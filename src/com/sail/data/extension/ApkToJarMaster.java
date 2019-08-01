@@ -39,7 +39,7 @@ public class ApkToJarMaster {
 		int start = 0;
 		int updatesNeedToAnalyze = 10000;
 		
-		if(updateLink.size() > (start + updatesNeedToAnalyze)){	
+		if((start + updatesNeedToAnalyze) > updateLink.size()){	
 			updatesNeedToAnalyze = updateLink.size() - start;
 		}
 		
@@ -51,6 +51,7 @@ public class ApkToJarMaster {
 		System.out.println("Total Number of Jars ["+updateLink.size()+"]");
 		System.out.println("Difference ["+difference+"]");
 		
+		/*
 		ExecutorService executor = Executors.newFixedThreadPool(numberOfThreads);
 	
 		long startTime = System.currentTimeMillis();
@@ -79,7 +80,7 @@ public class ApkToJarMaster {
         long endTime   = System.currentTimeMillis();
 		long totalTime = endTime - startTime;
 		System.out.println("Total Time ["+totalTime/(1000)+"] seconds");	
-		System.out.println("Total Time ["+totalTime/(1000*60)+"] minutes");		
+		System.out.println("Total Time ["+totalTime/(1000*60)+"] minutes");*/		
         System.out.println("Finished all threads");
 	}	
 	

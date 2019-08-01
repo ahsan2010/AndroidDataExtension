@@ -12,6 +12,7 @@ public class ShellCommandTester {
 	String copyLocation = "/home/local/SAIL/ahsan/Documents/SAIL_Projects/Android_Data_Extension/Temp_Folder/";
 	String dex2jarTool = "/home/local/SAIL/ahsan/Documents/SAIL_Projects/Conversion_Tools/dex-tools-2.1-20171001-lanchon/d2j-jar2dex.sh";
 	String jarOutputPath = "/home/local/SAIL/ahsan/Documents/SAIL_Projects/Android_Data_Extension/Output_Data/";
+	
 	public void testCommands() throws Exception{
 		
 		for(int i = 0 ; i < testingAPKList.size() ; i ++ ){

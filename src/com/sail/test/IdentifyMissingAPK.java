@@ -12,7 +12,7 @@ public class IdentifyMissingAPK {
 	ArrayList<String> updateLink = new ArrayList<String>();
 	
 	public void readAppUpdateData() throws Exception{
-		CsvReader reader = new CsvReader(ProjectConstants.APP_UPDATES_SHORT_FILE);
+		CsvReader reader = new CsvReader(ProjectConstants.APP_UPDATES_FULL);
 		reader.readHeaders();
 		while(reader.readRecord()){
 			String packageName = reader.get("PACKAGE_NAME");
@@ -43,11 +43,11 @@ public class IdentifyMissingAPK {
 		System.out.println("Missing APK ["+missingAPKList.size()+"]");
 		System.out.println("Existing APK ["+existingAPKList.size()+"]");
 		
-		//writeMissingAPKList(missingAPKList);
+		writeMissingAPKList(missingAPKList);
 	}
 	
 	public void writeMissingAPKList(ArrayList<String> missingAPKList ) throws Exception{
-		CsvWriter writer = new CsvWriter(ProjectConstants.JAR_CONVERSION_LOG+"MissingAPK.csv");
+		CsvWriter writer = new CsvWriter(ProjectConstants.JAR_CONVERSION_LOG+"MissingAPK_Full_2016_2019.csv");
 		writer.write("Package_Name");
 		writer.write("Version_Code");
 		writer.write("Release_Date");
