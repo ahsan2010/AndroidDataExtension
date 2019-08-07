@@ -20,7 +20,7 @@ public class CopierWorker implements Runnable{
 	
 	String APK_LOCATION = "/safwatscratch/shassan/Input_Apks/";			
 	String DESTINATION = ProjectConstants.ROOT + "Android_Manifests/";
-	String APK_TOOL = ProjectConstants.ROOT + "Conversion_Tools/Apk_Tool/";
+	String APK_TOOL = ProjectConstants.ROOT + "Conversion_Tools/apktool_2.3.1.jar";
 	String TEMP_COPY_LOCATION = ProjectConstants.ROOT + "Temp_Folder/";
 	
 	int THREAD_NO;
@@ -99,7 +99,7 @@ public class CopierWorker implements Runnable{
 		}catch(Exception e){
 			e.printStackTrace();
 		}
-		APK_TOOL = APK_TOOL +"apktool_2.3.1_"+threadNo +".jar";
+		
 	}
 	
 	public CopierWorker(){
