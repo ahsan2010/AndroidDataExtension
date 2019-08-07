@@ -15,7 +15,7 @@ public class ApkToJarMaster {
 	public ArrayList<String> getAppUpdatesLink(){
 		ArrayList<String> updateLink = new ArrayList<String>();
 		try{
-			CsvReader reader = new CsvReader(ProjectConstants.APP_UPDATES_FILE);
+			CsvReader reader = new CsvReader(ProjectConstants.APP_UPDATES_JAN_16_SEP_19);
 			reader.readHeaders();
 			while(reader.readRecord()){
 				String packageName = reader.get("PACKAGE_NAME");
@@ -37,11 +37,11 @@ public class ApkToJarMaster {
 	public void runTheWorker(){
 		ArrayList<String> updateLink = getAppUpdatesLink();
 		int start = 0;
-		int updatesNeedToAnalyze = 10000;
+		int updatesNeedToAnalyze = updateLink.size();
 		
-		if((start + updatesNeedToAnalyze) > updateLink.size()){	
+		/*if((start + updatesNeedToAnalyze) > updateLink.size()){	
 			updatesNeedToAnalyze = updateLink.size() - start;
-		}
+		}*/
 		
 		int difference = (int)((updatesNeedToAnalyze)/numberOfThreads);
 		
@@ -50,8 +50,8 @@ public class ApkToJarMaster {
 		System.out.println("Total Threads ["+numberOfThreads+"]");
 		System.out.println("Total Number of Jars ["+updateLink.size()+"]");
 		System.out.println("Difference ["+difference+"]");
+		System.out.println("Update needs to analyze ["+updatesNeedToAnalyze+"]");
 		
-		/*
 		ExecutorService executor = Executors.newFixedThreadPool(numberOfThreads);
 	
 		long startTime = System.currentTimeMillis();
@@ -80,7 +80,7 @@ public class ApkToJarMaster {
         long endTime   = System.currentTimeMillis();
 		long totalTime = endTime - startTime;
 		System.out.println("Total Time ["+totalTime/(1000)+"] seconds");	
-		System.out.println("Total Time ["+totalTime/(1000*60)+"] minutes");*/		
+		System.out.println("Total Time ["+totalTime/(1000*60)+"] minutes");		
         System.out.println("Finished all threads");
 	}	
 	
