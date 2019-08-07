@@ -57,7 +57,7 @@ public class ManifestFileCopier {
 			if (i == numberOfThreads) {
 				Runnable worker = new CopierWorker(updateLink, start, end, i);
 				System.out.println(
-						"*Thread Start Position [" + start + "]" + " " + " End Position [" + updateLink.size() + "]");
+						"*Thread Start Position [" + start + "]" + " " + " End Position [" + end + "]");
 				executor.execute(worker);
 
 			} else {

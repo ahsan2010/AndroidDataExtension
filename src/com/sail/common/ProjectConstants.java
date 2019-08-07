@@ -1,5 +1,9 @@
 package com.sail.common;
 
+import org.joda.time.DateTime;
+
+import com.sail.mobile.analysis.util.DateUtil;
+
 public class ProjectConstants {
 
 	public static String ROOT = "/home/local/SAIL/ahsan/Documents/SAIL_Projects/Android_Data_Extension/";
@@ -11,4 +15,7 @@ public class ProjectConstants {
 	public static String APP_UPDATES_FULL = "/home/local/SAIL/ahsan/Documents/SAIL_Projects/Android_Data_Extension/Data/app_updates_top_April_2016_April_2019.csv";
 	public static String APP_UPDATES_JAN_16_SEP_19 = "/home/local/SAIL/ahsan/Documents/SAIL_Projects/Android_Data_Extension/Data/app_updates_top_Jan_2016_April_2019.csv";
 	public static String STUDIED_APP_UPDATES = ROOT + "Data/Final_Studied_App_Updates_2016_2019.csv";
+		
+	public static DateTime EPERIMENT_START_TIME = DateUtil.formatter.parseDateTime("2016_04_20");
+	public static DateTime EPERIMENT_END_TIME = DateUtil.formatter.parseDateTime("2019_04_20");
 }
