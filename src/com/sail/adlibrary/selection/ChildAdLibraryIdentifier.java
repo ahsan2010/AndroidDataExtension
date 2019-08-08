@@ -18,14 +18,15 @@ import org.apache.bcel.classfile.ConstantPool;
 import org.apache.bcel.classfile.JavaClass;
 
 import com.csvreader.CsvWriter;
+import com.sail.common.ProjectConstants;
 import com.sail.mobile.analysis.util.AdsUtil;
 import com.sail.mobile.analysis.util.FileUtil;
 
 public class ChildAdLibraryIdentifier implements Runnable{
 
-	public  String JAR_DIRECTORY = "/archive/ahsan/Jars/";
-	public String OUTPUT_LOCATION =  "/home/local/SAIL/ahsan/Documents/AdLibraryAnalysis/ROOT/result/ad-library-update/";
-	public String AD_LIBRARY_MAP = "/home/local/SAIL/ahsan/Documents/AdLibraryAnalysis/ROOT/scripts/verified_ads_updated.csv";
+	public  String JAR_DIRECTORY = "/safwatscratch/shassan/Jars/";
+	public String OUTPUT_LOCATION =  ProjectConstants.ROOT + "Ad_Library_Identification_Result/";
+	public String AD_LIBRARY_MAP = "/home/local/SAIL/ahsan/Documents/SAIL_Projects/Android_Data_Extension/Data/verified_ads_updated.csv";
 	ArrayList<String>updateLink = new ArrayList<String>();
 	Map<String,String> varifiedAdPackageMapGroup = FileUtil.readVerfiedAdList(AD_LIBRARY_MAP);
 	Set<String> adLibraryImportSet = new HashSet<String>();
@@ -51,12 +52,14 @@ public class ChildAdLibraryIdentifier implements Runnable{
 		Enumeration<JarEntry> entries = jarFile.entries();
 		while (entries.hasMoreElements()) {
 			JarEntry entry = entries.nextElement();
+			System.out.println(entry.getName());
 			if (!entry.getName().endsWith(".class")) {
 				continue;
 			}
 			ClassParser parser = new ClassParser(jarPath, entry.getName());
 			JavaClass javaClass = parser.parse();
 			javaClasses.put(javaClass.getClassName(), javaClass);
+			System.out.println("GOT >>>");
 		}
 		return javaClasses;
 	}
@@ -148,6 +151,7 @@ public class ChildAdLibraryIdentifier implements Runnable{
 		try{
 			JarFile jarFile = new JarFile(new File(jarLocation));
 			Map<String, JavaClass> javaClassesMap  = collectJavaClasses(jarLocation, jarFile);
+			System.out.println("Total Java Classes ["+javaClassesMap.size()+"]");
 			for (String key : javaClassesMap.keySet()) {
 				JavaClass investigationClass = javaClassesMap.get(key);
 				String fullClassIdentifier = investigationClass.getClassName();

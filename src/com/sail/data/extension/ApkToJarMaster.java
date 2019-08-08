@@ -10,12 +10,12 @@ import com.sail.common.ProjectConstants;
 
 public class ApkToJarMaster {
 
-	int numberOfThreads = 10;
+	int numberOfThreads = 30;
 	
 	public ArrayList<String> getAppUpdatesLink(){
 		ArrayList<String> updateLink = new ArrayList<String>();
 		try{
-			CsvReader reader = new CsvReader(ProjectConstants.APP_UPDATES_JAN_16_SEP_19);
+			CsvReader reader = new CsvReader(ProjectConstants.STUDIED_APP_UPDATES);
 			reader.readHeaders();
 			while(reader.readRecord()){
 				String packageName = reader.get("PACKAGE_NAME");
@@ -37,7 +37,8 @@ public class ApkToJarMaster {
 	public void runTheWorker(){
 		ArrayList<String> updateLink = getAppUpdatesLink();
 		int start = 0;
-		int updatesNeedToAnalyze = updateLink.size();
+		int end = 10000;
+		int updatesNeedToAnalyze = end - start + 1;
 		
 		/*if((start + updatesNeedToAnalyze) > updateLink.size()){	
 			updatesNeedToAnalyze = updateLink.size() - start;
@@ -45,7 +46,7 @@ public class ApkToJarMaster {
 		
 		int difference = (int)((updatesNeedToAnalyze)/numberOfThreads);
 		
-		int END_INDEX = start + updatesNeedToAnalyze;
+		int END_INDEX = end;
 		
 		System.out.println("Total Threads ["+numberOfThreads+"]");
 		System.out.println("Total Number of Jars ["+updateLink.size()+"]");

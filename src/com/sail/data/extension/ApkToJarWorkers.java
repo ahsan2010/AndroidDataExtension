@@ -16,8 +16,8 @@ public class ApkToJarWorkers implements Runnable{
 	
 	String apkLocation = "/safwatscratch/shassan/Input_Apks/";
 	//List<String> testingAPKList = Arrays.asList("a2dp.Vol-145-2018_11_09.apk","a2dp.Vol-148-2018_11_30.apk");
-	String copyLocation = ProjectConstants.ROOT + "Temp_Folder/";
-	String dex2jarTool = ProjectConstants.ROOT + "Conversion_Tools/dex-tools-2.1-20171001-lanchon/d2j-jar2dex.sh";
+	String copyLocation = ProjectConstants.ROOT + "Temp_Folder_Jars/";
+	String dex2jarTool = ProjectConstants.ROOT + "Conversion_Tools/dex-tools-2.1-20171001-lanchon/d2j-dex2jar.sh";
 	String jarOutputPath = "/safwatscratch/shassan/Jars/";
 	//String jarOutputPath = ProjectConstants.ROOT + "Output_Data/";
 	

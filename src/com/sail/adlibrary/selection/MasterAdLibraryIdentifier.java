@@ -7,29 +7,37 @@ import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import com.csvreader.CsvReader;
+import com.sail.common.ProjectConstants;
 import com.sail.mobile.analysis.util.AdsInputDataLoader;
 import com.sail.mobile.model.UpdateTable;
 
 public class MasterAdLibraryIdentifier {
-	//public final String VALID_UPDATE_PATH ="/home/local/SAIL/ahsan/Documents/AdLibraryAnalysis/ROOT/scripts/studied_app_Short.csv" ;
-	public final String VALID_UPDATE_PATH = "/home/local/SAIL/ahsan/Documents/AdLibraryAnalysis/ROOT/scripts/studied_app_updates_final_2016.csv";
-	HashMap<String,ArrayList<UpdateTable>> appUpdates = AdsInputDataLoader.readUpdateData(VALID_UPDATE_PATH);
-	int numberOfThreads = 35;
+	
+	int numberOfThreads = 10;
 	
 	
 	public ArrayList<String> getAppUpdatesLink(){
 		ArrayList<String> updateLink = new ArrayList<String>();
-		Set<String> appList = new HashSet<String>();
-		appList.addAll(appUpdates.keySet());
-		for(String appName : appList){
-			for(UpdateTable update : appUpdates.get(appName)){
-				String key = appName+"-"+update.getVERSION_CODE()+"-"+update.getRELEASE_DATE().replace("-", "_");
-				updateLink.add(key);
+		try{
+			CsvReader reader = new CsvReader(ProjectConstants.APP_UPDATES_SHORT_FILE);
+			reader.readHeaders();
+			while(reader.readRecord()){
+				String packageName = reader.get("PACKAGE_NAME");
+				String versionCode = reader.get("VERSION_CODE");
+				String releaseDate = reader.get("RELEASE_DATE");				
+				releaseDate = releaseDate.replace("-","_");
+				
+				String updateString = packageName +"-" + versionCode + "-" + releaseDate;
+				updateLink.add(updateString);				
 			}
+		reader.close();
+		}catch(Exception e){
+			e.printStackTrace();
 		}
-		System.out.println("Total updates need to be decomipled ["+updateLink.size()+"]");
 		return updateLink;
 	}
+	
 	
 	public void runTheWorker(){
 		ArrayList<String> updateLink = getAppUpdatesLink();
@@ -50,14 +58,12 @@ public class MasterAdLibraryIdentifier {
 			if( i == numberOfThreads){
 				Runnable worker = new ChildAdLibraryIdentifier(updateLink,start, END_INDEX,i);
 				System.out.println("*Thread Start Position ["+ start +"]" +" " + " End Position ["+(END_INDEX)+"]");
-				executor.execute(worker);
-	
+				executor.execute(worker);	
 			}else{
 				Runnable worker = new ChildAdLibraryIdentifier(updateLink, start, start+difference,i);
 				System.out.println("*Thread Start Position ["+ start +"]" +" " + " End Position ["+(start+difference)+"]");
 				start+= difference;
-				executor.execute(worker);
-				
+				executor.execute(worker);				
 			}
 		}
 		executor.shutdown();
@@ -65,6 +71,7 @@ public class MasterAdLibraryIdentifier {
         }
         long endTime   = System.currentTimeMillis();
 		long totalTime = endTime - startTime;
+		System.out.println("Total Time ["+totalTime/(1000)+"] seconds");	
 		System.out.println("Total Time ["+totalTime/(1000*60)+"] minutes");		
         System.out.println("Finished all threads");
 	}	
