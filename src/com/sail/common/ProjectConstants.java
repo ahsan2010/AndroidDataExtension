@@ -18,4 +18,6 @@ public class ProjectConstants {
 		
 	public static DateTime EPERIMENT_START_TIME = DateUtil.formatter.parseDateTime("2016_04_20");
 	public static DateTime EPERIMENT_END_TIME = DateUtil.formatter.parseDateTime("2019_04_20");
+	
+	public static String  jarOutputPath = "/safwatscratch/shassan/Jars/";
 }

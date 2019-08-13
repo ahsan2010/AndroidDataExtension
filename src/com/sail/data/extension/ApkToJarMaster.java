@@ -1,6 +1,9 @@
 package com.sail.data.extension;
 
+import java.io.File;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -11,6 +14,8 @@ import com.sail.common.ProjectConstants;
 public class ApkToJarMaster {
 
 	int numberOfThreads = 30;
+	public Set<String> existingJarConersion = new HashSet<String>();
+	public Set<String> apkNeedsToCompile = new HashSet<String>();
 	
 	public ArrayList<String> getAppUpdatesLink(){
 		ArrayList<String> updateLink = new ArrayList<String>();
@@ -24,20 +29,41 @@ public class ApkToJarMaster {
 				releaseDate = releaseDate.replace("-","_");
 				
 				String updateString = packageName +"-" + versionCode + "-" + releaseDate;
-				updateLink.add(updateString);
-				
+				updateLink.add(updateString);		
 			}
 		reader.close();
+		System.out.println("Total updates ["+updateLink.size()+"]");
 		}catch(Exception e){
 			e.printStackTrace();
 		}
 		return updateLink;
 	}
+
+	
+	public void checkExistingJar(){
+		int totalExistingJars = 0;
+		ArrayList<String> updateLink = getAppUpdatesLink();
+		for(int i = 0 ; i < 30000 ; i ++){
+			
+			String updateString = updateLink.get(i);
+			String fileLocation = ProjectConstants.jarOutputPath + updateString + "-dex2jar.jar";
+			File f = new File(fileLocation);
+			if(f.exists() && !f.isDirectory()) { 
+				existingJarConersion.add(updateString);
+				++totalExistingJars;
+			}else{
+				
+			}
+			
+			System.out.println("Check complete " + (i+1) + " " + fileLocation + " " + totalExistingJars);
+		}
+		System.out.println("Total existing Jars = " + totalExistingJars +" " + existingJarConersion.size());
+	}
 	
 	public void runTheWorker(){
 		ArrayList<String> updateLink = getAppUpdatesLink();
-		int start = 0;
-		int end = 10000;
+		int start = 55001;
+		int end = 60000;
 		int updatesNeedToAnalyze = end - start + 1;
 		
 		/*if((start + updatesNeedToAnalyze) > updateLink.size()){	
@@ -88,7 +114,8 @@ public class ApkToJarMaster {
 	
 	public static void main(String[] args) throws Exception{
 		ApkToJarMaster ob = new ApkToJarMaster();
-		ob.runTheWorker();
+		//ob.runTheWorker();
+		ob.checkExistingJar();
 		System.out.println("Program finishes successfully");
 	}
 	
