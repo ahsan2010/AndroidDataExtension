@@ -13,9 +13,9 @@ import com.sail.common.ProjectConstants;
 
 public class ApkToJarMaster {
 
-	int numberOfThreads = 30;
+	int numberOfThreads = 5;
 	public Set<String> existingJarConersion = new HashSet<String>();
-	public Set<String> apkNeedsToCompile = new HashSet<String>();
+	public ArrayList<String> apkNeedsToCompile = new ArrayList<String>();
 	
 	public ArrayList<String> getAppUpdatesLink(){
 		ArrayList<String> updateLink = new ArrayList<String>();
@@ -52,19 +52,20 @@ public class ApkToJarMaster {
 				existingJarConersion.add(updateString);
 				++totalExistingJars;
 			}else{
-				
+				apkNeedsToCompile.add(updateString);
 			}
 			
-			System.out.println("Check complete " + (i+1) + " " + fileLocation + " " + totalExistingJars);
+			//System.out.println("Check complete " + (i+1) + " " + fileLocation + " " + totalExistingJars);
 		}
 		System.out.println("Total existing Jars = " + totalExistingJars +" " + existingJarConersion.size());
 	}
 	
 	public void runTheWorker(){
-		ArrayList<String> updateLink = getAppUpdatesLink();
-		int start = 55001;
-		int end = 60000;
-		int updatesNeedToAnalyze = end - start + 1;
+		ArrayList<String> updateLink = apkNeedsToCompile;
+		//ArrayList<String> updateLink = getAppUpdatesLink();
+		int start = 0;
+		int end = apkNeedsToCompile.size();
+		int updatesNeedToAnalyze = end - start;
 		
 		/*if((start + updatesNeedToAnalyze) > updateLink.size()){	
 			updatesNeedToAnalyze = updateLink.size() - start;
@@ -116,6 +117,7 @@ public class ApkToJarMaster {
 		ApkToJarMaster ob = new ApkToJarMaster();
 		//ob.runTheWorker();
 		ob.checkExistingJar();
+		ob.runTheWorker();
 		System.out.println("Program finishes successfully");
 	}
 	
