@@ -1,0 +1,268 @@
+{
+    "160000" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"yingguo_152_561_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_0.png"
+    },
+    "160001" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"luozhuang7_161_590_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_1.png"
+    },
+    "160002" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"hanzhuang03_149_597_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_2.png"
+    },
+    "160003" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"luozhuang1_152_594_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_3.png"
+    },
+    "160004" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"hanzhuang04_141_598_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_18.png"
+    },
+    "160005" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"yidali_128_588_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_4.png"
+    },
+    "160006" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"hanzhuang01_146_597_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_6.png"
+    },
+    "160007" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"hanzhuang06_171_639_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_7.png"
+    },
+    "160008" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"luozhuang2_153_702_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_8.png"
+    },
+    "160009" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"nongzhuang1_112_586_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_9.png"
+    },
+    "160010" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"nongzhuang3_112_581_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_10.png"
+    },
+    "160011" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"nongzhuang4_107_597_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_11.png"
+    },
+    "160012" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"nongzhuang8_109_602_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_12.png"
+    },
+    "160013" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"nongzhuang6_134_604_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_13.png"
+    },
+    "160014" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"moluoge_159_602_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_14.png"
+    },
+    "160015" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"nongzhuang5_108_583_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_15.png"
+    },
+    "160016" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"nongzhuang7_111_577_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_16.png"
+    },
+    "160017" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"xila_91_568_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_17.png"
+    },
+    "160018" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"hanzhuang08_180_642_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_5.png"
+    },
+    "160019" : {
+        "pids":["160000"],
+        "alpha":"0.7",
+        "texture":"luozhuang8_155_592_shadow.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"shadow_19.png"
+    },
+
+    "160020" : {
+    "pids":["160000"],
+    "alpha":"0.7",
+    "texture":"agenting_122_602_shadow.png",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"shadow_AR.png"
+    },
+
+    "160021" : {
+    "pids":["160000"],
+    "alpha":"0.7",
+    "texture":"wuhuizhuang03_83_562_shadow.png",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"shadow_wuhuizhuang03.png"
+    },
+
+    "160022" : {
+    "pids":["160000"],
+    "alpha":"0.7",
+    "texture":"caizhuang_79_581_shadow.png",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"shadow_caizhuang.png"
+    },
+
+    "160023" : {
+    "pids":["160000"],
+    "alpha":"0.7",
+    "texture":"hanzhuang02_173_637_shadow.png",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"shadow_K2.png"
+    },
+
+    "160024" : {
+    "pids":["160000"],
+    "alpha":"0.7",
+    "texture":"hanzhuang09_173_639_shadow.png",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"shadow_K9.png"
+    },
+
+    "160025" : {
+    "pids":["160000"],
+    "alpha":"0.7",
+    "texture":"nongzhuang2_66_557_shadow.png",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"shadow_S2.png"
+    }
+}

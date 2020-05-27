@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_bg" android:background="@drawable/ab_bg_black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_gravity="center" android:id="@id/view_container" android:background="@drawable/corner_four_gray" android:layout_width="230.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/solid_white" android:gravity="center_vertical" android:id="@id/txt_title" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="FontName" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/solid_white" android:gravity="center" android:id="@id/txt_message" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="Download FotoRus to get more PIP frames." android:layout_below="@id/txt_title" android:layout_centerHorizontal="true" />
+        <Button android:textSize="12.0sp" android:textColor="@color/solid_white" android:id="@id/cancelButton" android:background="@drawable/corner_four_lightgray" android:layout_width="90.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:text="@string/cancel" android:layout_below="@id/txt_message" android:layout_alignParentLeft="true" />
+        <Button android:textSize="12.0sp" android:textColor="@color/solid_white" android:id="@id/downloadButton" android:background="@drawable/corner_four_blue" android:layout_width="90.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/Download" android:layout_below="@id/txt_message" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</FrameLayout>

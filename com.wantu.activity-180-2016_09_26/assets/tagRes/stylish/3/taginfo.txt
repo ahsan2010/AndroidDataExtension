@@ -1,0 +1,5 @@
+{"previewImg":"jingdian15_icon.jpg","centerX":1,"centerY":9,"width":147,"height":84,"oriention":3,"basicView":
+[{"viewNum":0,"viewtype":0,"textColor":{"R":0,"G":0,"B":0,"A":100},"isBold":"false","isShadow":"false","fontSize":20,"textLines":1},
+{"viewNum":1,"viewtype":1,"x":0,"y":0,"w":100,"h":84,"imageName":"jingdian15_01.png","isContentView":"false"},
+{"viewNum":2,"viewtype":1,"x":100,"y":13,"w":12,"h":60,"imageName":"jingdian15_02.png","isContentView":"true"},
+{"viewNum":3,"viewtype":1,"x":112,"y":13,"w":35,"h":60,"imageName":"jingdian15_03.png","isContentView":"false"}],"outview":[]}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/dot_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/view_1" android:padding="10.0dip" android:visibility="gone" android:clickable="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/guide_view_dot_drawable" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/view_2" android:padding="10.0dip" android:clickable="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/guide_view_dot_drawable" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/view_3" android:padding="10.0dip" android:clickable="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/guide_view_dot_drawable" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/view_4" android:padding="10.0dip" android:clickable="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/guide_view_dot_drawable" />
+    </LinearLayout>
+</RelativeLayout>

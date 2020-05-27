@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="320.0dip" android:layout_height="69.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res-auto="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.wantu.activity.link.view.CaptionLabel android:textColor="@color/solid_white" android:ellipsize="none" android:gravity="center" android:id="@id/title" android:layout_width="79.0dip" android:layout_height="25.0dip" android:text="InstaMag" android:singleLine="true" android:layout_centerInParent="true" res-auto:maxFontSize="20.0sp" />
+            <FrameLayout android:id="@id/splitView" android:background="@color/solid_dark_gray" android:layout_width="5.0dip" android:layout_height="fill_parent" android:layout_marginRight="17.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

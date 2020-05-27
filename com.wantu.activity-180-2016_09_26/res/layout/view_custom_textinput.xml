@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/btn_ok_frame" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/btn_ok_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OK" />
+        </FrameLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/btn_ok_frame" android:layout_alignParentTop="true">
+            <ImageView android:background="@drawable/input_inner_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffff0000" android:id="@id/txt_cur_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="10" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#dd000000" android:id="@id/txt_max_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/8" android:layout_toRightOf="@id/txt_cur_length" android:layout_centerVertical="true" />
+            <FrameLayout android:id="@id/btn_del_frame" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:id="@id/img_delete" android:background="@drawable/close" android:layout_width="18.0dip" android:layout_height="18.0dip" />
+            </FrameLayout>
+            <EditText android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/edittext" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:scrollHorizontally="true" android:singleLine="true" android:layout_toLeftOf="@id/btn_del_frame" android:layout_toRightOf="@id/txt_max_length" android:inputType="text">
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

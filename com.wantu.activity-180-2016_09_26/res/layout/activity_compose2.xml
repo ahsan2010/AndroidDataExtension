@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/FrameLayout1" android:background="@color/ui_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <FrameLayout android:id="@id/layout_top" android:background="@drawable/gr_nav" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:layout_gravity="center|right" android:id="@id/img_save" android:visibility="invisible" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/ic_action_save" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/img_share" android:visibility="invisible" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="62.0dip" android:src="@drawable/ic_action_share" />
+            <FrameLayout android:layout_gravity="top" android:id="@id/layout_pre" android:background="@drawable/item_horizon_btn" android:layout_width="90.0dip" android:layout_height="fill_parent">
+                <TextView android:textSize="18.0sp" android:textColor="@color/nav_back_color" android:layout_gravity="center" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/back" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/imageView2" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/nav_cancel_pic" />
+            </FrameLayout>
+            <TextView android:textSize="21.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_compose_module" />
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/layout_1_4_3_switch" android:background="@drawable/item_horizon_btn" android:layout_width="60.0dip" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:id="@id/img_1_4_3_switch" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="center" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="right" android:id="@id/layout_next" android:background="@drawable/item_horizon_btn" android:layout_width="90.0dip" android:layout_height="fill_parent">
+                <TextView android:textSize="18.0sp" android:textColor="@color/nav_save_color" android:layout_gravity="center|right" android:id="@id/textViewNext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:text="@string/next" />
+            </FrameLayout>
+        </FrameLayout>
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/bannerContainerID" android:tag="bannerRelative" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/layout_bottom" android:layout_width="fill_parent" android:layout_height="90.0dip">
+        <com.wantu.view.compose2.Compose2BottomBarView android:layout_gravity="bottom" android:id="@id/composeBottomBarView1" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        <LinearLayout android:layout_gravity="top" android:id="@id/compose_module" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_weight="1.0">
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_gravity="center|top" android:id="@id/collage_styles_layout" android:background="@drawable/btn_section_sta" android:layout_width="75.0dip" android:layout_height="40.0dip" android:layout_marginTop="-4.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@id/im_background" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/gr_tab_icon_style" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/solid_black" android:layout_gravity="center" android:id="@id/textView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_collage_style" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="top" android:id="@id/layout_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="100.0dip" android:layout_marginBottom="90.0dip">
+        <FrameLayout android:layout_gravity="center" android:id="@id/layout_operation_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/handleview_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="191.0dip">
+        <com.wantu.activity.compose2.CollageHandleView android:id="@id/collage_handle_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/link_styles_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="125.0dip" />
+</FrameLayout>

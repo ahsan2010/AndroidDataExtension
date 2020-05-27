@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/item_container" android:background="@color/white" android:layout_width="@dimen/online_image_thumbnail_width" android:layout_height="@dimen/online_image_thumbnail_width">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/filter_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/share_imgView" android:background="@drawable/share" android:layout_width="22.0dip" android:layout_height="14.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" />
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/app_imgView" android:background="@drawable/appload" android:layout_width="22.0dip" android:layout_height="14.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" />
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/download_imgview" android:background="@drawable/gr_download" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" />
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/five_imgView" android:background="@drawable/gr_five_stars" android:layout_width="22.0dip" android:layout_height="14.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" />
+    </FrameLayout>
+</LinearLayout>

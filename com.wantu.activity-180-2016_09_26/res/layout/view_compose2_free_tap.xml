@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/free_container" android:background="#ff282828" android:layout_width="fill_parent" android:layout_height="190.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <FrameLayout android:id="@id/free_styles" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/free_text_styles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collage_styles" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/free_background" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/free_text_backround" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backgrounds" />
+        </FrameLayout>
+        <Button android:layout_gravity="center_vertical" android:id="@id/btn_close_view" android:background="@drawable/btn_close_l" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="top" android:background="#ff3f3f3f" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="39.0dip" />
+</FrameLayout>

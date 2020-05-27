@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/ui_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="top" android:id="@id/bannerContainerID" android:tag="bannerRelative" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <View android:id="@id/maskview" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" />
+    <com.fotoable.fotoproedit.view.ui.ProEidtActionBarView android:layout_gravity="bottom" android:id="@id/proEidtActionBarView" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginBottom="0.0dip" />
+    <FrameLayout android:layout_gravity="bottom|center" android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/btn_add" android:background="@drawable/gr_openlibrary" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|top" android:id="@id/gl_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="55.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="49.0dip">
+        <ImageView android:id="@id/originimageview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <com.fotoable.global.TCustomFontDownloadTipView android:layout_gravity="bottom" android:id="@id/custom_fontdownloadview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.fotoable.fotoproedit.activity.zimu.TZiMuMainLibraryView android:layout_gravity="top" android:id="@id/mainlibraryview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="top" android:id="@id/indicate_mask" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/progressBarBg" android:background="#7d000000" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_centerHorizontal="true">
+                <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView android:textSize="16.0sp" android:id="@id/progressLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:layout_below="@id/progressBarBg" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <com.fotoable.global.TCustomTextInputView android:layout_gravity="bottom" android:id="@id/custom_text_input_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/keyboard_bottom_contianer" android:background="#ff464646" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/textEditor" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginLeft="-1.0dip" android:ems="10" android:inputType="textMultiLine" />
+    </RelativeLayout>
+</FrameLayout>

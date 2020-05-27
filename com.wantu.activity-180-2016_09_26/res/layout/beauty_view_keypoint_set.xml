@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="bottom" android:orientation="vertical" android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/imageTosetContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="90.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/imageToSet" android:background="@color/gray55" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/rightEye" android:layout_width="43.0dip" android:layout_height="38.0dip" android:layout_marginLeft="45.0dip" android:src="@drawable/eyer" />
+        <ImageView android:layout_gravity="center" android:id="@id/leftEye" android:layout_width="43.0dip" android:layout_height="38.0dip" android:layout_marginRight="45.0dip" android:src="@drawable/eyel" />
+        <FrameLayout android:layout_gravity="bottom|center|left" android:id="@id/tip_image_container" android:layout_width="120.0dip" android:layout_height="100.0dip" android:layout_marginBottom="5.0dip">
+            <FrameLayout android:id="@id/tip_image_img" android:background="@color/unselected_bg" android:layout_width="100.0dip" android:layout_height="100.0dip">
+                <ImageView android:layout_gravity="center|left|top" android:layout_width="98.0dip" android:layout_height="98.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/tip_image_find_face1" android:scaleType="fitCenter" />
+            </FrameLayout>
+            <Button android:layout_gravity="center_vertical" android:id="@id/tip_image_button" android:background="@drawable/tip_image_button_bg_2" android:layout_width="15.0dip" android:layout_height="60.0dip" android:layout_marginLeft="100.0dip" />
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/color_lgray" android:layout_width="fill_parent" android:layout_height="90.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/KeyptSetNote" android:layout_weight="0.52" />
+        <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:layout_gravity="right" android:id="@id/okBtn" android:background="@drawable/btn_edit_save" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+            <Button android:layout_gravity="left" android:id="@id/cancelBtn" android:background="@drawable/btn_edit_cancel" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.fotoable.beautyui.ImageDetailView android:layout_gravity="center|left|top" android:id="@id/imagedetailview" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="150.0dip" />
+</FrameLayout>

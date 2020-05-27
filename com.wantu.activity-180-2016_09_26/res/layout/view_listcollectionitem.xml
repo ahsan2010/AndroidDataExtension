@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageCollectionCover" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_toRightOf="@id/imageCollectionCover" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_toRightOf="@id/imageCollectionCover" android:layout_centerVertical="true">
+        <TextView android:textSize="20.0dip" android:layout_gravity="bottom" android:id="@id/textCollectionName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" />
+        <TextView android:id="@id/collectionPhotosCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collection_photo_count" />
+    </LinearLayout>
+</RelativeLayout>

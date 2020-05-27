@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:background="@color/fotobeauty_bg" android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:slideswitch="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/bar_auto_eyebag" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip">
+        <com.fotoable.beautyui.gpuimage.sample.utils.SlideSwitch android:layout_gravity="center|right" android:id="@id/toggle" android:background="@color/transparent" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" slideswitch:themeColor="@color/color_btn_blue_txt" slideswitch:isOpen="true" slideswitch:shapes="circle" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/auto_eyebag" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/bar_manual_eyebag" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginRight="50.0dip">
+        <Button android:id="@id/help_hint_eyebag" android:background="@drawable/btn_tip_res" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        <Button android:id="@id/undobtn" android:background="@drawable/btn_beauty_undo_res" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="5.0dip" />
+    </LinearLayout>
+    <Button android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center|right" android:id="@id/auto_manual_switch" android:background="@color/transparent" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:text="@string/auto" />
+</FrameLayout>

@@ -1,0 +1,27 @@
+﻿{
+  "typeId": 100,
+  "decorations": [
+    {
+      "viewType": 1,
+      "size": {
+        "x": 0,
+        "y": 0,
+        "w": 400,
+        "h": 592
+      },
+      "image": "zj_pp_25.png"
+    },
+    {
+      "viewType": 0,
+      "size": {
+        "x": 90,
+        "y": 148,
+        "w": 247,
+        "h": 226
+      }
+    }
+  ],
+  "containerW": 400,
+  "containerH": 592,
+  "iconName": "zj_xx_25.png"
+}

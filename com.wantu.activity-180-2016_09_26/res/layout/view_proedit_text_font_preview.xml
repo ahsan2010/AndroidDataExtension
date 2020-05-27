@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/ab_bg_black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.7" />
+    <FrameLayout android:layout_gravity="center" android:background="@drawable/corner_font_backview" android:layout_width="273.0dip" android:layout_height="313.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/solid_white" android:gravity="center_vertical" android:layout_gravity="center|left|top" android:id="@id/txt_fontname" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="FontName" />
+        <FrameLayout android:layout_gravity="center|left|top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="35.0dip">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/solid_white" android:gravity="top" android:layout_gravity="center|left|top" android:id="@id/txt_content" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="FontContent" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/solid_white" android:gravity="center_vertical" android:layout_gravity="center|left|top" android:id="@id/txt_tip" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="(FontContent)" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/solid_white" android:gravity="center_vertical" android:layout_gravity="center|left|top" android:id="@id/txt_preview" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="60.0dip" android:text="Preview" />
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/img_font" android:layout_width="253.0dip" android:layout_height="178.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="85.0dip" />
+        <Button android:textSize="16.0sp" android:textColor="@color/solid_white" android:layout_gravity="bottom|center|left" android:id="@id/cancelButton" android:background="@drawable/corner_font_cancel" android:layout_width="110.0dip" android:layout_height="35.0dip" android:layout_marginLeft="18.0dip" android:layout_marginBottom="10.0dip" android:text="@string/cancel" />
+        <Button android:textSize="16.0sp" android:textColor="@color/solid_white" android:layout_gravity="bottom|center|right" android:id="@id/downloadButton" android:background="@drawable/corner_font_download" android:layout_width="110.0dip" android:layout_height="35.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="10.0dip" android:text="@string/Download" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="60.0dip" android:layout_height="60.0dip">
+        <FrameLayout android:layout_gravity="center" android:id="@id/set_select_bg" android:background="@drawable/list_item" android:layout_width="54.0dip" android:layout_height="54.0dip">
+            <com.fotoable.onLineImage.ImageButtonOnLine android:layout_gravity="center" android:id="@id/bg_icon" android:background="@drawable/pip_scroll_bg" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="fitCenter" />
+        </FrameLayout>
+        <ImageButton android:layout_gravity="right" android:id="@id/new_icon" android:background="@drawable/gr_download" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/share_imgView" android:background="@drawable/share" android:layout_width="22.0dip" android:layout_height="14.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" />
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/app_imgView" android:background="@drawable/appload" android:layout_width="22.0dip" android:layout_height="14.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" style="?android:attr/progressBarStyleSmall" />
+    </FrameLayout>
+</LinearLayout>

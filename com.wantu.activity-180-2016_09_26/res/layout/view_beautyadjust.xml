@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fotoable.beautyui.TBeautyPresetContainer android:layout_gravity="bottom" android:id="@id/preset_mode_coantainer" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/tool_bar_container" android:layout_width="fill_parent" android:layout_height="111.0dip">
+        <FrameLayout android:layout_gravity="top" android:background="@drawable/gr_nav" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <FrameLayout android:layout_gravity="top" android:id="@id/adjustSeekBar" android:background="@color/fotobeauty_bg" android:layout_width="fill_parent" android:layout_height="55.0dip">
+                <SeekBar android:layout_gravity="center" android:id="@id/adjust_opacity_seekbar" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progress="40" android:progressDrawable="@drawable/progress_slider" android:minHeight="2.0dip" android:thumb="@drawable/progress_control" />
+            </FrameLayout>
+            <com.fotoable.beautyui.BeautyAdjustQudouToolBar android:layout_gravity="top" android:id="@id/beauty_adjust_qudou_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="55.0dip" />
+            <com.fotoable.beautyui.BeautyAdjustSlimBodyToolBar android:layout_gravity="top" android:id="@id/beauty_adjust_slimbody_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="55.0dip" />
+            <com.fotoable.beautyui.BeautyAdjustDarkCircleToolBar android:layout_gravity="top" android:id="@id/beauty_adjust_darkcircle_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="55.0dip" />
+            <com.fotoable.beautyui.BeautyAdjustBigeyeToolBar android:layout_gravity="top" android:id="@id/beauty_adjust_bigeye_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="55.0dip" />
+            <com.fotoable.beautyui.BeautyAdjustSlimNoseToolBar android:layout_gravity="top" android:id="@id/beauty_adjust_slimnose_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="55.0dip" />
+        </FrameLayout>
+        <com.fotoable.beautyui.TBeautyAdjustScrollView android:layout_gravity="bottom" android:id="@id/beauty_adjust_scroll_view" android:background="@color/color_bottom" android:layout_width="fill_parent" android:layout_height="55.0dip" />
+    </FrameLayout>
+</FrameLayout>

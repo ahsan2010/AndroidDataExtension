@@ -1,0 +1,44 @@
+{
+
+"version" : "1",
+
+"cn_name" : "燕尾",
+
+"en_name" : "Forktail",
+
+"cnn_name" : "燕尾",
+
+"brow": "nongzhuang8_148_549_brow.png",
+"brow_a": "0.09",
+"brow_c": "130001",
+   
+
+"eyeshadow": "nongzhuang8_109_602_shadow.png",
+"eyeshadow_a": "0.56",
+
+"eyeliner": "nongzhuang8_146_648_liner.png",
+"eyeliner_a": "0.48",
+"eyeliner_c": "150002",
+
+"eyelash": "nongzhuang8_179_601_lash.png",
+"eyelash_a": "0.58",
+"eyelash_c": "140020",
+
+"lip": "110044",
+"lip_a": "0.41",
+
+
+
+"blush":"nongzhuang8_87_701_blush.png",
+"blush_a": "0.53",
+"blush_c": "120032",
+"makeup_alpha": "0.8",
+
+"bottom_alpha" : "0.55",
+
+"base":"100000",
+
+"base_a": "0.5"
+
+
+}

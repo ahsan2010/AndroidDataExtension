@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:orientation="vertical" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_ad" android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="bottom" android:id="@id/layout_bottom" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="12.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/bt_cancel" android:visibility="visible" android:layout_width="100.0dip" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:text="放弃机会" />
+            <Button android:textSize="21.0sp" android:gravity="center" android:id="@id/bt_ok" android:background="@color/indicate_blue" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="5.0dip" android:text="免费下载" android:layout_toRightOf="@id/bt_cancel" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_container" android:layout_width="fill_parent" android:layout_height="160.0dip" android:layout_above="@id/layout_bottom">
+            <com.fotoable.onLineImage.ImageViewOnline android:id="@id/img_desc" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_above="@id/layout_container">
+            <RelativeLayout android:gravity="center" android:id="@id/layout_left" android:layout_width="60.0dip" android:layout_height="60.0dip">
+                <com.fotoable.onLineImage.ImageViewOnline android:id="@id/img_icon" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:scaleType="fitXY" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/layout_left">
+                <FrameLayout android:id="@id/layout_titile" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="21.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/tx_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="1.0dip" android:text="全能拼图软件：随手拼" />
+                </FrameLayout>
+                <RelativeLayout android:gravity="left" android:id="@id/layout_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/layout_titile">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/tx_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="t\nx\n" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layout_ad" android:alpha="0.5" />
+</RelativeLayout>

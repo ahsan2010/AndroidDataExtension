@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res-auto="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageView1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="center" android:layout_width="320.0dip" android:layout_height="75.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.wantu.activity.link.view.CityLabel android:textSize="20.0sp" android:textColor="@color/solid_white" android:ellipsize="none" android:gravity="center" android:id="@id/title" android:layout_width="102.0dip" android:layout_height="35.0dip" android:text="Paris" android:singleLine="true" android:layout_centerInParent="true" res-auto:maxFontSize="30.0sp" />
+            <com.wantu.activity.link.view.UILabel android:textColor="@color/solid_white" android:ellipsize="none" android:gravity="center" android:id="@id/datelabel" android:layout_width="80.0dip" android:layout_height="20.0dip" android:text="4,7,2013" android:singleLine="true" android:layout_below="@id/title" android:layout_centerHorizontal="true" res-auto:maxFontSize="15.0sp" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

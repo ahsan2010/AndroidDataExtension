@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="bottom" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:id="@id/btnfaceadjust" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/btn_faceadjust" android:layout_alignParentRight="true" />
+        <com.fotoable.beautyui.newui.FlexibleThumbSeekbar android:id="@id/filter_seekbar" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progress="40" android:progressDrawable="@drawable/beauty_red_scrubber_progress" android:minHeight="2.0dip" android:thumb="@drawable/beauty_red_scrubber_control" android:layout_toLeftOf="@id/btnfaceadjust" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.fotoable.beautyui.NewFilterScrollView android:layout_gravity="bottom" android:id="@id/filter_scroll" android:background="#ff303030" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

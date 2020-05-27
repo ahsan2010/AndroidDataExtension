@@ -1,0 +1,47 @@
+{
+
+"version" : "1",
+
+"cn_name" : "粉黛",
+
+"en_name" : "Pink",
+
+"cnn_name" : "粉黛",
+
+"brow": "nongzhuang5_157_574_brow.png",
+"brow_a": "0.27",
+"brow_c": "130001",
+   
+
+"eyeshadow": "nongzhuang5_108_583_shadow.png",
+"eyeshadow_a": "0.50",
+    
+
+"eyeliner": "nongzhuang5_167_658_liner.png",
+"eyeliner_a": "0.53",
+"eyeliner_c": "150002",
+
+"eyelash": "nongzhuang5_189_644_lash.png",
+"eyelash_a": "0.72",
+"eyelash_c": "140000",
+
+"lip": "110041",
+"lip_a": "0.60",
+
+
+
+"blush":"nongzhuang1_79_698_blush.png",
+"blush_a": "0.52",
+"blush_c": "120029",
+
+"makeup_alpha": "0.8",
+
+"bottom_alpha" : "0.6",
+
+"base":"100001",
+
+"base_a": "0.5"
+      
+
+
+}

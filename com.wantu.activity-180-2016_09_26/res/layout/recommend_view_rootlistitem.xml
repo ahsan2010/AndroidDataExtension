@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/titlecontainer" android:layout_width="wrap_content" android:layout_height="40.0dip">
+        <ImageView android:layout_gravity="center" android:background="@drawable/recommend_rootitem_dot" android:layout_width="33.0dip" android:layout_height="33.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff313131" android:gravity="center|left" android:id="@id/titleview" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="Temp" />
+        <ImageView android:layout_gravity="center" android:background="@drawable/recommend_rootitem_dot" android:layout_width="33.0dip" android:layout_height="33.0dip" />
+    </LinearLayout>
+    <com.fotoable.recommendapp.RecommendHorizontalRecyerView android:id="@id/recyclerview" android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="163.0dip" android:layout_marginTop="40.0dip" />
+</FrameLayout>

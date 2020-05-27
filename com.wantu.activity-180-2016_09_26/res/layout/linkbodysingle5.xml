@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res-auto="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center|left|top" android:id="@id/imageView1ParentView" android:layout_width="264.0dip" android:layout_height="260.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip">
+        <com.wantu.activity.link.view.LinkImageView android:layout_gravity="center" android:id="@id/imageView1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</FrameLayout>

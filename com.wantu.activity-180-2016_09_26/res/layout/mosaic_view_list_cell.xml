@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff1c1c1c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center|left|top" android:id="@id/cellLayout" android:background="#ff1c1c1c" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.fotoable.fotoproedit.activity.mosaic.TMosaicViewCell android:id="@id/mosaic_cell1" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" />
+        <com.fotoable.fotoproedit.activity.mosaic.TMosaicViewCell android:id="@id/mosaic_cell2" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" />
+        <com.fotoable.fotoproedit.activity.mosaic.TMosaicViewCell android:id="@id/mosaic_cell3" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" />
+    </FrameLayout>
+</FrameLayout>

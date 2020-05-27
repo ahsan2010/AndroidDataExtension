@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center|left|top" android:id="@id/cellLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:gravity="bottom" android:layout_gravity="bottom|center" android:id="@id/cellitem_1" android:layout_width="90.0dip" android:layout_height="135.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="20.0dip">
+            <com.fotoable.comlib.ui.RecyclingImageView android:layout_gravity="bottom" android:id="@id/imgview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/img_done" android:visibility="visible" android:layout_width="18.0dip" android:layout_height="18.0dip" />
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/img_share" android:visibility="visible" android:layout_width="33.0dip" android:layout_height="21.0dip" />
+    </FrameLayout>
+</FrameLayout>

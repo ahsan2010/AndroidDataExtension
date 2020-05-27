@@ -1,0 +1,37 @@
+{
+
+"version" : "1",
+
+"cn_name" : "素雅",
+
+"en_name" : "Plain",
+
+"cnn_name" : "素雅",
+
+"brow": "kenya_130_563_brow.png",
+"brow_a": "0.36",
+"brow_c": "130019",
+
+"eyeliner": "luozhuang5_179_655_liner.png",
+"eyeliner_a": "0.56",
+"eyeliner_c": "150016",
+
+
+"lip": "110032",
+"lip_a": "0.40",
+
+
+
+"blush":"nongzhuang8_87_701_blush.png",
+"blush_a": "0.40",
+"blush_c": "120020",
+"makeup_alpha": "0.7",
+
+"bottom_alpha" : "0.5",
+
+"base":"100002",
+
+"base_a": "0.5"
+
+
+}

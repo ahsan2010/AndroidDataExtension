@@ -1,0 +1,17 @@
+Server to run the sql command: sail216.cs.queensu.ca
+with the following command:
+
+nohup mysql --host=localhost --port=3307 GooglePlayCrawler  < Extract_Daily_Rating.sql | sed 's/\t/,/g' > Apps_Daily_Rating_2016_2019.csv
+
+
+SQL query for daily update rating:
+---------------------------------
+select APP_ID, AU.PACKAGE_NAME, APP_UPDATE_ID, ROUND(AVG(NUMBER_OF_ONE_STAR),0) ONE_STAR, 
+ROUND(AVG(NUMBER_OF_TWO_STARS),0) TWO_STARS,
+ROUND(AVG(NUMBER_OF_THREE_STARS),0) THREE_STARS, ROUND(AVG(NUMBER_OF_FOUR_STARS),0) FOUR_STARS,
+ROUND(AVG(NUMBER_OF_FIVE_STARS),0) FIVE_STARS, DATE(APP_UPDATE_EVENT_TIME) UPDATE_DATE
+from APP_UPDATE_EVENTS AU, APPS A where 
+A.PACKAGE_NAME = AU.PACKAGE_NAME and IS_2016_TOP_2500_APPS='Y'
+and APP_UPDATE_EVENT_TIME >= Cast( '2016-01-20 00:00:00' as date) and APP_UPDATE_EVENT_TIME <= Cast( '2019-10-20 00:00:00' as date)
+group by PACKAGE_NAME, DATE(APP_UPDATE_EVENT_TIME)
+order by PACKAGE_NAME, DATE(APP_UPDATE_EVENT_TIME);

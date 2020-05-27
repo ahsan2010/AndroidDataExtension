@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="right" android:id="@id/layout_compose_frame_selector_container" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginBottom="0.0dip">
+        <TextView android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <FrameLayout android:id="@id/module_toggle_container" android:layout_width="46.0dip" android:layout_height="130.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                <FrameLayout android:id="@id/frame_1_1" android:background="#ff262626" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <com.fotoable.global.ImageView_Color android:layout_gravity="center" android:id="@id/img_1_1" android:background="@drawable/ui_crop_1_1" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/frame_3_4" android:background="#ff262626" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <com.fotoable.global.ImageView_Color android:layout_gravity="center" android:id="@id/img_3_4" android:background="@drawable/ui_crop_3_4" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/module_frame_container" android:background="#ff262626" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_toRightOf="@id/module_toggle_container" android:layout_alignParentBottom="true">
+            <com.wantu.view.compose2.indicate.CirclePageIndicator android:layout_gravity="bottom|center" android:id="@id/circlePageIndicator1" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginBottom="2.0dip" />
+            <com.wantu.view.compose2.frames.FixFramesScrollPageView android:id="@id/fixFramesSelectorPageView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" />
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

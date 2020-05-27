@@ -1,0 +1,46 @@
+{
+
+"version" : "1",
+
+"cn_name" : "桃心",
+
+"en_name" : "Merlot",
+
+"cnn_name" : "桃心",
+
+
+"brow": "hanzhuang04_149_562_brow.png",
+"brow_a": "0.44",
+"brow_c": "130009",
+   
+
+"eyeshadow": "hanzhuang04_141_598_shadow.png",
+"eyeshadow_a": "0.50",
+
+"eyeliner": "hanzhuang04_175_653_liner.png",
+"eyeliner_a": "0.76",
+"eyeliner_c": "150009",
+
+"eyelash": "hanzhuang04_199_635_lash.png",
+"eyelash_a": "0.68",
+"eyelash_c": "140000", 
+
+
+"lip": "110013",
+"lip_a": "0.38",
+
+"blush":"nongzhuang1_79_698_blush.png",
+"blush_a": "0.16",
+"blush_c": "120031",
+
+"makeup_alpha": "0.7",
+
+"bottom_alpha" : "0.5",
+
+"base":"100005",
+
+"base_a": "0.5"
+      
+
+
+}

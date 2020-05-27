@@ -1,0 +1,100 @@
+{
+  "typeArray": [
+    {
+      "listId": 100,
+      "listNameCN": "今日最新素材",
+      "listNameZH": "今日最新素材",
+      "listNameEN": "New",
+      "listIcon": "list_100.png",
+      "listArray": [
+        {
+          "rid": 10011,
+          "needload": false,
+          "isnew": false,
+          "iconUrl": "maomi_icon.png",
+          "havemusic": 0,
+          "music": "",
+          "actionTips": "",
+          "videolist": [
+            {
+              "animtime": 3,
+              "pixelwidth": 800,
+              "pixelheight": 400,
+              "videofile": "maomi.mp4",
+              "starttime": 0,
+              "needtouch": 0,
+              "touchaction": 0,
+              "usefollow": 0,
+              "followtype": 0,
+              "followstarttime": 0,
+              "followendtime": 0,
+              "playtimes": -1,
+              "iteminfo": [
+                {
+                  "materialstartx": 0,
+                  "materialendx": 400,
+                  "startx": 0,
+                  "starty": 0,
+                  "endx": 400,
+                  "endy": 200,
+                  "facetype": 2,
+                  "facealign": 0,
+                  "position": 0,
+                  "margin": 0,
+                  "ratio": 1,
+                  "needtouch": 0,
+                  "touchaction": 0,
+                  "playtimes": -1,
+                  "displayreason": 0,
+                  "sound": "",
+                  "havesound": 0,
+                  "itemid": 1
+                },
+                {
+                  "materialstartx": 400,
+                  "materialendx": 800,
+                  "startx": 400,
+                  "starty": 0,
+                  "endx": 800,
+                  "endy": 200,
+                  "facetype": 4,
+                  "facealign": 0,
+                  "position": 0,
+                  "margin": 0,
+                  "ratio": 1,
+                  "needtouch": 0,
+                  "touchaction": 0,
+                  "playtimes": -1,
+                  "displayreason": 0,
+                  "sound": "",
+                  "havesound": 0,
+                  "itemid": 2
+                }
+              ],
+              "videoid": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  ,"staticstickerArray":[
+  {
+    "id":200,
+    "iconPath":"assets/videosticker/maomi_icon.png",
+    "bmpPath":"assets/videosticker/maomi_icon.png",
+    "jsonPath":""
+  },{
+    "id":201,
+    "iconPath":"assets/videosticker/maomi_icon.png",
+    "bmpPath":"assets/videosticker/maomi_icon.png",
+    "jsonPath":""
+  },{
+    "id":202,
+    "iconPath":"assets/videosticker/maomi_icon.png",
+    "bmpPath":"assets/videosticker/maomi_icon.png",
+    "jsonPath":""
+  }
+
+]
+}

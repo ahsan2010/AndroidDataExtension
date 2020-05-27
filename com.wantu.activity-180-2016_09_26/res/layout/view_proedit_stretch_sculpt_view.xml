@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center|left" android:id="@id/back_up_view" android:background="@drawable/btn_previous" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="6.0dip" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/reset_view" android:layout_width="100.0dip" android:layout_height="50.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/reset" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|right" android:id="@id/save_up_view" android:layout_width="50.0dip" android:layout_height="50.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/OK" />
+    </FrameLayout>
+</FrameLayout>

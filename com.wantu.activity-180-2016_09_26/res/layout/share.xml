@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/nvShareEdit" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" layout="@layout/nav_bar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:background="@drawable/view_list_border" android:layout_width="fill_parent" android:layout_height="194.0dip" android:layout_weight="0.16">
+            <LinearLayout android:orientation="vertical" android:id="@id/llImage" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <RelativeLayout android:id="@id/rlTotal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <LinearLayout android:gravity="center" android:id="@id/ll_text_imagesize_unit" android:background="@drawable/bg_delwords" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="false" android:layout_centerVertical="true">
+                        <TextView android:textColor="#ff333333" android:id="@id/tv_image_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0 K" android:layout_weight="12.0" />
+                    </LinearLayout>
+                    <CheckBox android:textColor="#ff333333" android:id="@id/setRennHeader" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="?android:listChoiceIndicatorMultiple" android:text="@string/setRennHeader" android:layout_centerInParent="true" android:onClick="onChickBoxClicked" />
+                    <LinearLayout android:gravity="center" android:id="@id/ll_text_limit_unit" android:background="@drawable/bg_delwords" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="false" android:layout_centerVertical="true">
+                        <TextView android:textColor="#ff333333" android:id="@id/tv_text_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="140" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="3.0dip" android:weightSum="1.0" android:layout_above="@id/llImage" android:layout_alignParentTop="true">
+                <EditText android:gravity="center|left|top" android:id="@id/et_share_content" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="false" android:capitalize="sentences" android:layout_weight="2.19" android:isScrollContainer="true" android:imeOptions="actionDone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

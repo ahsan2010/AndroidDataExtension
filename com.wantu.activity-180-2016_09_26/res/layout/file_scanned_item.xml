@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/item_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_logo" android:background="@drawable/img_folder" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/txt_filepath" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="56.0dip" android:singleLine="true" android:layout_toRightOf="@id/iv_logo" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/btn_bg_picture" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/gr_flag_local" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/select_picture" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/gr_flag_local_dn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

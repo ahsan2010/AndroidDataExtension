@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/item_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/bottom_bar_layout_module" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.wantu.view.compose2.StatusImageView android:id="@id/img_item1" android:visibility="invisible" android:layout_width="70.0dip" android:layout_height="96.0dip" android:src="@drawable/gr_tab_icon_collage" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/Item2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="center" android:id="@id/bottom_bar_layout_free" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.wantu.view.compose2.StatusImageView android:id="@id/img_item2" android:layout_width="70.0dip" android:layout_height="96.0dip" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/Item3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/bottom_bar_layout_long" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.wantu.view.compose2.StatusImageView android:id="@id/img_item3" android:visibility="invisible" android:layout_width="70.0dip" android:layout_height="96.0dip" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/Item4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/bottom_bar_layout_long4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.wantu.view.compose2.StatusImageView android:id="@id/img_item4" android:visibility="invisible" android:layout_width="70.0dip" android:layout_height="96.0dip" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

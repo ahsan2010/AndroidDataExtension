@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/FrameLayout1crop" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/layout_precrop" android:background="@drawable/btn_edit_close" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+    <ImageView android:layout_gravity="right" android:id="@id/layout_cropaccept" android:background="@drawable/btn_edit_save" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+</FrameLayout>

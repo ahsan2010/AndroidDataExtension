@@ -1,0 +1,5 @@
+{"previewImg":"gr_hand2_icon.jpg","centerX":21,"centerY":0,"width":166,"height":107,"oriention":3,"basicView":
+[{"viewNum":0,"viewtype":0,"textColor":{"R":255,"G":255,"B":255,"A":100},"isBold":"false","isShadow":"false","fontSize":20,"textLines":1},
+{"viewNum":1,"viewtype":1,"x":0,"y":0,"w":119,"h":107,"imageName":"gr_hand2_01.png","isContentView":"false"},
+{"viewNum":2,"viewtype":1,"x":119,"y":44,"w":12,"h":60,"imageName":"gr_hand2_02.png","isContentView":"true"},
+{"viewNum":3,"viewtype":1,"x":131,"y":44,"w":35,"h":60,"imageName":"gr_hand2_03.png","isContentView":"false"}],"outview":[]}

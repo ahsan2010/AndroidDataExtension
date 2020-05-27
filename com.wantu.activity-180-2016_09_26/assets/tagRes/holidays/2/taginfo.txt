@@ -1,0 +1,5 @@
+{"previewImg":"gr_guonian43_00.jpg","centerX":45,"centerY":90,"width":165,"height":156,"oriention":3,"basicView":
+[{"viewNum":0,"viewtype":0,"textColor":{"R":0,"G":0,"B":0,"A":100},"isBold":"false","isShadow":"false","fontSize":20,"textLines":1}
+,{"viewNum":1,"viewtype":1,"x":0,"y":0,"w":137,"h":156,"imageName":"gr_guonian43_01.png","isContentView":"false"},
+{"viewNum":2,"viewtype":1,"x":137,"y":78,"w":6,"h":60,"imageName":"gr_guonian43_02.png","isContentView":"true"},
+{"viewNum":3,"viewtype":1,"x":143,"y":78,"w":22,"h":60,"imageName":"gr_guonian43_03.png","isContentView":"false"}],"outview":[]}

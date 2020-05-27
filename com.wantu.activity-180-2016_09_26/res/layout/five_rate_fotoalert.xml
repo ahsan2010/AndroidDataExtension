@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:background="@drawable/corner_btn_5dp_white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/color_bg" android:layout_width="280.0dip" android:layout_height="121.0dip">
+        <ImageView android:id="@id/color_bg_img" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ratingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/color_bg">
+            <ImageView android:id="@id/img_star1" android:background="@drawable/star_gold" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="2.0dip" />
+            <ImageView android:id="@id/img_star2" android:background="@drawable/star_gold" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="2.0dip" />
+            <ImageView android:id="@id/img_star3" android:background="@drawable/star_gold" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="2.0dip" />
+            <ImageView android:id="@id/img_star4" android:background="@drawable/star_gold" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="2.0dip" />
+            <ImageView android:id="@id/img_star5" android:background="@drawable/star_gold" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="2.0dip" />
+        </LinearLayout>
+        <View android:layout_gravity="center|right|top" android:id="@id/btn_close" android:background="@drawable/rate_dialog_close" android:layout_width="40.0dip" android:layout_height="30.0dip" android:layout_marginRight="-5.0dip" />
+    </FrameLayout>
+    <ImageView android:id="@id/img_hand" android:background="@drawable/icon_hand" android:layout_width="50.0dip" android:layout_height="70.0dip" android:layout_marginLeft="215.0dip" android:layout_marginTop="81.0dip" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/text_view" android:layout_width="220.0dip" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:text="@string/five_rate_txt" android:layout_below="@id/color_bg" android:layout_centerHorizontal="true" />
+    <FrameLayout android:id="@id/btn_rate" android:background="@drawable/corner_btn_5dp_orange" android:layout_width="240.0dip" android:layout_height="40.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/text_view" android:layout_centerHorizontal="true">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/five_rate_ok" />
+    </FrameLayout>
+</RelativeLayout>

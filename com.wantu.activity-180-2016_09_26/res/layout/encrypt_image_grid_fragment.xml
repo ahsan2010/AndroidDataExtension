@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView android:id="@id/encrypt_gridView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:horizontalSpacing="@dimen/encrypt_image_thumbnail_spacing" android:verticalSpacing="@dimen/encrypt_image_thumbnail_spacing" android:stretchMode="columnWidth" android:columnWidth="@dimen/encrypt_image_thumbnail_size" android:numColumns="auto_fit" style="@style/encrypt_PhotoGridLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

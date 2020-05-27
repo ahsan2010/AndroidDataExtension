@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:background="@color/normal_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:id="@id/tab_row" android:background="@drawable/pip_edit_bar" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentLeft="true">
+            <LinearLayout android:layout_gravity="center_vertical" android:id="@id/linearLayout4" android:background="@drawable/pip_mode_bg" android:layout_width="wrap_content" android:layout_height="36.0dip">
+                <ToggleButton android:textColor="@color/solid_white" android:id="@id/pipmodell_all" android:background="@drawable/pipmodel_btn" android:visibility="gone" android:layout_width="85.0dip" android:layout_height="28.0dip" android:checked="true" android:textOn="@string/model_both" android:textOff="@string/model_both" android:text="ToggleButton" android:onClick="onPipModelAllbtnClicked" />
+                <ToggleButton android:textColor="@color/solid_white" android:layout_gravity="center_vertical" android:id="@id/pipmodel_fore" android:background="@drawable/pipmodel_btn" android:layout_width="76.0dip" android:layout_height="30.0dip" android:layout_marginLeft="3.0dip" android:checked="true" android:textOn="@string/model_foreground" android:textOff="@string/model_foreground" android:text="ToggleButton" android:layout_weight="1.0" android:onClick="onPipModelForebtnClicked" />
+                <ToggleButton android:textColor="@color/solid_white" android:layout_gravity="center_vertical" android:id="@id/pipmodel_back" android:background="@drawable/pipmodel_btn" android:layout_width="76.0dip" android:layout_height="30.0dip" android:layout_marginRight="3.0dip" android:textOn="@string/model_background" android:textOff="@string/model_background" android:text="ToggleButton" android:layout_weight="1.0" android:onClick="onPipModelBackbtnClicked" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/filterrelativeLayout1" android:background="@drawable/tab_bg" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_below="@id/tab_row" android:layout_alignParentLeft="true">
+            <com.wantu.view.TFilterListScrollView android:id="@id/filter_list_view" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bannerContainerID" android:tag="bannerRelative" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="50.0dip" />
+    <RelativeLayout android:gravity="center" android:layout_gravity="top" android:id="@id/RelativeLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" android:layout_marginBottom="120.0dip">
+        <FrameLayout android:id="@id/pipOpenGLlayout" android:padding="5.0dip" android:layout_width="320.0dip" android:layout_height="320.0dip">
+            <com.wantu.imagerender.ImageGLSurfaceView android:id="@id/gl_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <wantu.sephiroth.android.library.imagezoom.MaskScrollImageViewTouch android:id="@id/foreImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/coverImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </RelativeLayout>
+    <com.fotoable.view.actionbar.CommonActionBarView android:layout_gravity="top" android:id="@id/acctionBarView" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+</FrameLayout>

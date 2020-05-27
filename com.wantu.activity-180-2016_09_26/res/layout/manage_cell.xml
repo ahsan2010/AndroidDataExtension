@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/local_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center|left|top" android:layout_gravity="center|left|top" android:id="@id/cellLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:gravity="center|left|top" android:layout_gravity="bottom" android:id="@id/cellitem_1" android:layout_width="90.0dip" android:layout_height="135.0dip" android:layout_marginLeft="10.0dip">
+            <com.fotoable.comlib.ui.RecyclingImageView android:gravity="center" android:layout_gravity="center" android:id="@id/cell_img1" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center|left|top" android:layout_gravity="bottom" android:id="@id/cellitem_2" android:layout_width="90.0dip" android:layout_height="135.0dip" android:layout_marginLeft="10.0dip">
+            <com.fotoable.comlib.ui.RecyclingImageView android:gravity="center" android:layout_gravity="center" android:id="@id/cell_img2" android:clickable="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center|left|top" android:layout_gravity="bottom" android:id="@id/cellitem_3" android:layout_width="90.0dip" android:layout_height="135.0dip" android:layout_marginLeft="10.0dip">
+            <com.fotoable.comlib.ui.RecyclingImageView android:gravity="center" android:layout_gravity="center" android:id="@id/cell_img3" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        </FrameLayout>
+    </FrameLayout>
+    <ImageButton android:layout_gravity="center|left|top" android:id="@id/delete_btn1" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="0.0dip" android:scaleType="fitXY" />
+    <ImageButton android:layout_gravity="center|left|top" android:id="@id/delete_btn2" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="0.0dip" android:scaleType="fitXY" />
+    <ImageButton android:layout_gravity="center|left|top" android:id="@id/delete_btn3" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="0.0dip" android:scaleType="fitXY" />
+</FrameLayout>

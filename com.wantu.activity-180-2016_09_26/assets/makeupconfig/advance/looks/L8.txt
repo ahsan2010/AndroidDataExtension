@@ -1,0 +1,41 @@
+{
+
+"version" : "1",
+
+"cn_name" : "清新",
+
+"en_name" : "Light",
+
+"cnn_name" : "清新",
+
+
+"eyeshadow": "luozhuang8_155_592_shadow.png",
+"eyeshadow_a": "0.80",
+
+
+"eyeliner": "luozhuang8_202_656_liner.png",
+"eyeliner_a": "0.80",
+"eyeliner_c": "150002",
+
+"eyelash": "luozhuang8_179_630_lash.png",
+"eyelash_a": "0.70",
+"eyelash_c": "140020",
+
+"lip": "110035",
+"lip_a": "0.47",
+
+
+"blush":"luozhuang4_108_721_blush.png",
+"blush_a": "0.35",
+"blush_c": "120019",
+"makeup_alpha": "0.7",
+
+"bottom_alpha" : "0.5",
+
+"base":"100000",
+
+"base_a": "0.5"
+      
+
+
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:id="@id/FrameLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res-auto="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/layout_area" android:background="@color/transparent" android:layout_width="320.0dip" android:layout_height="270.0dip">
+        <com.wantu.view.SAutoBgFrameLayout android:layout_gravity="top" android:id="@id/item_instamag" android:background="@drawable/btn_main_instamag" android:layout_width="160.0dip" android:layout_height="75.5dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="45.0dip">
+            <Button android:layout_gravity="right" android:id="@id/newInstaMageMaterialAlert_btn" android:background="@drawable/btn_new_n" android:visibility="invisible" android:clickable="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" />
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@id/item_instamag_text_container" android:layout_width="97.0dip" android:layout_height="26.0dip" android:layout_marginBottom="5.0dip">
+                <com.wantu.activity.mainpage.MainFontFitTextView android:enabled="false" android:textSize="12.0sp" android:textColor="@color/solid_white" android:ellipsize="none" android:gravity="center" android:id="@id/tx_instamag" android:clickable="false" android:layout_width="fill_parent" android:layout_height="24.0dip" android:text="@string/instamag" android:singleLine="true" res-auto:maxFontSize="16.0sp" />
+            </FrameLayout>
+        </com.wantu.view.SAutoBgFrameLayout>
+        <com.wantu.view.SAutoBgFrameLayout android:layout_gravity="right" android:id="@id/item_collage" android:background="@drawable/btn_main_collage" android:layout_width="160.0dip" android:layout_height="75.0dip" android:layout_marginTop="45.0dip" android:layout_marginRight="0.0dip">
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@id/collage_text_container" android:layout_width="97.0dip" android:layout_height="26.0dip" android:layout_marginBottom="5.0dip">
+                <com.wantu.activity.mainpage.MainFontFitTextView android:textSize="12.0sp" android:textColor="@color/solid_white" android:ellipsize="none" android:gravity="center" android:id="@id/tx_collage" android:clickable="false" android:layout_width="fill_parent" android:layout_height="24.0dip" android:text="@string/collage_photo" android:singleLine="true" res-auto:maxFontSize="16.0sp" />
+            </FrameLayout>
+        </com.wantu.view.SAutoBgFrameLayout>
+        <com.wantu.view.SAutoBgFrameLayout android:layout_gravity="top" android:id="@id/item_pip" android:background="@drawable/btn_main_pip" android:layout_width="160.0dip" android:layout_height="75.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="120.0dip">
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@id/pip_text_container" android:layout_width="97.0dip" android:layout_height="26.0dip" android:layout_marginBottom="5.0dip">
+                <com.wantu.activity.mainpage.MainFontFitTextView android:textSize="12.0sp" android:textColor="@color/solid_white" android:ellipsize="none" android:gravity="center" android:id="@id/tx_pip" android:layout_width="fill_parent" android:layout_height="24.0dip" android:text="@string/pip" android:singleLine="true" res-auto:maxFontSize="16.0sp" />
+            </FrameLayout>
+        </com.wantu.view.SAutoBgFrameLayout>
+        <com.wantu.view.SAutoBgFrameLayout android:layout_gravity="right" android:id="@id/item_proedit" android:background="@drawable/btn_main_proedit" android:layout_width="160.0dip" android:layout_height="75.0dip" android:layout_marginTop="120.0dip" android:layout_marginRight="0.0dip">
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@id/proedit_text_container" android:layout_width="97.0dip" android:layout_height="26.0dip" android:layout_marginBottom="5.0dip">
+                <com.wantu.activity.mainpage.MainFontFitTextView android:textSize="12.0sp" android:textColor="@color/solid_white" android:ellipsize="none" android:gravity="center" android:id="@id/tx_proedit" android:layout_width="fill_parent" android:layout_height="24.0dip" android:text="@string/proedit" android:singleLine="true" res-auto:maxFontSize="16.0sp" />
+            </FrameLayout>
+        </com.wantu.view.SAutoBgFrameLayout>
+        <com.wantu.view.SAutoBgFrameLayout android:layout_gravity="top" android:id="@id/item_material" android:background="@drawable/btn_main_library" android:layout_width="160.0dip" android:layout_height="75.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="195.0dip">
+            <Button android:layout_gravity="right" android:id="@id/newMaterialAlert_btn" android:background="@drawable/btn_new_n" android:visibility="invisible" android:clickable="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" />
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@id/library_text_container" android:layout_width="97.0dip" android:layout_height="26.0dip" android:layout_marginBottom="5.0dip">
+                <com.wantu.activity.mainpage.MainFontFitTextView android:textSize="12.0sp" android:textColor="@color/solid_white" android:ellipsize="none" android:gravity="center" android:id="@id/tx_library" android:layout_width="fill_parent" android:layout_height="24.0dip" android:text="@string/online_library" android:singleLine="true" res-auto:maxFontSize="16.0sp" />
+            </FrameLayout>
+        </com.wantu.view.SAutoBgFrameLayout>
+        <com.fotoable.adbuttonlib.TAdButton android:layout_gravity="right" android:id="@id/item_adC01" android:layout_width="160.0dip" android:layout_height="75.0dip" android:layout_marginTop="195.0dip" android:layout_marginRight="0.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|right|top" android:id="@id/layout_next_page" android:background="@drawable/btn_nextpage" android:visibility="visible" android:layout_width="39.0dip" android:layout_height="39.0dip" android:layout_marginRight="7.0dip" />
+</FrameLayout>

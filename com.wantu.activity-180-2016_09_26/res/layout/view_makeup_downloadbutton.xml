@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/btn_material_download" android:layout_width="36.0dip" android:layout_height="69.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="7.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/item_bg_select" android:background="@drawable/btn_mag_download" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="20.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/item_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/more" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

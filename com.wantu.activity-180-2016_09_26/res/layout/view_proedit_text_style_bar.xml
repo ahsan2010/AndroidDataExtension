@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/style_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/ly_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/frame_1" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/im_1" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/gr_text_bold" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/style_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/ly_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/frame_2" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/im_2" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/gr_text_italic" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/style_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/ly_3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/frame_3" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/im_3" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/gr_text_shadow" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/style_4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/ly_4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/frame_4" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/im_4" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/gr_text_left" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/style_5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/ly_5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/frame_5" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/im_5" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/gr_text_middle" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/style_6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/ly_6" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/frame_6" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/im_6" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/gr_text_right" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

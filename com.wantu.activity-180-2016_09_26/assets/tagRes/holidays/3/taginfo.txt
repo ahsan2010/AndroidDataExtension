@@ -1,0 +1,5 @@
+{"previewImg":"gr_guonian36_icon.jpg","centerX":0,"centerY":81,"width":189,"height":130,"oriention":3,"basicView":
+[{"viewNum":0,"viewtype":0,"textColor":{"R":255,"G":255,"B":247,"A":100},"isBold":"false","isShadow":"false","fontSize":20,"textLines":1},
+{"viewNum":1,"viewtype":1,"x":0,"y":0,"w":120,"h":130,"imageName":"gr_guonian36_01.png","isContentView":"false"},
+{"viewNum":2,"viewtype":1,"x":120,"y":52,"w":31,"h":66,"imageName":"gr_guonian36_02.png","isContentView":"true"},
+{"viewNum":3,"viewtype":1,"x":151,"y":52,"w":38,"h":66,"imageName":"gr_guonian36_03.png","isContentView":"false"}],"outview":[]}

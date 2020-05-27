@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top" android:id="@id/ly_action_bar" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.fotoable.fotoproedit.view.ui.ProEidtActionBarView android:id="@id/proEidtActionBarView1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/ly_sketchSliderView" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="130.0dip">
+        <SeekBar android:layout_gravity="center" android:id="@id/color_slider" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="20.0dip" android:maxHeight="2.0dip" android:progressDrawable="@drawable/progress_slider" android:minHeight="2.0dip" android:thumb="@drawable/progress_control" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/ly_sketchColorView" android:background="@drawable/ui_gr_proeditbg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginBottom="106.0dip">
+        <com.wantu.view.compose2.color.ColorSelectView android:layout_gravity="center" android:id="@id/colorSelectView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="5.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/ly_sketchScrollView" android:background="#ff303030" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginBottom="56.0dip">
+        <com.fotoable.fotoproedit.view.ui.scroll.TProEditSketchScrollView android:id="@id/sketchScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/ly_bottom" android:background="#ff1a1a1a" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <com.fotoable.fotoproedit.view.ui.scroll.TProEditSketchBottomBar android:layout_gravity="center" android:id="@id/tTextBottomBar1" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="centered" format="boolean" />
+    <attr name="childSize" format="reference|dimension" />
+    <attr name="fromDegrees" format="reference|float" />
+    <attr name="hlv_absHListViewStyle" format="reference" />
+    <attr name="hlv_expandableListViewStyle" format="reference" />
+    <attr name="hlv_listPreferredItemWidth" format="dimension" />
+    <attr name="hlv_listViewStyle" format="reference" />
+    <attr name="selectedColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="toDegrees" format="reference|float" />
+    <attr name="unselectedColor" format="color" />
+    <attr name="hlv_stackFromRight" format="boolean" />
+    <attr name="hlv_transcriptMode">
+        <enum name="alwaysScroll" value="2" />
+        <enum name="disabled" value="0" />
+        <enum name="normal" value="1" />
+    </attr>
+    <attr name="adSize" format="string" />
+    <attr name="adSizes" format="string" />
+    <attr name="adUnitId" format="string" />
+    <attr name="borderColor" format="color" />
+    <attr name="borderWidth" format="dimension" />
+    <attr name="fillColor" format="color" />
+    <attr name="pageColor" format="color" />
+    <attr name="radius" format="dimension" />
+    <attr name="snap" format="boolean" />
+    <attr name="strokeColor" format="color" />
+    <attr name="mlpb_inner_radius" format="dimension" />
+    <attr name="mlpb_background_color" format="color" />
+    <attr name="mlpb_progress_color" format="color" />
+    <attr name="mlpb_progress_stoke_width" format="dimension" />
+    <attr name="mlpb_show_arrow" format="boolean" />
+    <attr name="mlpb_enable_circle_background" format="boolean" />
+    <attr name="mlpb_arrow_width" format="dimension" />
+    <attr name="mlpb_arrow_height" format="dimension" />
+    <attr name="mlpb_progress" format="integer" />
+    <attr name="mlpb_max" format="integer" />
+    <attr name="mlpb_progress_text_size" format="dimension" />
+    <attr name="mlpb_progress_text_color" format="color" />
+    <attr name="mlpb_progress_text_visibility">
+        <enum name="invisible" value="1" />
+        <enum name="visible" value="0" />
+    </attr>
+    <attr name="prefix" format="string" />
+    <attr name="suffix" format="string" />
+    <attr name="timeInterval" format="float" />
+    <attr name="incrementValue" format="float" />
+    <attr name="startValue" format="float" />
+    <attr name="endValue" format="float" />
+    <attr name="formatText" format="boolean" />
+    <attr name="autoStart" format="boolean" />
+    <attr name="type">
+        <enum name="both" value="2" />
+        <enum name="decimal" value="1" />
+        <enum name="integer" value="0" />
+    </attr>
+    <attr name="androidtext" format="string" />
+    <attr name="hlv_indicatorGravity">
+        <flag name="bottom" value="0x00000050" />
+        <flag name="center" value="0x00000011" />
+        <flag name="center_horizontal" value="0x00000001" />
+        <flag name="center_vertical" value="0x00000010" />
+        <flag name="clip_horizontal" value="0x00000008" />
+        <flag name="clip_vertical" value="0x00000080" />
+        <flag name="end" value="0x00800005" />
+        <flag name="fill" value="0x00000077" />
+        <flag name="fill_horizontal" value="0x00000007" />
+        <flag name="fill_vertical" value="0x00000070" />
+        <flag name="left" value="0x00000003" />
+        <flag name="right" value="0x00000005" />
+        <flag name="start" value="0x00800003" />
+        <flag name="top" value="0x00000030" />
+    </attr>
+    <attr name="hlv_childIndicatorGravity">
+        <flag name="bottom" value="0x00000050" />
+        <flag name="center" value="0x00000011" />
+        <flag name="center_horizontal" value="0x00000001" />
+        <flag name="center_vertical" value="0x00000010" />
+        <flag name="clip_horizontal" value="0x00000008" />
+        <flag name="clip_vertical" value="0x00000080" />
+        <flag name="end" value="0x00800005" />
+        <flag name="fill" value="0x00000077" />
+        <flag name="fill_horizontal" value="0x00000007" />
+        <flag name="fill_vertical" value="0x00000070" />
+        <flag name="left" value="0x00000003" />
+        <flag name="right" value="0x00000005" />
+        <flag name="start" value="0x00800003" />
+        <flag name="top" value="0x00000030" />
+    </attr>
+    <attr name="hlv_childDivider" format="reference|color" />
+    <attr name="hlv_groupIndicator" format="reference" />
+    <attr name="hlv_childIndicator" format="reference" />
+    <attr name="hlv_indicatorPaddingLeft" format="dimension" />
+    <attr name="hlv_indicatorPaddingTop" format="dimension" />
+    <attr name="hlv_childIndicatorPaddingLeft" format="dimension" />
+    <attr name="hlv_childIndicatorPaddingTop" format="dimension" />
+    <attr name="el_headerLayout" format="reference" />
+    <attr name="el_contentLayout" format="reference" />
+    <attr name="el_duration" format="integer" />
+    <attr name="maxFontSize" format="dimension" />
+    <attr name="hlv_dividerWidth" format="dimension" />
+    <attr name="hlv_headerDividersEnabled" format="boolean" />
+    <attr name="hlv_footerDividersEnabled" format="boolean" />
+    <attr name="hlv_overScrollHeader" format="reference|color" />
+    <attr name="hlv_overScrollFooter" format="reference|color" />
+    <attr name="hlv_measureWithChild" format="integer" />
+    <attr name="dividerWidth" format="dimension" />
+    <attr name="lineWidth" format="dimension" />
+    <attr name="gapWidth" format="dimension" />
+    <attr name="imageAspectRatioAdjust">
+        <enum name="adjust_height" value="2" />
+        <enum name="adjust_width" value="1" />
+        <enum name="none" value="0" />
+    </attr>
+    <attr name="imageAspectRatio" format="float" />
+    <attr name="circleCrop" format="boolean" />
+    <attr name="aspect" format="string" />
+    <attr name="progress" format="integer" />
+    <attr name="max" format="integer" />
+    <attr name="progress_unreached_color" format="color" />
+    <attr name="progress_reached_color" format="color" />
+    <attr name="progress_reached_bar_height" format="dimension" />
+    <attr name="progress_unreached_bar_height" format="dimension" />
+    <attr name="progress_text_size" format="dimension" />
+    <attr name="progress_text_color" format="color" />
+    <attr name="progress_text_offset" format="dimension" />
+    <attr name="progress_text_visibility">
+        <enum name="invisible" value="1" />
+        <enum name="visible" value="0" />
+    </attr>
+    <attr name="phased_mode">
+        <enum name="horizontal" value="1" />
+        <enum name="vertical" value="2" />
+    </attr>
+    <attr name="phased_base_margin_left" format="reference|dimension" />
+    <attr name="phased_base_margin_right" format="reference|dimension" />
+    <attr name="phased_base_margin_top" format="reference|dimension" />
+    <attr name="phased_base_margin_bottom" format="reference|dimension" />
+    <attr name="phased_base_background" format="reference|color" />
+    <attr name="phased_item_width" format="reference|dimension" />
+    <attr name="phased_item_height" format="reference|dimension" />
+    <attr name="phased_anchor_width" format="reference|dimension" />
+    <attr name="phased_anchor_height" format="reference|dimension" />
+    <attr name="phased_draw_on_off" format="boolean" />
+    <attr name="phased_fix_point" format="boolean" />
+    <attr name="layoutManager" format="string" />
+    <attr name="spanCount" format="integer" />
+    <attr name="reverseLayout" format="boolean" />
+    <attr name="stackFromEnd" format="boolean" />
+    <attr name="leftUp" format="dimension" />
+    <attr name="leftBottom" format="dimension" />
+    <attr name="rightUp" format="dimension" />
+    <attr name="rightBottom" format="dimension" />
+    <attr name="roundWidth" format="dimension" />
+    <attr name="roundHeight" format="dimension" />
+    <attr name="topLeftRadius" format="dimension" />
+    <attr name="topRightRadius" format="dimension" />
+    <attr name="bottomLeftRadius" format="dimension" />
+    <attr name="bottomRightRadius" format="dimension" />
+    <attr name="onDrawable" format="reference" />
+    <attr name="offDrawable" format="reference" />
+    <attr name="thumbDrawable" format="reference" />
+    <attr name="thumb_margin" format="reference|dimension" />
+    <attr name="thumb_marginTop" format="reference|dimension" />
+    <attr name="thumb_marginBottom" format="reference|dimension" />
+    <attr name="thumb_marginLeft" format="reference|dimension" />
+    <attr name="thumb_marginRight" format="reference|dimension" />
+    <attr name="thumb_width" format="reference|dimension" />
+    <attr name="thumb_height" format="reference|dimension" />
+    <attr name="onColor" format="reference|color" />
+    <attr name="offColor" format="reference|color" />
+    <attr name="thumbColor" format="reference|color" />
+    <attr name="thumbPressedColor" format="reference|color" />
+    <attr name="animationVelocity" format="integer" />
+    <attr name="radius1" format="integer" />
+    <attr name="measureFactor" format="float" />
+    <attr name="insetLeft" format="reference|dimension" />
+    <attr name="insetRight" format="reference|dimension" />
+    <attr name="insetTop" format="reference|dimension" />
+    <attr name="insetBottom" format="reference|dimension" />
+    <attr name="numberProgressBarStyle" format="reference" />
+    <attr name="clipPadding" format="dimension" />
+    <attr name="footerColor" format="color" />
+    <attr name="footerLineHeight" format="dimension" />
+    <attr name="footerIndicatorStyle">
+        <enum name="none" value="0" />
+        <enum name="triangle" value="1" />
+        <enum name="underline" value="2" />
+    </attr>
+    <attr name="footerIndicatorHeight" format="dimension" />
+    <attr name="footerIndicatorUnderlinePadding" format="dimension" />
+    <attr name="footerPadding" format="dimension" />
+    <attr name="linePosition">
+        <enum name="bottom" value="0" />
+        <enum name="top" value="1" />
+    </attr>
+    <attr name="selectedBold" format="boolean" />
+    <attr name="titlePadding" format="dimension" />
+    <attr name="topPadding" format="dimension" />
+    <attr name="fades" format="boolean" />
+    <attr name="fadeDelay" format="integer" />
+    <attr name="fadeLength" format="integer" />
+    <attr name="vpiCirclePageIndicatorStyle" format="reference" />
+    <attr name="vpiIconPageIndicatorStyle" format="reference" />
+    <attr name="vpiLinePageIndicatorStyle" format="reference" />
+    <attr name="vpiTitlePageIndicatorStyle" format="reference" />
+    <attr name="vpiTabPageIndicatorStyle" format="reference" />
+    <attr name="vpiUnderlinePageIndicatorStyle" format="reference" />
+    <attr name="themeColor" format="color" />
+    <attr name="isOpen" format="boolean" />
+    <attr name="shapes">
+        <enum name="circle" value="2" />
+        <enum name="rect" value="1" />
+    </attr>
+</resources>

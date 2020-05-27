@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/dlg_fivestar_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center|top" android:id="@id/decorationview" android:background="@drawable/fivestar_decorationbg" android:layout_width="240.0dip" android:layout_height="88.0dip">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ratingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/color_bg">
+            <ImageView android:id="@id/img_star1" android:background="@drawable/star_gold" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="2.0dip" />
+            <ImageView android:id="@id/img_star2" android:background="@drawable/star_gold" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="2.0dip" />
+            <ImageView android:id="@id/img_star3" android:background="@drawable/star_gold" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="2.0dip" />
+            <ImageView android:id="@id/img_star4" android:background="@drawable/star_gold" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="2.0dip" />
+            <ImageView android:id="@id/img_star5" android:background="@drawable/star_gold" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="2.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:id="@id/img_hand" android:background="@drawable/icon_hand" android:layout_width="40.0dip" android:layout_height="55.0dip" android:layout_marginLeft="180.0dip" android:layout_marginTop="70.0dip" />
+    <RelativeLayout android:layout_gravity="center|top" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginTop="98.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/save_gray" android:gravity="center" android:id="@id/titleview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dlg_fivestar_content" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center|left|top" android:orientation="horizontal" android:layout_width="210.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="160.0dip">
+        <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_cancel" android:background="@drawable/fivestar_later" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:text="@string/dlg_fivestar_cancel" android:layout_weight="1.0" />
+        <FrameLayout android:gravity="center" android:id="@id/plusonecontainer" android:background="@drawable/dlg_fivestar_cancel" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/zanview" android:background="@drawable/fivestar_zan" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginBottom="3.0dip" />
+                <com.google.android.gms.plus.PlusOneButton android:gravity="center" android:layout_gravity="center" android:id="@id/btn_oneplus" android:background="@drawable/dlg_fivestar_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" plus:size="tall" plus:annotation="none"
+                  xmlns:plus="http://schemas.android.com/apk/lib/com.google.android.gms.plus" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <Button android:textSize="18.0sp" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="center|top" android:id="@id/btn_ok" android:background="@drawable/fivestar_ok" android:layout_width="200.0dip" android:layout_height="35.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="215.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/dlg_fivestar_ok" />
+</FrameLayout>

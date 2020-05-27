@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/normal_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/imageviewcontianer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="140.0dip">
+        <FrameLayout android:id="@id/imageandwatermarkcontainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/originimageview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/prismaimageview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/watermarkview" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        </FrameLayout>
+        <com.fotoable.prismalib.common.PrismaNewFuncTipView android:id="@id/newfuntipview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:background="@color/color_lgray" android:layout_width="fill_parent" android:layout_height="140.0dip">
+        <SeekBar android:layout_gravity="center|top" android:id="@id/seekbar_imageview" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:maxHeight="2.0dip" android:progress="30" android:progressDrawable="@drawable/prisma_progress_slider" android:minHeight="2.0dip" android:thumb="@drawable/prisma_progress_control" />
+        <com.fotoable.prismalib.camera.PrismaRecyclerView android:layout_gravity="bottom|center" android:id="@id/prismascrollview" android:layout_width="fill_parent" android:layout_height="110.0dip" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/backbutton" android:padding="5.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_prismahandle_back" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/sharebutton" android:padding="5.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_prismahandle_share" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/btn_adapter" android:background="@drawable/btn_open_bg" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    <Button android:textSize="11.0sp" android:textColor="@color/white" android:layout_gravity="center|top" android:id="@id/helpTip" android:background="@drawable/first_btn_help" android:paddingTop="3.0dip" android:visibility="gone" android:layout_width="135.0dip" android:layout_height="36.0dip" android:layout_marginTop="40.0dip" android:text="@string/remain_original_tone" />
+</FrameLayout>

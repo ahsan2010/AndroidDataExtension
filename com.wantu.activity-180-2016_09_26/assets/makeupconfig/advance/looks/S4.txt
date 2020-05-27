@@ -1,0 +1,45 @@
+{
+
+"version" : "1",
+
+"cn_name" : "紫鸢",
+
+"en_name" : "Violet",
+
+"cnn_name" : "紫鳶",
+
+"brow": "nongzhuang4_147_569_brow.png",
+"brow_a": "0.22",
+"brow_c": "130026",
+
+"eyeshadow": "nongzhuang4_107_597_shadow.png",
+"eyeshadow_a": "0.45",
+
+"eyeliner": "nongzhuang2_187_660_liner.png",
+"eyeliner_a": "0.60",
+"eyeliner_c": "150002",  
+
+
+"eyelash": "nongzhuang4_173_624_lash.png",
+"eyelash_a": "0.44",
+"eyelash_c": "140020",
+
+
+"lip": "110040",
+"lip_a": "0.49",
+
+
+
+"blush":"luozhuang4_108_721_blush.png",
+"blush_a": "0.43",
+"blush_c": "120019",
+"makeup_alpha": "0.7",
+
+"bottom_alpha" : "0.5",
+
+"base":"100003",
+
+"base_a": "0.5"
+
+
+}

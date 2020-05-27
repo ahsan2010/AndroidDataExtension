@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:id="@id/top_frame" android:background="@drawable/gr_nav" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center|left" android:id="@id/reset_frame" android:layout_width="100.0dip" android:layout_height="44.0dip" android:layout_marginLeft="70.0dip" android:onClick="onResetClicked">
+        <TextView android:textSize="18.0sp" android:textColor="@color/nav_back_color" android:layout_gravity="center|left" android:id="@id/tx_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/reset" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|right" android:layout_width="100.0dip" android:layout_height="44.0dip" android:layout_marginRight="70.0dip">
+        <FrameLayout android:layout_gravity="center|left" android:id="@id/undo_frame" android:layout_width="50.0dip" android:layout_height="44.0dip" android:onClick="onUndoClicked">
+            <ImageView android:layout_gravity="center" android:id="@id/img_undo" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/btn_proedit_undo_res" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center|right" android:id="@id/redo_frame" android:layout_width="50.0dip" android:layout_height="44.0dip" android:onClick="onRedoClicked">
+            <ImageView android:layout_gravity="center" android:id="@id/img_redo" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/btn_proedit_redo_res" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|left" android:id="@id/cancel_frame" android:layout_width="60.0dip" android:layout_height="44.0dip" android:onClick="onCancelClicked">
+        <ImageView android:layout_gravity="center|left" android:id="@id/imageView2" android:layout_width="60.0dip" android:layout_height="44.0dip" android:src="@drawable/proedit_btn_cancel" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|right" android:id="@id/check_frame" android:layout_width="60.0dip" android:layout_height="44.0dip" android:onClick="onCheckClicked">
+        <ImageView android:layout_gravity="center|right" android:id="@id/img_accept" android:layout_width="60.0dip" android:layout_height="44.0dip" android:src="@drawable/proedit_btn_check" />
+    </FrameLayout>
+</FrameLayout>

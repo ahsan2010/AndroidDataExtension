@@ -1,0 +1,28 @@
+/* 
+   Localizable.strings
+
+   Copyright 2013 Fotoable,Inc. All rights reserved.
+ */
+
+pen 	= "pen";
+sparkle = "Sparkle";
+laser	= "Laser";
+boken1	= "Boken1";
+boken2	= "Boken2";
+boken3	= "Boken3";
+boken4 	= "Boken4";
+lips1	= "lips1";
+flares1	= "flares1";
+flares2 = "flares2";
+flares3 = "flares3";
+bubble3 = "bubble3";
+heart1	= "heart1"
+heart3 	= "heart3";
+mosaic	= "Mosaic";
+eraser	= "Eraser";
+reset   = "Reset";
+dollar  = "dollar"
+gold    = "gold"
+redbag  = "redbag"
+rmb     = "RMB"
+Taptoinput = "Tap to input"

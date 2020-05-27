@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/bar_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/auto_beauty_degree" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/unselected_bg" android:id="@id/autotextview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="强度" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.fotoable.beautyui.newui.FlexibleThumbSeekbar android:layout_gravity="center" android:id="@id/adjust_bigeye_seekbar" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progress="10" android:progressDrawable="@drawable/beauty_red_scrubber_progress" android:minHeight="2.0dip" android:thumb="@drawable/beauty_red_scrubber_control" android:layout_toRightOf="@id/autotextview" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/manual_beauty_degree" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/unselected_bg" android:id="@id/manualtextview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="画笔大小" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.fotoable.beautyui.newui.MNewCanSelButton android:id="@id/help_hint_bigeye" android:background="@drawable/btn_tip_res" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.fotoable.beautyui.newui.MNewCanSelButton android:id="@id/undobtn" android:background="@drawable/btn_undo" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_centerInParent="true">
+                <com.fotoable.beautyui.newui.MNewCanSelButton android:layout_gravity="center_vertical" android:id="@id/button1" android:background="@drawable/icon_blemish1" android:layout_width="35.0dip" android:layout_height="35.0dip" style="?android:attr/buttonStyleSmall" />
+                <com.fotoable.beautyui.newui.MNewCanSelButton android:layout_gravity="center_vertical" android:id="@id/button2" android:background="@drawable/icon_blemish2" android:layout_width="35.0dip" android:layout_height="35.0dip" style="?android:attr/buttonStyleSmall" />
+                <com.fotoable.beautyui.newui.MNewCanSelButton android:layout_gravity="center_vertical" android:id="@id/button3" android:background="@drawable/icon_blemish3" android:layout_width="35.0dip" android:layout_height="35.0dip" style="?android:attr/buttonStyleSmall" />
+                <com.fotoable.beautyui.newui.MNewCanSelButton android:layout_gravity="center_vertical" android:id="@id/button4" android:background="@drawable/icon_blemish4" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="8.0dip" style="?android:attr/buttonStyleSmall" />
+                <com.fotoable.beautyui.newui.MNewCanSelButton android:layout_gravity="center_vertical" android:id="@id/button5" android:background="@drawable/icon_blemish5" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="8.0dip" style="?android:attr/buttonStyleSmall" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

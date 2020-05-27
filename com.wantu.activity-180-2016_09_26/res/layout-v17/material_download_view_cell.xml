@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:background="@color/transparent" android:layout_width="150.0dip" android:layout_height="205.0dip" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/cellLayout" android:background="@drawable/crazy_cross_cell_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip">
+        <com.fotoable.makeup.materialdownloadview.RecycleAngleImageView android:id="@id/imgview" android:background="@color/transparent" android:layout_width="150.0dip" android:layout_height="190.0dip" android:scaleType="fitCenter" app:roundWidth="5.0dip" app:roundHeight="5.0dip" />
+        <ImageView android:id="@id/img_share" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" android:src="@drawable/gr_fivefraction" />
+        <com.fotoable.makeup.NumberProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:progress="0" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/downloadflagcontent" android:background="@drawable/btn_crazycross_download" android:layout_width="fill_parent" android:layout_height="30.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/downloadtext" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下载" />
+            <ImageView android:layout_gravity="center" android:id="@id/downloadflag" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/gr_material_download" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/img_update" android:background="@drawable/crazy_cross_cell_update_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="22.0dip" android:layout_height="24.0dip" android:src="@drawable/gr_crazycross_need_update" />
+        </FrameLayout>
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="@color/crazy_text" android:gravity="center" android:id="@id/text" android:background="@drawable/crazy_cross_cell_text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1111" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/img_done" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_alignRight="@id/text" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ll_player"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/lv_ad_gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_ad" android:layout_width="fill_parent" android:layout_height="185.0dip" android:src="@drawable/default_ad_image" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_below="@id/iv_ad">
+            <ImageView android:id="@id/home_fm_ad_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ff121212" android:gravity="center_horizontal" android:id="@id/home_fm_ad_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="ad-title" android:singleLine="true" />
+            <TextView android:textSize="17.0sp" android:textColor="#77121212" android:gravity="center_horizontal" android:id="@id/home_fm_ad_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="ad-title" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/home_fm_ad_action" android:background="#ff50ac12" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="100.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="30.0dip" android:text="Click" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="30.0dip" android:layout_below="@id/home_fm_ad_action" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/exit" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/off" android:layout_alignParentRight="true" />
+    <TextView android:textSize="18.0sp" android:textColor="#88000000" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/close" android:background="@drawable/closebackgroung" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="45.0dip" android:text="Close" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ImageView android:layout_width="17.0dip" android:layout_height="17.0dip" android:src="@drawable/adicon" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

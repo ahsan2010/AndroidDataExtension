@@ -1,0 +1,45 @@
+﻿{
+
+"version" : "1",
+
+"cn_name" : "哥德",
+
+"en_name" : "Goth",
+
+"cnn_name" : "哥德",
+
+"brow": "caihuizhuang_156_568_brow.png",
+"brow_a": "0.80",
+"brow_c": "130001",
+
+"eyeshadow": "caizhuang_79_581_shadow.png",
+"eyeshadow_a": "0.80",
+
+"doubleeyelid": "caizhuang_194_633_doulid.png",
+"doubleeyelid_a": "0.75",
+    
+
+"eyeliner": "caizhuang_170_653_liner.png",
+"eyeliner_a": "0.70",
+"eyeliner_c": "150002",
+
+"eyelash": "caihuizhuang_163_624_lash.png",
+"eyelash_a": "0.75",
+"eyelash_c": "140000",
+
+
+"lip": "110001",
+"lip_a": "0.80",
+
+
+"makeup_alpha": "0.7",
+
+"bottom_alpha" : "0.5",
+
+"base":"100000",
+
+"base_a": "0.5"
+      
+
+
+}

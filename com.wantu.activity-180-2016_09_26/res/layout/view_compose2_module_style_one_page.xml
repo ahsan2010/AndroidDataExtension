@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/FrameLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top" android:id="@id/line_1_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="5.0dip">
+        <com.wantu.view.compose2.frames.ModuleStyleOnePageViewLine android:layout_gravity="top" android:id="@id/line1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="top" android:id="@id/line_2_container" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_marginTop="55.0dip">
+        <com.wantu.view.compose2.frames.ModuleStyleOnePageViewLine android:layout_gravity="top" android:id="@id/line2" android:layout_width="fill_parent" android:layout_height="46.0dip" />
+    </FrameLayout>
+</FrameLayout>

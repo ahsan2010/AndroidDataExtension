@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center|top" android:id="@id/style_progress" android:layout_width="260.0dip" android:layout_height="50.0dip">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress_h" android:layout_width="250.0dip" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:progressDrawable="@drawable/progress_slider" android:minHeight="20.0dip" style="?android:attr/progressBarStyleHorizontal" />
+        <FrameLayout android:layout_gravity="bottom|center" android:layout_width="250.0dip" android:layout_height="20.0dip">
+            <TextView android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/progress_number" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginRight="5.0dip" />
+            <TextView android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/progress_percent" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|top" android:id="@id/style_spinner" android:visibility="invisible" android:layout_width="250.0dip" android:layout_height="50.0dip">
+        <ProgressBar android:id="@id/spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:max="10000" android:minHeight="50.0dip" style="@android:style/Widget.ProgressBar" />
+        <TextView android:textSize="16.0sp" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/spinner_tip" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="110.0dip" android:text="@string/processing_tip" />
+    </FrameLayout>
+</FrameLayout>

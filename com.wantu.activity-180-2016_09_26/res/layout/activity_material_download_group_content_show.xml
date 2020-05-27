@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/makeupbottombg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/downloadmaterial" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/btn_crazycross_download" android:scaleType="fitXY" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/group_download" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="去美美哒" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/downloadmaterialdescribe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip" android:layout_above="@id/downloadsize">
+        <TextView android:textSize="12.0sp" android:id="@id/group_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="花样浪漫的春装，恰到好处的轻柔，让你即刻变身粉嫩少女" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/downloadsize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:layout_above="@id/downloadmaterial">
+        <TextView android:textSize="12.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="下载大小:" />
+        <TextView android:textSize="12.0sp" android:id="@id/group_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:text="1.1M" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/materialname" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_above="@id/downloadmaterialdescribe">
+        <TextView android:textSize="20.0sp" android:textColor="@color/solid_red" android:layout_gravity="center_vertical" android:id="@id/group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="春季妆" />
+    </FrameLayout>
+    <HorizontalScrollView android:id="@id/materialitemsscroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_above="@id/materialname">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/materialitemslinearlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/materialitemsscroll">
+        <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/materialitemsscroll">
+        <com.viewpagerindicator.CirclePageIndicator android:theme="@style/Widget.CirclePageIndicator" android:layout_gravity="bottom" android:id="@id/indicator" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|left|top" android:id="@id/btn_group_content_back" android:background="@drawable/gr_backarrow_black" android:layout_width="23.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" />
+</RelativeLayout>

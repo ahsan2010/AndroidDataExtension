@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/cellLayout" android:background="@drawable/gr_sticker_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.fotoable.comlib.ui.RecyclingImageView android:id="@id/imgview" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/img_done" android:visibility="invisible" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" />
+        <ImageView android:id="@id/img_share" android:visibility="invisible" android:layout_width="22.0dip" android:layout_height="14.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ExpandableListView android:layout_gravity="bottom" android:id="@id/listview" android:background="#ff1c1c1c" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#ff000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0dip" />
+</FrameLayout>

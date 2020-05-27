@@ -1,0 +1,5 @@
+{"previewImg":"wupin10_icon.jpg","centerX":11,"centerY":11,"width":140,"height":112,"oriention":3,"basicView":
+[{"viewNum":0,"viewtype":0,"textColor":{"R":0,"G":28,"B":32,"A":100},"isBold":"false","isShadow":"false","fontSize":20,"textLines":1},
+{"viewNum":1,"viewtype":1,"x":0,"y":0,"w":48,"h":96,"imageName":"wupin10_01.png","isContentView":"false"},
+{"viewNum":2,"viewtype":1,"x":48,"y":27,"w":8,"h":68,"imageName":"wupin10_02.png","isContentView":"true"},
+{"viewNum":3,"viewtype":1,"x":56,"y":27,"w":84,"h":80,"imageName":"wupin10_03.png","isContentView":"false"}],"outview":[]}

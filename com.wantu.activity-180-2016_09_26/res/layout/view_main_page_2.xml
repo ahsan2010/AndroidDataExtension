@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:id="@id/FrameLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res-auto="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/layout_area" android:layout_width="106.0dip" android:layout_height="90.0dip">
+        <com.fotoable.adbuttonlib.TAdButton android:layout_gravity="bottom|center|left" android:id="@id/item_adC01" android:layout_width="48.5dip" android:layout_height="34.5dip" android:layout_marginLeft="3.0dip" android:layout_marginBottom="3.0dip" />
+        <com.fotoable.adbuttonlib.TAdButton android:layout_gravity="right" android:id="@id/item_adC02" android:layout_width="48.5dip" android:layout_height="72.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" />
+        <FrameLayout android:layout_gravity="center|left|top" android:id="@id/layout_prev_page" android:background="@drawable/btn_prevpage" android:visibility="visible" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="2.2999878dip" />
+        <FrameLayout android:layout_gravity="center|left|top" android:id="@id/btn_secretalbum" android:background="@color/main_secret" android:visibility="visible" android:layout_width="48.5dip" android:layout_height="34.5dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="15.0dip">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/btn_main_secret" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_marginTop="9.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/secret_album" />
+            <Button android:layout_gravity="right" android:id="@id/new_secret_album_btn" android:background="@drawable/btn_new_n" android:visibility="invisible" android:clickable="false" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="1.0dip" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

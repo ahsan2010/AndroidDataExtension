@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/gray55" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wantu.imagerender.ImageGLSurfaceView android:layout_gravity="center|left|top" android:id="@id/gl_render_view" android:visibility="visible" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+    <FrameLayout android:id="@id/imagecontaier" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="111.0dip">
+        <ImageView android:id="@id/srcimageview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/imageview1" android:background="@color/gray55" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/btncompare" android:padding="5.0dip" android:layout_width="41.0dip" android:layout_height="41.0dip" android:layout_marginTop="55.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="60.0dip" android:src="@drawable/btn_compare" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/bottomcontainer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="156.0dip">
+        <View android:layout_gravity="bottom" android:background="@color/gray55" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="44.0dip" />
+        <FrameLayout android:layout_gravity="bottom|center|left" android:id="@id/bottomBar" android:background="@color/bg_top" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <ImageView android:layout_gravity="left" android:id="@id/btnback" android:background="@drawable/btn_edit_close" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+            <FrameLayout android:layout_gravity="center" android:id="@id/tool_bar_container" android:layout_width="225.0dip" android:layout_height="fill_parent">
+                <Button android:layout_gravity="center" android:id="@id/btnSel3" android:background="@drawable/btn_3_res" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+                <Button android:layout_gravity="center" android:id="@id/btnSel2" android:background="@drawable/btn_2_res" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="45.0dip" />
+                <Button android:layout_gravity="center" android:id="@id/btnSel1" android:background="@drawable/btn_1_res" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="90.0dip" />
+                <Button android:layout_gravity="center" android:id="@id/btnSel4" android:background="@drawable/btn_4_res" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="45.0dip" />
+                <Button android:layout_gravity="center" android:id="@id/btnSel5" android:background="@drawable/btn_5_res" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="90.0dip" />
+            </FrameLayout>
+            <ImageView android:layout_gravity="right" android:id="@id/btnnext" android:background="@drawable/btn_edit_save" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+        </FrameLayout>
+    </FrameLayout>
+    <com.fotoable.beautyui.NewFilterContainer android:layout_gravity="bottom" android:id="@id/filtercontainer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="111.0dip" android:layout_marginBottom="45.0dip" />
+    <com.fotoable.beautyui.secnewui.filter.BottomBarView android:layout_gravity="bottom" android:id="@id/bottomBarView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="80.0dip" />
+    <FrameLayout android:id="@id/waittingcontainer" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="45.0dip">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar1" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+    </FrameLayout>
+</FrameLayout>

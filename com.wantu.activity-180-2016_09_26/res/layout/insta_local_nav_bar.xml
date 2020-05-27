@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/ui_action_bar_color" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top" android:id="@id/layout_pre" android:background="@drawable/item_horizon_btn" android:layout_width="70.0dip" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/imageView1" android:layout_width="30.0dip" android:layout_height="35.0dip" android:layout_marginLeft="30.0dip" android:src="@drawable/icon_action" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/imageView2" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/ic_action_previous_item" />
+    </FrameLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <Button android:id="@id/instarect_btn" android:background="@drawable/insta_recttype_btn" android:focusable="false" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+        <Button android:id="@id/instasq_btn" android:background="@drawable/insta_sqtype_btn" android:focusable="false" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+        <Button android:id="@id/insta_landscape_btn" android:background="@drawable/insta_landscape_btn" android:focusable="false" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/frameLayoutnext" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="false">
+        <Button android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/solid_white" android:layout_gravity="center" android:id="@id/next_btn" android:background="@drawable/btn_bluecolor" android:layout_width="65.0dip" android:layout_height="48.0dip" android:layout_marginLeft="5.0dip" android:onClick="nextBtnClicked" />
+        <Button android:layout_gravity="center|right|top" android:id="@id/newMaterialAlert_btn" android:background="@drawable/btn_newsmall" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="30.0dip" android:layout_marginTop="-7.0dip" android:layout_marginRight="-6.0dip" />
+    </FrameLayout>
+</RelativeLayout>

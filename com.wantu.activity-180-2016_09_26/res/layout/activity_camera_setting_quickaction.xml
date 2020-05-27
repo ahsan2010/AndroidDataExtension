@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="255.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/quickaction_item_arrow_up" android:background="@drawable/quickaction_arrow_up" android:layout_width="16.0dip" android:layout_height="5.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/quickaction_item_content" android:background="@drawable/correct_camera_orientation_dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <View android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff363636" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/delay_capture" android:layout_centerVertical="true" />
+            <ToggleButton android:textColor="#ff363636" android:id="@id/camera_setting_delay_capture" android:background="@drawable/btn_camera_setting_bg" android:layout_width="52.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:checked="true" android:textOn="@string/ON" android:textOff="@string/OFF" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff363636" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/click_screen_capture" android:layout_centerVertical="true" />
+            <ToggleButton android:textColor="#ff363636" android:id="@id/camera_setting_tap_screen" android:background="@drawable/btn_camera_setting_bg" android:layout_width="52.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:checked="true" android:textOn="@string/ON" android:textOff="@string/OFF" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/correct_camera_orientation" android:background="@drawable/btn_camera_setting_correct_bg" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="#ff363636" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="10.0dip" android:text="@string/txt_correct_camera_orien" />
+        </RelativeLayout>
+        <View android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    </LinearLayout>
+</RelativeLayout>

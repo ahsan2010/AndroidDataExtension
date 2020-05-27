@@ -1,0 +1,74 @@
+{
+
+"version" : "1",
+
+"cn_name" : "自然",
+
+"en_name" : "Fair",
+
+"cnn_name" : "自然",
+
+"brow": "hanzhuang01_147_566_brow.png",
+
+
+
+"brow_a": "0.18",
+"brow_c": "130026",
+   
+
+"eyeshadow": "hanzhuang01_146_597_shadow.png",
+
+
+
+"eyeshadow_a": "0.38",
+
+
+
+"doubleeyelid": "",
+
+
+
+"doubleeyelid_a": "",
+    
+
+
+"eyeliner": "hanzhuang01_182_646_liner.png",
+
+
+
+"eyeliner_a": "0.67",
+"eyeliner_c": "150010",  
+
+
+"eyelash": "hanzhuang01_179_625_lash.png",
+
+
+
+"eyelash_a": "0.64",
+"eyelash_c": "140020",
+
+
+"lip": "110010",
+
+
+"lip_a": "0.26",
+
+
+
+"blush":"luozhuang4_108_721_blush.png",
+
+
+
+"blush_a": "0.17",
+"blush_c": "120019",
+"makeup_alpha": "0.7",
+
+"bottom_alpha" : "0.5",
+
+"base":"100000",
+
+"base_a": "0.5"
+      
+
+
+}

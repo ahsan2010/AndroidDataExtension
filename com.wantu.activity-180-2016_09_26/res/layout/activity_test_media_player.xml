@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/main_frame" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/player_frame_bar_title" android:background="#ff363636" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:layout_gravity="center|left" android:id="@id/img_back_movie" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/btn_back_adv" />
+    </FrameLayout>
+    <jp.co.cyberagent.android.gpuimage.export.AspectFrameLayout android:layout_gravity="center" android:id="@id/view_container" android:background="@android:color/black" android:clickable="true" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginBottom="20.0dip">
+        <com.fotoable.tiezhicam.BeautyVideoView android:layout_gravity="center" android:id="@id/vvcameracapture" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/photocapture" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </jp.co.cyberagent.android.gpuimage.export.AspectFrameLayout>
+    <HorizontalScrollView android:layout_gravity="bottom" android:id="@id/player_frame_bar_tool" android:background="#ff363636" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/sharecontainer" android:layout_width="fill_parent" android:layout_height="100.0dip">
+            <ImageView android:id="@id/img_player_del_movie" android:background="@drawable/sync_deletevideo3x" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="27.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="27.0dip" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</FrameLayout>

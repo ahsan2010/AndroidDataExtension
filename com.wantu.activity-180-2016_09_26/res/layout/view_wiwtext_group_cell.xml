@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center|left" android:id="@id/text_big" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="生活" android:layout_alignParentTop="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/black" android:gravity="center|left" android:id="@id/text_small" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_marginLeft="10.0dip" android:text="不只有眼前的苟且，还有诗和远方" android:layout_below="@id/text_big" />
+    <View android:background="#7affffff" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/text_small" />
+</RelativeLayout>

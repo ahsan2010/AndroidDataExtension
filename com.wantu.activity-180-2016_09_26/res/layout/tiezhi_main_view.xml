@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top" android:id="@id/ly_action_bar" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <com.fotoable.fotoproedit.view.ui.ProEidtMainActionBarView android:id="@id/proEidtMainActionBarView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="44.0dip">
+        <com.viewpagerindicator_wantu.TabPageIndicator android:id="@id/indicator" android:background="#ff3a3a3a" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.fotoable.sketch.view.TTiezhiFilterView android:id="@id/tiezhi_filterView" android:background="#ff3a3a3a" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="10.0sp" android:id="@id/tiezhi_indicator_countLab" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="0.0dip" android:text="" />
+        </FrameLayout>
+        <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

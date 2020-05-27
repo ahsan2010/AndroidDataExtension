@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="16.0dip" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_photos" android:layout_centerVertical="true" />
+                <Button android:textColor="@color/solid_white" android:id="@id/next_btn" android:background="@drawable/next_red_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:text="@string/next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="nextBtnClicked" />
+            </RelativeLayout>
+            <LinearLayout android:id="@id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip">
+                <com.fotoable.photoselector.activity.PhotoSelectScrollView android:id="@id/photo_list_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="0.0dip" />
+    <RelativeLayout android:gravity="top" android:layout_gravity="bottom" android:id="@id/layout_compose_link_frame_selector_container" android:layout_width="fill_parent" android:layout_height="125.0dip" android:layout_marginBottom="0.0dip">
+        <FrameLayout android:id="@id/module_link_frame_container" android:background="@drawable/gr_tab_bg_bg" android:layout_width="fill_parent" android:layout_height="125.0dip" android:layout_alignParentBottom="true">
+            <com.wantu.view.compose2.link.LinkCollageStyleScrollPageView android:id="@id/linkFramesSelectorPageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:layout_marginBottom="13.0dip" />
+            <com.wantu.view.compose2.indicate.CirclePageIndicator android:layout_gravity="bottom|center" android:id="@id/circlePageIndicator1" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginBottom="2.0dip" />
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

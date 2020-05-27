@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom|center" android:id="@id/FrameLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res-auto="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/layout_area" android:layout_width="320.0dip" android:layout_height="203.0dip">
+        <FrameLayout android:layout_gravity="center|left|top" android:layout_width="64.0dip" android:layout_height="90.0dip" android:layout_marginLeft="32.0dip" android:layout_marginTop="10.0dip">
+            <com.wantu.view.SAutoBgFrameLayout android:layout_gravity="top" android:id="@id/item_collage" android:layout_width="64.0dip" android:layout_height="64.0dip" />
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@id/collage_text_container" android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <com.wantu.activity.mainpage.MainFontFitTextView android:enabled="false" android:textSize="13.0sp" android:textColor="@color/solid_black" android:ellipsize="none" android:gravity="center" android:layout_gravity="center" android:id="@id/tx_collage" android:paddingBottom="4.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/collage_photo" android:singleLine="true" res-auto:maxFontSize="13.0sp" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center|top" android:layout_width="64.0dip" android:layout_height="90.0dip" android:layout_marginTop="10.0dip">
+            <com.wantu.view.SAutoBgFrameLayout android:layout_gravity="top" android:id="@id/item_tagtag" android:layout_width="64.0dip" android:layout_height="64.0dip" />
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@id/tagtag_text" android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <com.wantu.activity.mainpage.MainFontFitTextView android:textSize="13.0sp" android:textColor="@color/solid_black" android:ellipsize="none" android:gravity="center" android:layout_gravity="center" android:id="@id/tx_tagtag" android:paddingBottom="4.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/ui_proedit_main_sketch" android:singleLine="true" res-auto:maxFontSize="13.0sp" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center|right|top" android:layout_width="64.0dip" android:layout_height="90.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="32.0dip">
+            <com.wantu.view.SAutoBgFrameLayout android:layout_gravity="top" android:id="@id/item_proedit" android:layout_width="64.0dip" android:layout_height="64.0dip" />
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@id/library_text_container" android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <com.wantu.activity.mainpage.MainFontFitTextView android:textSize="13.0sp" android:textColor="@color/solid_black" android:ellipsize="none" android:gravity="center" android:layout_gravity="center" android:id="@id/tx_proedit" android:paddingBottom="4.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/proedit" android:singleLine="true" res-auto:maxFontSize="13.0sp" />
+            </FrameLayout>
+            <Button android:layout_gravity="right" android:id="@id/flag_newproedit" android:background="@drawable/gr_newupdate" android:visibility="invisible" android:clickable="false" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center|left|top" android:layout_width="64.0dip" android:layout_height="90.0dip" android:layout_marginLeft="32.0dip" android:layout_marginTop="106.0dip">
+            <com.wantu.view.SAutoBgFrameLayout android:layout_gravity="top" android:id="@id/item_instabeauty" android:layout_width="64.0dip" android:layout_height="64.0dip" />
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@id/item_beauty_text" android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <com.wantu.activity.mainpage.MainFontFitTextView android:enabled="false" android:textSize="13.0sp" android:textColor="@color/solid_black" android:ellipsize="none" android:gravity="center" android:layout_gravity="center" android:id="@id/tx_instabeauty" android:paddingBottom="4.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/beauty_fun" android:singleLine="true" res-auto:maxFontSize="13.0sp" />
+            </FrameLayout>
+            <Button android:layout_gravity="right" android:id="@id/flag_newbeauty" android:background="@drawable/gr_newupdate" android:visibility="invisible" android:clickable="false" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center|top" android:layout_width="64.0dip" android:layout_height="90.0dip" android:layout_marginTop="106.0dip">
+            <com.wantu.view.SAutoBgFrameLayout android:layout_gravity="top" android:id="@id/item_pip" android:layout_width="64.0dip" android:layout_height="64.0dip" />
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@id/morden_text_container" android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <com.wantu.activity.mainpage.MainFontFitTextView android:textSize="13.0sp" android:textColor="@color/solid_black" android:ellipsize="none" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_pip" android:paddingBottom="4.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="PaintLab" android:singleLine="true" res-auto:maxFontSize="13.0sp" />
+            </FrameLayout>
+            <Button android:layout_gravity="right" android:id="@id/flag_newMakeupCrazy" android:background="@drawable/gr_newupdate" android:visibility="invisible" android:clickable="false" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center|right|top" android:clipChildren="false" android:layout_width="64.0dip" android:layout_height="90.0dip" android:layout_marginTop="106.0dip" android:layout_marginRight="32.0dip">
+            <com.fotoable.adbuttonlib.TAdButton android:id="@id/item_adC01" android:clipChildren="false" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginRight="0.0dip" />
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@id/ad01_text_container" android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <com.wantu.activity.mainpage.MainFontFitTextView android:textSize="13.0sp" android:textColor="@color/solid_black" android:ellipsize="none" android:gravity="center" android:layout_gravity="center" android:id="@id/item_name01" android:paddingBottom="4.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" res-auto:maxFontSize="13.0sp" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="bottom|center" android:id="@id/new_style_text_container" android:visibility="invisible" android:layout_width="100.0dip" android:layout_height="24.0dip" android:layout_marginBottom="10.0dip">
+            <com.fotoable.adbuttonlib.TAdButton android:id="@id/item_adC03" android:background="@drawable/btn_main_latest" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip">
+                <com.wantu.activity.mainpage.MainFontFitTextView android:textSize="13.0sp" android:textColor="@color/solid_white" android:ellipsize="none" android:gravity="center" android:layout_gravity="center" android:id="@id/item_name03" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" res-auto:maxFontSize="13.0sp" />
+                <Button android:layout_gravity="right" android:id="@id/flag_newmag" android:background="@drawable/gr_newupdate" android:visibility="invisible" android:clickable="false" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="4.0dip" />
+            </com.fotoable.adbuttonlib.TAdButton>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center|right|top" android:id="@id/layout_next_page" android:background="@drawable/btn_nextpage" android:visibility="visible" android:layout_width="39.0dip" android:layout_height="39.0dip" android:layout_marginTop="76.0dip" />
+    </FrameLayout>
+</FrameLayout>

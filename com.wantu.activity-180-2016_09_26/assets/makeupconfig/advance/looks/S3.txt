@@ -1,0 +1,40 @@
+{
+
+"version" : "1",
+
+"cn_name" : "明眸",
+
+"en_name" : "Clarion",
+
+"cnn_name" : "明眸",
+
+"brow": "nongzhuang3_147_565_brow.png",
+"brow_a": "0.24",
+"brow_c": "130026",
+   
+
+"eyeshadow": "nongzhuang3_112_581_shadow.png",
+"eyeshadow_a": "0.56",
+
+"eyelash": "nongzhuang3_168_621_lash.png",
+"eyelash_a": "0.60",
+"eyelash_c": "140020",
+
+"lip": "110039",
+"lip_a": "0.39",
+
+
+
+"blush":"nongzhuang8_87_701_blush.png",
+"blush_a": "0.50",
+"blush_c": "120027",
+"makeup_alpha": "0.7",
+
+"bottom_alpha" : "0.5",
+
+"base":"100000",
+
+"base_a": "0.5"
+
+
+}

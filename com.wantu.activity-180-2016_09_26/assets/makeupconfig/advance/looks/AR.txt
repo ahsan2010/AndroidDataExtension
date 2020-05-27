@@ -1,0 +1,79 @@
+{
+
+"version" : "1",
+
+"cn_name" : "娇媚",
+
+"en_name" : "Flirt",
+
+"cnn_name" : "嬌媚",
+
+"brow": "agenting_148_571_brow.png",
+
+
+
+"brow_a": "0.35",
+
+"brow_c": "130001",
+
+
+"eyeshadow": "agenting_122_602_shadow.png",
+
+
+
+"eyeshadow_a": "0.55",
+
+
+
+"doubleeyelid": "",
+
+
+
+"doubleeyelid_a": "",
+    
+
+
+"eyeliner": "agenting_175_656_liner.png",
+
+
+
+"eyeliner_a": "0.28",
+
+"eyeliner_c": "150002",
+  
+
+
+"eyelash": "agenting_177_641_lash.png",
+
+
+
+"eyelash_a": "0.56",
+
+"eyelash_c": "140000",
+ 
+
+
+"lip": "110000",
+
+
+"lip_a": "0.53",
+
+
+
+
+"blush":"nongzhuang8_87_701_blush.png",
+
+"blush_a": "0.48",
+
+"blush_c": "120000",
+
+"makeup_alpha": "0.8",
+
+"bottom_alpha" : "0.6",
+
+"base":"100014",
+
+"base_a": "1.0"
+
+
+}

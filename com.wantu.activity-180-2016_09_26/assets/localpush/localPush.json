@@ -1,0 +1,66 @@
+{
+  "version": "1",
+  "type": "local",
+  "data": [
+    {
+      "push_id": "1",
+      "type": "day",
+      "icon": "default",
+      "title": "Wantu",
+      "text": "Best photo processing app!",
+      "sound": "default",
+      "interval_days": 1,
+      "time": "20:00"
+    },
+    {
+      "push_id": "2",
+      "type": "day",
+      "icon": "default",
+      "title": "Wantu",
+      "text": "Best photo processing app!",
+      "sound": "default",
+      "interval_days": 2,
+      "time": "20:00"
+    },
+    {
+      "push_id": "3",
+      "type": "day",
+      "icon": "default",
+      "title": "Wantu",
+      "text": "Best photo processing app!",
+      "sound": "default",
+      "interval_days": 3,
+      "time": "20:00"
+    },
+    {
+      "push_id": "4",
+      "type": "day",
+      "icon": "default",
+      "title": "Wantu",
+      "text": "Best photo processing app!",
+      "sound": "default",
+      "interval_days": 3,
+      "time": "20:00"
+    },
+    {
+      "push_id": "5",
+      "type": "day",
+      "icon": "default",
+      "title": "Wantu",
+      "text": "Best photo processing app!",
+      "sound": "default",
+      "interval_days": 3,
+      "time": "20:00"
+    },
+    {
+      "push_id": "n",
+      "type": "day",
+      "icon": "default",
+      "title": "Wantu",
+      "text": "Best photo processing app!",
+      "sound": "default",
+      "interval_days": 3,
+      "time": "20:00"
+    }
+  ]
+}

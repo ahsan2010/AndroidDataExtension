@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/correct_camera_orientation_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_truegray" android:gravity="center" android:layout_gravity="center" android:id="@id/tipcontent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tip_defect_face" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="10.0dip">
+        <Button android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_ok" android:background="@drawable/btn_correct_cancel_" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="@string/b_ok" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/btn_cancle" android:background="@drawable/btn_bg_correct_camera_orientation" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

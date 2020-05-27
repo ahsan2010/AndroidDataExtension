@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res-auto="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="right" android:id="@id/splitView" android:background="@color/solid_dark_gray" android:layout_width="5.0dip" android:layout_height="fill_parent" android:layout_marginRight="17.0dip" />
+    <FrameLayout android:layout_gravity="center|left|top" android:id="@id/imageView1ParentView" android:layout_width="300.0dip" android:layout_height="261.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="14.0dip">
+        <com.wantu.activity.link.view.LinkImageView android:layout_gravity="center" android:id="@id/imageView1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="top" android:id="@id/headerlayout" android:layout_width="fill_parent" android:layout_height="14.0dip">
+        <com.wantu.activity.link.view.CaptionLabel android:textSize="20.0sp" android:textColor="@color/solid_white" android:ellipsize="none" android:gravity="center|right" android:id="@id/title" android:layout_width="139.0dip" android:layout_height="14.0dip" android:layout_marginRight="25.0dip" android:text="08/12 04:35" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" res-auto:maxFontSize="10.0sp" />
+        <ImageView android:id="@id/footlogView" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/gifcontainer" android:layout_width="140.0dip" android:layout_height="163.0dip">
+        <ImageView android:id="@id/bg_bg" android:background="@drawable/recommend_default_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <com.fotoable.recommendapp.gif.GifImageView android:id="@id/gifview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <com.fotoable.savepagescrollview.SAutoBgFrameLayout android:id="@id/imageview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <FrameLayout android:layout_gravity="center|right|top" android:id="@id/ad_tip" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip">
+            <ImageView android:background="@drawable/bg_btn_shape" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/gr_ad_samll" />
+            <TextView android:textSize="6.0sp" android:textColor="@color/solid_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AD" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/likecontainer" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="33.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip">
+            <ImageView android:layout_gravity="center|left" android:id="@id/likeimageview" android:background="@drawable/recommend_like_redheart" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff383b42" android:layout_gravity="center|left" android:id="@id/likecount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:text="2345" />
+            <nativead.AutofitTextView android:textSize="13.0sp" android:textColor="#ff383b42" android:layout_gravity="center|right" android:id="@id/appname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0dip" android:layout_marginRight="5.0dip" android:text="Fotorus" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/imageuseview" android:background="@drawable/recommend_use" android:layout_width="41.0dip" android:layout_height="17.0dip" android:layout_marginRight="8.0dip" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/adcontainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

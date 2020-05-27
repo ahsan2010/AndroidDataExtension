@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res-auto="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center|left|top" android:id="@id/imageView1ParentView" android:layout_width="278.0dip" android:layout_height="268.0dip" android:layout_marginLeft="20.0dip">
+        <com.wantu.activity.link.view.LinkImageView android:layout_gravity="center|left|top" android:id="@id/imageView1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.wantu.activity.link.view.LinkImageView android:layout_gravity="center" android:id="@id/maskView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom|center" android:layout_width="189.0dip" android:layout_height="24.0dip" android:layout_marginBottom="4.0dip">
+        <com.wantu.activity.link.view.CaptionLabel android:textColor="@color/solid_white" android:ellipsize="none" android:gravity="center" android:layout_gravity="center|left|top" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="01" android:singleLine="true" res-auto:maxFontSize="19.0sp" />
+    </FrameLayout>
+</FrameLayout>

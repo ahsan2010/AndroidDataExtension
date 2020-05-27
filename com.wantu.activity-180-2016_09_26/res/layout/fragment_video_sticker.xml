@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/videosticker_afl" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <jp.co.cyberagent.android.gpuimage.camera.export.VideoStickerGLSurfaceView android:id="@id/videosticker_surfaceView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/view_switchcam_use" android:background="@color/black_transparent_90" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ImageView android:id="@id/find_face_rect" android:background="@drawable/gr_facerec" android:visibility="invisible" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/img_touch_focus" android:background="@drawable/gr_focus" android:visibility="invisible" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    <TextView android:textSize="28.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/showlabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:text="as" android:shadowColor="@color/save_gray" android:shadowDx="1.0" android:shadowDy="1.0" />
+    <com.fotoable.tiezhicam.VideoTopContainer android:layout_gravity="top" android:id="@id/selfie_top_container" android:layout_width="fill_parent" android:layout_height="55.0dip" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/filtertoolcontianer" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="111.0dip">
+        <com.fotoable.beautyui.gpuimage.sample.activity.CameraFilterScrollView android:layout_gravity="bottom" android:id="@id/video_filter_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/videostickerbar" android:layout_width="fill_parent" android:layout_height="65.0dip">
+            <com.fotoable.tiezhicam.VideoStickerIconScrollView android:layout_gravity="bottom" android:id="@id/videostickericonview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/captureContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip">
+        <com.fotoable.tiezhicam.VideoStickerCaptureHScrollView android:id="@id/capturescrollview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:background="#ff363636" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@id/selfie_video_layout" android:layout_width="fill_parent" android:layout_height="111.0dip">
+                    <LinearLayout android:layout_gravity="top" android:background="#ff363636" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="41.0dip" android:weightSum="2.0">
+                        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <com.fotoable.tiezhicam.MNewImageItemView android:layout_gravity="center" android:id="@id/btn_showfilterbar" android:background="@null" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+                        </FrameLayout>
+                        <com.fotoable.tiezhicam.VideoStickerCaptureButton android:layout_gravity="center" android:id="@id/button_continous_record" android:layout_width="70.0dip" android:layout_height="70.0dip" />
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <com.fotoable.tiezhicam.MNewImageItemView android:layout_gravity="center" android:id="@id/btn_switchcamphoto" android:background="@null" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <View android:layout_gravity="top" android:background="#88545454" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="41.0dip" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/selfie_photo_layout" android:layout_width="fill_parent" android:layout_height="111.0dip">
+                    <View android:layout_gravity="top" android:id="@id/videostickertypeview_photo" android:background="#ff363636" android:layout_width="fill_parent" android:layout_height="41.0dip" />
+                    <LinearLayout android:layout_gravity="top" android:background="#ff363636" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="41.0dip" android:weightSum="2.0">
+                        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <com.fotoable.tiezhicam.MNewImageItemView android:layout_gravity="center" android:id="@id/btn_showfilterbar_photo" android:background="@null" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+                        </FrameLayout>
+                        <Button android:layout_gravity="center" android:id="@id/button_continous_record_photo" android:background="@drawable/takephoto" android:layout_width="70.0dip" android:layout_height="70.0dip" />
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <com.fotoable.tiezhicam.MNewImageItemView android:layout_gravity="center" android:id="@id/btn_fromgallery_photo" android:background="@null" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <View android:layout_gravity="top" android:background="#88545454" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="41.0dip" />
+                </FrameLayout>
+            </LinearLayout>
+        </com.fotoable.tiezhicam.VideoStickerCaptureHScrollView>
+        <com.fotoable.tiezhicam.VideoStickerTypeScrollView android:layout_gravity="top" android:id="@id/videostickertypeview" android:background="#ff363636" android:layout_width="fill_parent" android:layout_height="41.0dip" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/bottomswitchcontainer" android:background="@color/gray55" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textColor="@color/white" android:id="@id/videobutton" android:background="@color/gray55" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sticker_video" />
+            <View android:layout_gravity="bottom" android:id="@id/stickerbutton_selline" android:background="@color/color_btn_blue_txt" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textColor="@color/white" android:id="@id/photobutton" android:background="@color/gray55" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sticker_photo" />
+            <View android:layout_gravity="bottom" android:id="@id/decorationbutton_selline" android:background="@color/color_btn_blue_txt" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/tip_finger" android:background="@drawable/gr_finger" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" />
+    <FrameLayout android:id="@id/refect_touch_container" android:background="@color/transparent" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/view_filllight_use" android:background="@color/fill_light" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true" />
+    <FrameLayout android:id="@id/waittingcontainer" android:background="@color/transparent" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar1" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+    </FrameLayout>
+</FrameLayout>

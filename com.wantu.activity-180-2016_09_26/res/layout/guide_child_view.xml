@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/img_background" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+    <LinearLayout android:orientation="vertical" android:id="@id/div_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/img_display" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0" android:contentDescription="@string/app_name" />
+        <FrameLayout android:id="@id/custom_control_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="11.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/div_view_end" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/img_display_end" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0" android:contentDescription="@string/app_name" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="7.0">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/custom_control_view_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <Button android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/start_pipcamera" android:visibility="invisible" android:layout_width="210.0dip" android:layout_height="50.0dip" />
+                <Button android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/not_pipcamera" android:visibility="invisible" android:layout_width="210.0dip" android:layout_height="50.0dip" />
+                <ImageView android:layout_gravity="center" android:id="@id/start_pipcamera_ad" android:visibility="invisible" android:layout_width="52.0dip" android:layout_height="7.0dip" android:layout_marginLeft="70.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/gr_contains_ads" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

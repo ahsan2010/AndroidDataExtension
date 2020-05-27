@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dlg_fivestar_bg_china" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="35.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="35.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/color_truegray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/dlg_fivestar_content" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <Button android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_cancel" android:background="@drawable/dlg_fivestar_cancel_china" android:layout_width="175.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/dlg_fivestar_cancel" />
+    <Button android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_ok" android:background="@drawable/dlg_fivestar_ok_china" android:layout_width="175.0dip" android:layout_height="50.0dip" android:layout_marginTop="17.0dip" android:layout_marginBottom="33.0dip" android:text="@string/dlg_fivestar_ok" />
+</LinearLayout>

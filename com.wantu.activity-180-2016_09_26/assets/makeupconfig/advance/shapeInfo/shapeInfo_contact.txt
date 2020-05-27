@@ -1,0 +1,90 @@
+{
+    "170000" : {
+        "pids":["170000"],
+        "alpha":"1.0",
+        "texture":"hanzhuang04_contact.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"",
+        "defaultColor":"170000"
+    },
+    "170001" : {
+        "pids":["170000"],
+        "alpha":"1.0",
+        "texture":"hanzhuang05_contact.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"",
+        "defaultColor":"170000"
+    },
+    "170002" : {
+        "pids":["170000"],
+        "alpha":"1.0",
+        "texture":"hanzhuang06_contact.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"",
+        "defaultColor":"170000"
+    },
+    "170003" : {
+        "pids":["170000"],
+        "alpha":"1.0",
+        "texture":"hanzhuang07_contact.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"",
+        "defaultColor":"170000"
+    },
+    "170004" : {
+        "pids":["170000"],
+        "alpha":"1.0",
+        "texture":"nongzhuang01_contact.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"",
+        "defaultColor":"170000"
+    },
+    "170005" : {
+        "pids":["170000"],
+        "alpha":"1.0",
+        "texture":"nongzhuang02_contact.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"",
+        "defaultColor":"170000"
+    },
+    "170006" : {
+        "pids":["170000"],
+        "alpha":"1.0",
+        "texture":"nongzhuang04_contact.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"",
+        "defaultColor":"170000"
+    },
+    "170007" : {
+        "pids":["170000"],
+        "alpha":"1.0",
+        "texture":"nongzhuang01_contact.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"",
+        "defaultColor":"170000"
+    }
+}

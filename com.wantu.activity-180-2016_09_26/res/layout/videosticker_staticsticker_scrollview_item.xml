@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_margin="5.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/imageview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/downloadview" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/btn_dl_l" />
+        <FrameLayout android:id="@id/selectview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.fotoable.beautyui.newui.MNewImageItemView android:id="@id/selimagecircleview" android:background="@drawable/gr_selected" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="bottom|center|right" android:background="@drawable/videosticker_sel_right" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

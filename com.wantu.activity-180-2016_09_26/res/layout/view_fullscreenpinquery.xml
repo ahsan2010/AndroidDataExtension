@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="2000.0dip" android:minHeight="2000.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="60.0">
+        <TextView android:textSize="20.0dip" android:textColor="@color/skyblue_text_color" android:id="@id/pwdinput" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:inputType="textPassword" style="@style/button_query" />
+        <TextView android:textColor="@color/skyblue_text_color" android:id="@id/passwrodNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/input_pincode" android:layout_above="@id/pwdinput" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="40.0">
+        <TableRow android:id="@id/tableRow1" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="10.0">
+            <Button android:textColor="@color/skyblue_text_color" android:id="@id/button01" android:tag="1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_weight="33.0" />
+            <Button android:textColor="@color/skyblue_text_color" android:id="@id/button02" android:tag="2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" android:layout_weight="33.0" />
+            <Button android:textColor="@color/skyblue_text_color" android:id="@id/button03" android:tag="3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:layout_weight="33.0" />
+        </TableRow>
+        <TableRow android:id="@id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="10.0">
+            <Button android:textColor="@color/skyblue_text_color" android:id="@id/Button04" android:tag="4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" android:layout_weight="33.0" />
+            <Button android:textColor="@color/skyblue_text_color" android:id="@id/Button05" android:tag="5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:layout_weight="33.0" />
+            <Button android:textColor="@color/skyblue_text_color" android:id="@id/Button06" android:tag="6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" android:layout_weight="33.0" />
+        </TableRow>
+        <TableRow android:textColor="@color/skyblue_text_color" android:id="@id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="10.0">
+            <Button android:textColor="@color/skyblue_text_color" android:id="@id/Button07" android:tag="7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7" android:layout_weight="33.0" />
+            <Button android:textColor="@color/skyblue_text_color" android:id="@id/Button08" android:tag="8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8" android:layout_weight="33.0" />
+            <Button android:textColor="@color/skyblue_text_color" android:id="@id/Button09" android:tag="9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9" android:layout_weight="33.0" />
+        </TableRow>
+        <TableRow android:id="@id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="10.0">
+            <Button android:textColor="@color/skyblue_text_color" android:id="@id/ButtonCancel" android:tag="cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="33.0" />
+            <Button android:textColor="@color/skyblue_text_color" android:id="@id/Button00" android:tag="0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_weight="33.0" />
+            <Button android:textColor="@color/skyblue_text_color" android:id="@id/ButtonBackSpace" android:tag="backspace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;--" android:layout_weight="33.0" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

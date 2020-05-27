@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:id="@id/actionView" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:id="@id/bottom_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/ly_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.instamag.activity.commonview.FilterMagItemView android:layout_gravity="center" android:id="@id/btnAll" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/bottom_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/ly_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.instamag.activity.commonview.FilterMagItemView android:layout_gravity="center" android:id="@id/btnPortrait" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/bottom_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/ly_3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.instamag.activity.commonview.FilterMagItemView android:layout_gravity="center" android:id="@id/btnSquare" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/bottom_4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/ly_4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.instamag.activity.commonview.FilterMagItemView android:layout_gravity="center" android:id="@id/btnLandScape" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/bottom_5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/ly_5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.instamag.activity.commonview.FilterMagItemView android:layout_gravity="center" android:id="@id/btnStrips" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

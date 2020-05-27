@@ -1,0 +1,5 @@
+{"previewImg":"gr_renwu3.icon.jpg","centerX":24,"centerY":24,"width":102,"height":108,"oriention":3,"basicView":
+[{"viewNum":0,"viewtype":0,"textColor":{"R":0,"G":0,"B":0,"A":100},"isBold":"false","isShadow":"false","fontSize":20,"textLines":1},
+{"viewNum":1,"viewtype":1,"x":0,"y":0,"w":72,"h":108,"imageName":"gr_renwu3_01.png","isContentView":"false"},
+{"viewNum":2,"viewtype":1,"x":72,"y":42,"w":12,"h":66,"imageName":"gr_renwu3_02.png","isContentView":"true"},
+{"viewNum":3,"viewtype":1,"x":84,"y":42,"w":18,"h":66,"imageName":"gr_renwu3_03.png","isContentView":"false"}],"outview":[]}

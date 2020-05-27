@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/capturePhoto_preview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="top" android:id="@id/surfaceViewcontainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="44.0dip" />
+        <ImageView android:id="@id/find_face_rect" android:background="@drawable/gr_facerec" android:visibility="invisible" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        <View android:id="@id/view_filllight_use" android:background="@color/transparent_80" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="45.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/img_touch_focus" android:background="@drawable/gr_focus" android:visibility="invisible" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/img_delay_capture" android:background="@drawable/gr_counter3" android:visibility="invisible" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+        <FrameLayout android:id="@id/camera_preview_container" android:background="@drawable/gr_nav" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <ImageView android:layout_gravity="center|left" android:id="@id/img_back_camera" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/nav_cancel_pic" />
+            <ImageView android:layout_gravity="center|left" android:id="@id/img_brightness_camera" android:layout_width="52.0dip" android:layout_height="45.0dip" android:layout_marginLeft="52.0dip" android:src="@drawable/btn_light_off" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/img_switch_camera" android:layout_width="52.0dip" android:layout_height="45.0dip" android:src="@drawable/ro_camera" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/img_flash_camera" android:layout_width="52.0dip" android:layout_height="45.0dip" android:layout_marginRight="53.0dip" android:src="@drawable/btn_flash_off" />
+            <ImageView android:layout_gravity="center" android:id="@id/img_setting_camera" android:layout_width="50.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_setup" />
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:id="@id/camera_auto_whitening" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginBottom="5.0dip" android:layout_above="@id/capturePhoto_toolbar">
+        <TextView android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/auto_whitening" android:shadowColor="@color/black" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+        <SeekBar android:layout_gravity="center" android:id="@id/seekbar_auto_whitening" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progress="40" android:progressDrawable="@drawable/progress_slider" android:minHeight="2.0dip" android:thumb="@drawable/progress_control" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/capturePhoto_toolbar" android:background="#ff363636" android:clickable="true" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/button_capture" android:background="@drawable/takephoto_l" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_centerInParent="true" />
+        <Button android:id="@id/button_from_library" android:background="@drawable/btn_library_l" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

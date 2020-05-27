@@ -1,0 +1,40 @@
+{
+
+"version" : "1",
+
+"cn_name" : "粉鹊",
+
+"en_name" : "Pretty",
+
+"cnn_name" : "粉鵲",
+
+
+
+"eyeshadow": "luozhuang2_153_702_shadow.png",
+"eyeshadow_a": "0.65",
+
+
+
+"eyeliner": "luozhuang2_184_652_liner.png",
+"eyeliner_a": "0.81",
+"eyeliner_c": "150016",
+
+
+"lip": "110029",
+"lip_a": "0.45",
+
+
+"blush":"wuhuizhuang02_63_654_blush.png",
+"blush_a": "0.29",
+"blush_c": "120019",
+"makeup_alpha": "0.8",
+
+"bottom_alpha" : "0.5",
+
+"base":"100000",
+
+"base_a": "0.5"
+      
+
+
+}

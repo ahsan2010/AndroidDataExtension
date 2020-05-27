@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/ui_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="top" android:id="@id/bannerContainerID" android:tag="bannerRelative" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <FrameLayout android:layout_gravity="center|left|top" android:id="@id/gl_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="55.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="105.0dip" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/adjustbottom" android:layout_width="fill_parent" android:layout_height="135.0dip">
+        <com.fotoable.fotoproedit.view.ui.ProEidtActionBarView android:layout_gravity="bottom" android:id="@id/proEidtActionBarView1" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+        <HorizontalScrollView android:layout_gravity="bottom" android:background="@color/ui_main_text_color" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginBottom="44.0dip" android:isScrollContainer="true">
+            <LinearLayout android:orientation="horizontal" android:background="@color/ui_main_text_color" android:layout_width="wrap_content" android:layout_height="56.0dip" android:isScrollContainer="true">
+                <com.fotoable.fotoproedit.activity.adjust.AdjustButtomItemView android:id="@id/btn_brightness" android:layout_width="56.0dip" android:layout_height="fill_parent" />
+                <com.fotoable.fotoproedit.activity.adjust.AdjustButtomItemView android:id="@id/btn_balance" android:layout_width="56.0dip" android:layout_height="fill_parent" />
+                <com.fotoable.fotoproedit.activity.adjust.AdjustButtomItemView android:id="@id/btn_comtrait" android:layout_width="56.0dip" android:layout_height="fill_parent" />
+                <com.fotoable.fotoproedit.activity.adjust.AdjustButtomItemView android:id="@id/btn_saturation" android:layout_width="56.0dip" android:layout_height="fill_parent" />
+                <com.fotoable.fotoproedit.activity.adjust.AdjustButtomItemView android:id="@id/btn_sharpen" android:layout_width="56.0dip" android:layout_height="fill_parent" />
+                <com.fotoable.fotoproedit.activity.adjust.AdjustButtomItemView android:id="@id/btn_shadow" android:layout_width="56.0dip" android:layout_height="fill_parent" />
+                <com.fotoable.fotoproedit.activity.adjust.AdjustButtomItemView android:id="@id/btn_hightlight" android:layout_width="56.0dip" android:layout_height="fill_parent" />
+                <com.fotoable.fotoproedit.activity.adjust.AdjustButtomItemView android:id="@id/btn_colotemp" android:layout_width="56.0dip" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <RelativeLayout android:layout_gravity="top" android:id="@id/opacity_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip">
+            <SeekBar android:layout_gravity="left" android:id="@id/scn_opacity_seekbar" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="10.0dip" android:maxHeight="2.0dip" android:progressDrawable="@drawable/progress_slider" android:minHeight="2.0dip" android:thumb="@drawable/progress_control" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

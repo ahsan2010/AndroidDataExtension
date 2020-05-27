@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/capturePhoto_preview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="top" android:id="@id/surfaceViewcontainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="44.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/img_wait_take_photo" android:background="@drawable/gr_capture_wait" android:visibility="invisible" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+        <View android:id="@id/view_filllight_use" android:background="@color/white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="45.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/img_touch_focus" android:background="@drawable/btn_prisma_focus" android:visibility="invisible" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+        <FrameLayout android:id="@id/camera_preview_container" android:background="@drawable/bg_prisma_grnav" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <ImageView android:layout_gravity="center|left" android:id="@id/img_back_camera" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_prisma_cancel" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/img_switch_camera" android:layout_width="52.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_prisma_rotatecam" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/img_flash_camera" android:layout_width="52.0dip" android:layout_height="45.0dip" android:layout_marginRight="53.0dip" android:src="@drawable/btn_prisma_flash_off" />
+        </FrameLayout>
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/capturePhoto_toolbar" android:background="@color/normal_gray" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ImageButton android:id="@id/button_capture" android:background="@drawable/btn_prisma_takephoto" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/button_from_library" android:background="@drawable/btn_prisma_library" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/no_touch_container" android:background="@color/transparent" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/waittingcontainer" android:background="@color/transparent" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar1" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/font_select_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="36.0dip" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/ly_fontstyle" android:background="@color/font_no_select_black_dark" android:layout_width="36.0dip" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/img_fontstyle" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/ly_background" android:background="@color/font_no_select_black_dark" android:layout_width="36.0dip" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/img_background" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/ly_shadow_outline" android:background="@color/font_no_select_black_dark" android:layout_width="36.0dip" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/img_shadow_outline" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.fotoable.fotoproedit.activity.font.FontStyleGridView android:gravity="center" android:layout_gravity="right" android:id="@id/font_style_gridview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="41.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+    <GridView android:gravity="center" android:layout_gravity="right" android:id="@id/background_color_gridview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="41.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:listSelector="#00000000" android:horizontalSpacing="3.0dip" android:verticalSpacing="3.0dip" android:stretchMode="columnWidth" android:numColumns="7" />
+    <com.fotoable.fotoproedit.activity.font.FontShadowOutlineEditView android:gravity="center" android:layout_gravity="right" android:id="@id/shadow_outline_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="46.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" />
+</FrameLayout>

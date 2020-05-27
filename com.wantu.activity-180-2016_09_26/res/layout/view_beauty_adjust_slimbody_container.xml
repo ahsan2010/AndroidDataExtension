@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center|left" android:background="@color/fotobeauty_bg" android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/bar_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="50.0dip">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/auto_beauty_degree" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_weight="1.0">
+            <SeekBar android:layout_gravity="center_vertical" android:id="@id/adjust_slimbody_seekbar" android:paddingLeft="15.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progressDrawable="@drawable/progress_slider" android:minHeight="2.0dip" android:thumb="@drawable/progress_control" android:layout_weight="0.69" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/manual_beauty_degree" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_weight="1.0">
+            <Button android:id="@id/help_hint_slimface" android:background="@drawable/btn_tip_res" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+            <Button android:id="@id/undobtn" android:background="@drawable/btn_beauty_undo_res" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="5.0dip" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/buttons" android:background="@drawable/btn_beauty_qudou_pensize_small" android:layout_width="50.0dip" android:layout_height="wrap_content" style="?android:attr/buttonStyleSmall" />
+            <Button android:id="@id/buttonm" android:background="@drawable/btn_beauty_qudou_pensize_middle" android:layout_width="50.0dip" android:layout_height="wrap_content" style="?android:attr/buttonStyleSmall" />
+            <Button android:id="@id/buttonl" android:background="@drawable/btn_beauty_qudou_pensize_lg" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" style="?android:attr/buttonStyleSmall" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center|right" android:id="@id/auto_manual_switch" android:background="@color/transparent" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:text="@string/auto" />
+</FrameLayout>

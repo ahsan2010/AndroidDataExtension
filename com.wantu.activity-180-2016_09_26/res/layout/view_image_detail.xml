@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center|left|top" android:id="@id/detailcontainer" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/imageview" android:layout_width="200.0dip" android:layout_height="200.0dip" />
+        <com.fotoable.beautyui.SlimFaceLineView android:id="@id/slimfaelineview" android:layout_width="200.0dip" android:layout_height="200.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/targetareasize" android:background="@drawable/gr_targetarea" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,73 @@
+{
+    "170000" : {
+        "pids":["170000"],
+        "alpha":"0.7",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_lip_1.png",
+        "colorid":"170000"
+    },
+    "170001" : {
+        "pid":"170000",
+        "alpha":"0.7",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_lip_2.png",
+        "colorid":"170001"
+    },
+    "170002" : {
+        "pid":"170000",
+        "alpha":"0.7",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_lip_3.png",
+        "colorid":"170002"
+    },
+    "170003" : {
+        "pid":"170000",
+        "alpha":"0.7",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_lip_4.png",
+        "colorid":"170003"
+    },
+    "170004" : {
+        "pid":"170000",
+        "alpha":"0.7",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_lip_5.png",
+        "colorid":"170004"
+    },
+    "170005" : {
+        "pid":"170000",
+        "alpha":"0.7",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_lip_6.png",
+        "colorid":"170005"
+    },
+    "170006" : {
+        "pid":"170000",
+        "alpha":"0.7",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_lip_7.png",
+        "colorid":"170006"
+    }
+  
+}

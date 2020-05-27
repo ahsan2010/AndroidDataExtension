@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom|center" android:id="@id/FrameLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res-auto="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/layout_area" android:layout_width="320.0dip" android:layout_height="229.0dip">
+        <FrameLayout android:layout_gravity="center|left|top" android:layout_width="70.0dip" android:layout_height="97.0dip" android:layout_marginLeft="32.0dip" android:layout_marginTop="20.0dip">
+            <com.wantu.view.SAutoBgFrameLayout android:layout_gravity="top" android:id="@id/item_instamag" android:layout_width="70.0dip" android:layout_height="70.0dip" />
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@id/item_library_text_container" android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <com.wantu.activity.mainpage.MainFontFitTextView android:enabled="false" android:textSize="13.0sp" android:textColor="@color/solid_black" android:ellipsize="none" android:gravity="center" android:layout_gravity="bottom" android:id="@id/tv_beauty" android:paddingBottom="6.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/mag_library" android:singleLine="true" res-auto:maxFontSize="13.0sp" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center|top" android:layout_width="70.0dip" android:layout_height="97.0dip" android:layout_marginTop="20.0dip">
+            <com.wantu.view.SAutoBgFrameLayout android:layout_gravity="top" android:id="@id/btn_secretalbum" android:layout_width="70.0dip" android:layout_height="70.0dip" />
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@id/secretalbum_text" android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <com.wantu.activity.mainpage.MainFontFitTextView android:textSize="13.0sp" android:textColor="@color/solid_black" android:ellipsize="none" android:gravity="center" android:layout_gravity="bottom" android:id="@id/tv_secretalbum" android:paddingBottom="6.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/pip" android:singleLine="true" res-auto:maxFontSize="13.0sp" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center|right|top" android:layout_width="70.0dip" android:layout_height="97.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="32.0dip">
+            <com.fotoable.adbuttonlib.TAdButton android:id="@id/item_adC01" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginRight="0.0dip" />
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@id/ad02_text_container" android:layout_width="fill_parent" android:layout_height="27.0dip">
+                <com.wantu.activity.mainpage.MainFontFitTextView android:textSize="13.0sp" android:textColor="@color/solid_black" android:ellipsize="none" android:gravity="center" android:layout_gravity="bottom" android:id="@id/item_name01" android:paddingBottom="6.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" res-auto:maxFontSize="13.0sp" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center|top" android:layout_width="256.0dip" android:layout_height="84.0dip" android:layout_marginTop="122.0dip">
+            <com.fotoable.adbuttonlib.TAdButton android:id="@id/item_adC02" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="0.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center|left|top" android:id="@id/layout_prev_page" android:background="@drawable/btn_prevpage" android:visibility="visible" android:layout_width="39.0dip" android:layout_height="39.0dip" android:layout_marginTop="95.0dip" />
+    </FrameLayout>
+</FrameLayout>

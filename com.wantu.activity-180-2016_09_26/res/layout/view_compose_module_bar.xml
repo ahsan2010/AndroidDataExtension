@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:id="@id/ly_module_sub_container" android:layout_width="250.0dip" android:layout_height="50.0dip">
+        <LinearLayout android:id="@id/compose_module" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_gravity="center" android:id="@id/compose_modue_bar_layout_frame" android:background="@drawable/btn_section_sta" android:layout_width="75.0dip" android:layout_height="40.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@id/im_background" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/gr_tab_icon_style" />
+                    <TextView android:textSize="11.0sp" android:textColor="@color/solid_black" android:layout_gravity="center" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_collage_style" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/bottom_share" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_gravity="center" android:id="@id/compose_module_bar_layout_corner" android:background="@drawable/btn_section_sta" android:layout_width="75.0dip" android:layout_height="40.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@id/im_share" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/gr_tab_icon_corner" />
+                    <TextView android:textSize="11.0sp" android:textColor="@color/solid_black" android:layout_gravity="center" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_collage_effect" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/compose_long" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_gravity="center" android:id="@id/compose_module_bar_layout_bg" android:background="@drawable/btn_section_sta" android:layout_width="75.0dip" android:layout_height="40.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@id/im_resize" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/gr_tab_icon_bg" />
+                    <TextView android:textSize="11.0sp" android:textColor="@color/solid_black" android:layout_gravity="center" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_collage_bg" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

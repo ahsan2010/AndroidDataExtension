@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/ui_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="top" android:id="@id/bannerContainerID" android:tag="bannerRelative" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <FrameLayout android:layout_gravity="center|left|top" android:id="@id/ly_imgae_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="55.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="105.0dip">
+        <com.wantu.imagerender.ImageGLSurfaceView android:layout_gravity="center" android:id="@id/gl_render_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/filterbottom" android:layout_width="fill_parent" android:layout_height="135.0dip">
+        <FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ly_filter_container" android:layout_width="fill_parent" android:layout_height="91.0dip" android:layout_marginBottom="44.0dip">
+            <SeekBar android:layout_gravity="top" android:id="@id/scn_opacity_seekbar" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="10.0dip" android:maxHeight="2.0dip" android:progress="80" android:progressDrawable="@drawable/progress_slider_new" android:minHeight="2.0dip" android:thumb="@drawable/progress_control" />
+            <FrameLayout android:layout_gravity="bottom" android:background="@drawable/ui_gr_proeditbg" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                    <FrameLayout android:layout_gravity="bottom" android:id="@id/container_lomo" android:background="#ff007aff" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginBottom="0.0dip" android:layout_alignParentLeft="true">
+                        <Button android:layout_gravity="center" android:id="@id/lomo_library_btn" android:background="@drawable/btn_mag_download" android:layout_width="40.0dip" android:layout_height="56.0dip" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/textmorelomo" android:layout_width="40.0dip" android:layout_height="20.0dip" android:layout_marginBottom="3.0dip" android:text="@string/more" />
+                    </FrameLayout>
+                    <com.wantu.view.TFilterListScrollView android:layout_gravity="center_vertical" android:id="@id/tFilterListScrollView_lomo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/container_lomo" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                    <FrameLayout android:layout_gravity="bottom" android:id="@id/container_beauty" android:background="#ff007aff" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginBottom="0.0dip" android:layout_alignParentLeft="true">
+                        <Button android:layout_gravity="center" android:id="@id/beauty_library_btn" android:background="@drawable/btn_mag_download" android:layout_width="40.0dip" android:layout_height="56.0dip" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/textmorebeauty" android:layout_width="40.0dip" android:layout_height="20.0dip" android:layout_marginBottom="3.0dip" android:text="@string/more" />
+                    </FrameLayout>
+                    <com.wantu.view.TFilterListScrollView android:layout_gravity="center_vertical" android:id="@id/tFilterListScrollView_beauty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/container_beauty" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                    <FrameLayout android:layout_gravity="bottom" android:id="@id/container_arts" android:background="#ff007aff" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginBottom="0.0dip" android:layout_alignParentLeft="true">
+                        <Button android:layout_gravity="center" android:id="@id/arts_library_btn" android:background="@drawable/btn_mag_download" android:layout_width="40.0dip" android:layout_height="56.0dip" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/textmorearts" android:layout_width="40.0dip" android:layout_height="20.0dip" android:layout_marginBottom="3.0dip" android:text="@string/more" />
+                    </FrameLayout>
+                    <com.wantu.view.TFilterListScrollView android:layout_gravity="center_vertical" android:id="@id/tFilterListScrollView_arts" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/container_arts" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                    <FrameLayout android:layout_gravity="bottom" android:id="@id/container_styles" android:background="#ff007aff" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginBottom="0.0dip" android:layout_alignParentLeft="true">
+                        <Button android:layout_gravity="center" android:id="@id/style_library_btn" android:background="@drawable/btn_mag_download" android:layout_width="40.0dip" android:layout_height="56.0dip" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/textmorestyle" android:layout_width="40.0dip" android:layout_height="20.0dip" android:layout_marginBottom="3.0dip" android:text="@string/more" />
+                    </FrameLayout>
+                    <com.wantu.view.TFilterListScrollView android:layout_gravity="center_vertical" android:id="@id/tFilterListScrollView_style" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/container_styles" />
+                </RelativeLayout>
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/ly_action_bar" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <com.fotoable.fotoproedit.view.ui.ProEidtActionBarView android:id="@id/proEidtActionBarView1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:layout_gravity="center" android:id="@id/ly_filter_cata" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="60.0dip" android:layout_marginRight="60.0dip">
+                <FrameLayout android:id="@id/lomo_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/lomo_image" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/gr_filter_classic" android:scaleType="fitCenter" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/beauty_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/beauty_image" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/gr_filter_beauty" android:scaleType="fitCenter" />
+                </FrameLayout>
+                <FrameLayout android:layout_gravity="center_vertical" android:id="@id/arts_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/arts_image" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/gr_filter_artistic" android:scaleType="fitCenter" />
+                </FrameLayout>
+                <FrameLayout android:layout_gravity="center_vertical" android:id="@id/style_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/style_image" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/gr_filter_elegance" android:scaleType="fitCenter" />
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <com.fotoable.fotoproedit.activity.filter.FilterManageOnlineView android:layout_gravity="top" android:id="@id/mainlibraryview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

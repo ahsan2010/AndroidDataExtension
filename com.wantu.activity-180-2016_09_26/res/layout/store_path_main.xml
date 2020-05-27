@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wantu.setting.BackPathActionBarView android:id="@id/actionBarView" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/solid_black" android:gravity="center_vertical" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:text="@string/current_Directory" android:layout_below="@id/actionBarView" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/solid_black" android:id="@id/absolute_path_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:text="textView0" android:singleLine="true" android:layout_below="@id/label" />
+    <FrameLayout android:id="@id/store_path_btn" android:background="@drawable/store_path_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/absolute_path_name">
+        <TextView android:textSize="25.0sp" android:textColor="@color/solid_white" android:layout_gravity="center" android:id="@id/set_store_path_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_store_path" />
+    </FrameLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/solid_black" android:id="@id/hint_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="@string/hint_message" android:layout_below="@id/store_path_btn" />
+</RelativeLayout>

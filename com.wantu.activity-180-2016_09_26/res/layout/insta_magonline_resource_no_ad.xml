@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:background="@color/local_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/include1" android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.fotoable.view.actionbar.CommonActionBarView android:id="@id/actionBarView" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bannerContainerID" android:tag="bannerRelative" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bannerContainerID" android:layout_below="@id/include1" android:layout_alignParentLeft="true">
+        <FrameLayout android:id="@id/materials_contrainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" />
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/downloadProgressBar" android:visibility="invisible" android:layout_width="70.0dip" android:layout_height="70.0dip" android:indeterminate="true" android:indeterminateBehavior="cycle" android:layout_centerInParent="true" />
+</RelativeLayout>

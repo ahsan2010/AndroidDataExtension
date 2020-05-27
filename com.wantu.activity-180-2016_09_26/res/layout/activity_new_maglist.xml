@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff262626" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip">
+        <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/ly_closedown" android:background="@drawable/gr_edit_shade" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <Button android:enabled="false" android:layout_gravity="center" android:id="@id/btnClose" android:background="@drawable/btn_closedownload" android:clickable="false" android:layout_width="33.0dip" android:layout_height="33.0dip" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/bannerContainerID" android:tag="bannerRelative" android:background="@color/ad_banner_background_color" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/ly_process" android:background="@drawable/bg_process_dailog" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="80.0dip" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip">
+        <ProgressBar android:layout_gravity="center|left" android:id="@id/loading" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:indeterminateDrawable="@drawable/custom_progress_loading" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/solid_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center|left" android:clickable="false" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="60.0dip" android:layout_marginRight="20.0dip" android:text="@string/loading" android:singleLine="true" />
+    </FrameLayout>
+</FrameLayout>

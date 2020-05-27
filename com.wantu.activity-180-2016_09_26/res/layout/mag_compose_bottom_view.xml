@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="top" android:layout_width="fill_parent" android:layout_height="93.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center|left|top" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="bottom|center|left" android:id="@id/ly_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.fotoable.comlib.ui.HorizontalListView android:layout_gravity="bottom|center|left" android:id="@id/horizontalReuseListView1" android:layout_width="fill_parent" android:layout_height="93.0dip" android:layout_marginLeft="60.0dip" />
+            <ImageView android:layout_gravity="bottom" android:id="@id/download" android:background="#ff007aff" android:layout_width="50.0dip" android:layout_height="93.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/btn_mag_download" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

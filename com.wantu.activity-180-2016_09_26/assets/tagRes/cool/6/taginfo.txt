@@ -1,0 +1,5 @@
+{"previewImg":"gr_hand8_icon.jpg","centerX":0,"centerY":62,"width":133,"height":100,"oriention":3,"basicView":
+[{"viewNum":0,"viewtype":0,"textColor":{"R":0,"G":0,"B":0,"A":100},"isBold":"false","isShadow":"false","fontSize":20,"textLines":1},
+{"viewNum":1,"viewtype":1,"x":0,"y":0,"w":86,"h":100,"imageName":"gr_hand8_01.png","isContentView":"false"},
+{"viewNum":2,"viewtype":1,"x":86,"y":32,"w":12,"h":60,"imageName":"gr_hand8_02.png","isContentView":"true"},
+{"viewNum":3,"viewtype":1,"x":98,"y":32,"w":35,"h":60,"imageName":"gr_hand8_03.png","isContentView":"false"}],"outview":[]}

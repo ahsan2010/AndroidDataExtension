@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/ui_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/ly_bottom" android:background="@drawable/ui_gr_proeditbg" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <com.fotoable.fotoproedit.view.ui.scroll.TProEditStretchBottomBar android:layout_gravity="bottom" android:id="@id/t_common_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/ly_bottom_tip" android:background="@drawable/ui_gr_proeditbg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <com.fotoable.fotoproedit.view.ui.scroll.TProEditStretchSculptBar android:layout_gravity="bottom" android:id="@id/t_tip_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="top" android:id="@id/ly_action_bar" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <com.fotoable.fotoproedit.view.ui.ProEidtActionBarView android:id="@id/proEidtActionBarView1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/ly_imgae_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="44.0dip" android:layout_marginBottom="56.0dip">
+        <com.fotoable.fotoproedit.activity.stretch.StretchImageView android:layout_gravity="center" android:id="@id/img_display" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom|center|right" android:id="@id/btn_start_area" android:background="@drawable/btn_stretchstart" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="59.0dip">
+        <TextView android:textSize="10.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/start_sculpt" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/ly_sketchSliderView" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="60.0dip">
+        <SeekBar android:layout_gravity="center" android:id="@id/color_slider" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progressDrawable="@drawable/progress_slider" android:minHeight="2.0dip" android:thumb="@drawable/progress_control" />
+    </FrameLayout>
+</FrameLayout>

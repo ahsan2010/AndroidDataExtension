@@ -1,0 +1,62 @@
+{
+    "180000" : {
+        "pids":["180000"],
+        "alpha":"0.4",
+        "texture":"liangfen01_102_585_liangfen.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_g1.png"
+    },
+    "180001" : {
+        "pids":["180000"],
+        "alpha":"0.4",
+        "texture":"liangfen02_144_589_liangfen.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_g2.png"
+    },
+    "180002" : {
+        "pids":["180000"],
+        "alpha":"0.4",
+        "texture":"liangfen03_156_654_liangfen.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_g3.png"
+    },
+    "180003" : {
+        "pids":["180000"],
+        "alpha":"0.4",
+        "texture":"liangfen04_190_611_liangfen.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_g4.png"
+    },
+    "180004" : {
+        "pids":["180000"],
+        "alpha":"0.4",
+        "texture":"liangfen05_159_613_liangfen.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_g5.png"
+    },
+    "180005" : {
+        "pids":["180000"],
+        "alpha":"0.4",
+        "texture":"liangfen06_150_599_liangfen.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_g6.png"
+    }
+}

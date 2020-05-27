@@ -1,0 +1,166 @@
+{
+    "100000" : {
+        "pids":["100000"],
+        "alpha":"0.8",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_b1.png",
+        "colorid":"100000"
+    },
+    "100001" : {
+        "pids":["100000"],
+        "alpha":"0.8",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_b2.png",
+        "colorid":"100001"
+    },
+
+    "100002" : {
+        "pids":["100000"],
+        "alpha":"0.8",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_b3.png",
+        "colorid":"100002"
+    },
+
+    "100003" : {
+        "pids":["100000"],
+        "alpha":"0.8",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_b4.png",
+        "colorid":"100003"
+    },
+
+    "100004" : {
+        "pids":["100000"],
+        "alpha":"0.8",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_b5.png",
+        "colorid":"100004"
+    },
+
+    "100005" : {
+        "pids":["100000"],
+        "alpha":"0.8",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_b6.png",
+        "colorid":"100005"
+    },
+
+    "100006" : {
+        "pids":["100000"],
+        "alpha":"0.8",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_b7.png",
+        "colorid":"100006"
+    },
+
+    "100007" : {
+        "pids":["100000"],
+        "alpha":"0.8",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_b8.png",
+        "colorid":"100007"
+    },
+
+    "100008" : {
+        "pids":["100000"],
+        "alpha":"0.8",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_b9.png",
+        "colorid":"100008"
+    },
+
+    "100009" : {
+        "pids":["100000"],
+        "alpha":"0.8",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_b10.png",
+        "colorid":"100009"
+    },
+
+    "100010" : {
+        "pids":["100000"],
+        "alpha":"0.8",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_b11.png",
+        "colorid":"100010"
+    },
+
+    "100011" : {
+        "pids":["100000"],
+        "alpha":"0.8",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_b12.png",
+        "colorid":"100011"
+    },
+
+    "100012" : {
+        "pids":["100000"],
+        "alpha":"0.8",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_b13.png",
+        "colorid":"100012"
+    },
+
+    "100013" : {
+        "pids":["100000"],
+        "alpha":"0.8",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_b14.png",
+        "colorid":"100013"
+    },
+
+    "100014" : {
+        "pids":["100000"],
+        "alpha":"0.8",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"gr_style_b15.png",
+        "colorid":"100014"
+    }
+
+}

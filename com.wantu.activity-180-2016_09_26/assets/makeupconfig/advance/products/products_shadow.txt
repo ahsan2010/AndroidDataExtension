@@ -1,0 +1,10 @@
+{
+    "160000" : {
+        "brandId":"10000",
+        "cnname":"YouMakeup",
+        "cnnname":"YouMakeup",
+        "enname":"YouMakeup",
+        "iconPath":"",
+        "link":""
+    }
+}

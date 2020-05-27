@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff1f1f1f" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_notification_launcher" android:layout_width="42.0dip" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_toRightOf="@id/iv_notification_launcher" android:layout_centerVertical="true">
+        <TextView android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/tv_notify_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notify_current_level" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff9b9b9b" android:id="@id/tv_notify_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/notify_click_optimize" android:layout_below="@id/tv_notify_title" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/text_percent_low" android:id="@id/tv_notify_title_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notify_lower_20" android:layout_toRightOf="@id/tv_notify_title" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/iv_notify_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notify_low_power_save" />
+        <TextView android:textSize="8.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/optimize" />
+    </LinearLayout>
+</RelativeLayout>

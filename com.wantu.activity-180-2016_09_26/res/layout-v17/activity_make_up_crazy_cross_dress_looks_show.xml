@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/navibar" android:background="#ff1c1c1c" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <Button android:id="@id/back_btn" android:background="@drawable/btn_edit_cancel" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="backBtnClicked" android:layout_alignParentStart="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crazy_title" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <HorizontalScrollView android:id="@id/tabScroll" android:background="#ff1c1c1c" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="44.0dip" android:layoutDirection="ltr">
+        <LinearLayout android:orientation="horizontal" android:id="@id/tablinearout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layoutDirection="ltr" />
+    </HorizontalScrollView>
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:background="#ffbebebe" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="88.0dip" android:layout_marginBottom="0.0dip">
+        <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ListView android:id="@id/showlooslist" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="88.0dip" android:listSelector="#00000000" android:divider="@color/transparent" />
+    <FrameLayout android:id="@id/nonetwork" android:background="#ff585858" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="44.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/nonetworkimage" android:layout_width="258.0dip" android:layout_height="79.0dip" android:src="@drawable/gr_notnetwork" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/waittingcontainer" android:background="@color/transparent" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar1" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+    </FrameLayout>
+</FrameLayout>

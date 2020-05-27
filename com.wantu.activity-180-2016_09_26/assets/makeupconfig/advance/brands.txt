@@ -1,0 +1,16 @@
+{
+    "10000" : {
+        "cnname":"YouMakeup",
+        "cnnname":"YouMakeup",
+        "enname":"YouMakeup",
+        "iconPath":"",
+        "link":""
+    },
+    "10001" : {
+        "cnname":"美宝莲",
+        "cnnname":"美宝莲",
+        "enname":"Maybelline",
+        "iconPath":"",
+        "link":""
+}
+}

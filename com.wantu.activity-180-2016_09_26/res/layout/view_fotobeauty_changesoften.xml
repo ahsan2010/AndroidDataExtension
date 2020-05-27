@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="bottom|center" android:layout_gravity="center|left|top" android:id="@id/softentextview" android:layout_width="40.0dip" android:layout_height="20.0dip" android:text="+1" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center|left|top" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="20.0dip" android:text="@string/Soften" android:singleLine="true" />
+    <com.fotoable.beautyui.secnewui.filter.softenSeekbar.PhasedSeekBar android:layout_gravity="center|left|top" android:id="@id/softenseekbar" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="62.0dip" android:layout_marginTop="20.0dip" />
+</FrameLayout>

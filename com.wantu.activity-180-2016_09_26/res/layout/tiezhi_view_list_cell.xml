@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center|left|top" android:id="@id/cellLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:gravity="center|left|top" android:layout_gravity="bottom" android:id="@id/cellitem_1" android:layout_width="70.0dip" android:layout_height="80.0dip" android:layout_marginLeft="8.0dip">
+            <com.fotoable.sketch.view.TTieZhiViewCell android:layout_gravity="center" android:id="@id/cell_view1" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center|left|top" android:layout_gravity="bottom" android:id="@id/cellitem_2" android:layout_width="70.0dip" android:layout_height="80.0dip" android:layout_marginLeft="8.0dip">
+            <com.fotoable.sketch.view.TTieZhiViewCell android:layout_gravity="center" android:id="@id/cell_view2" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center|left|top" android:layout_gravity="bottom" android:id="@id/cellitem_3" android:layout_width="70.0dip" android:layout_height="80.0dip" android:layout_marginLeft="8.0dip">
+            <com.fotoable.sketch.view.TTieZhiViewCell android:layout_gravity="center" android:id="@id/cell_view3" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center|left|top" android:layout_gravity="bottom" android:id="@id/cellitem_4" android:layout_width="70.0dip" android:layout_height="80.0dip" android:layout_marginLeft="8.0dip">
+            <com.fotoable.sketch.view.TTieZhiViewCell android:layout_gravity="center" android:id="@id/cell_view4" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

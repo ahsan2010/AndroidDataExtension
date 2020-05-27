@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res-auto="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center|left|top" android:id="@id/imageView1ParentView" android:layout_width="154.0dip" android:layout_height="205.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="0.0dip">
+        <com.wantu.activity.link.view.LinkImageView android:layout_gravity="center" android:id="@id/imageView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|left|top" android:id="@id/imageView2ParentView" android:layout_width="154.0dip" android:layout_height="205.0dip" android:layout_marginLeft="162.0dip">
+        <com.wantu.activity.link.view.LinkImageView android:layout_gravity="center" android:id="@id/imageView2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|left|top" android:layout_width="74.0dip" android:layout_height="20.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="12.0dip">
+        <com.wantu.activity.link.view.UILabel android:textColor="@color/black" android:ellipsize="none" android:gravity="center" android:id="@id/title1" android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Death Valley" android:singleLine="true" res-auto:maxFontSize="15.0sp" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|left|top" android:layout_width="74.0dip" android:layout_height="20.0dip" android:layout_marginLeft="242.0dip" android:layout_marginTop="12.0dip">
+        <com.wantu.activity.link.view.UILabel android:textColor="@color/black" android:ellipsize="none" android:gravity="center" android:id="@id/title2" android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Death Valley" android:singleLine="true" res-auto:maxFontSize="15.0sp" />
+    </FrameLayout>
+</FrameLayout>

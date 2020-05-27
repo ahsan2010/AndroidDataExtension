@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/collection_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <HorizontalScrollView android:layout_gravity="top" android:id="@id/collection_scrollView" android:background="#7d000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+</FrameLayout>

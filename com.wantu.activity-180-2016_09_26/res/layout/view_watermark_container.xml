@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff363636" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="30.0dip">
+        <com.fotoable.watermark.WaterMarkRecyclerView android:layout_gravity="center" android:id="@id/watermarkscrollview" android:layout_width="fill_parent" android:layout_height="80.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/btn_close" android:background="@drawable/btn_watermark_down" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+    </FrameLayout>
+</FrameLayout>

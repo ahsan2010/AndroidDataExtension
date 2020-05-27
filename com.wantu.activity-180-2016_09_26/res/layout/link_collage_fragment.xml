@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/gr_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bannerContainerID" android:tag="bannerRelative" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="40.0dip" />
+    <com.instamag.activity.view.TMagComposeFrameLayout android:id="@id/composeFrameLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.wantu.imagerender.ImageGLSurfaceView android:id="@id/gl_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ScrollView android:id="@id/scrollContainerView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/scrollViewlayout" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <FrameLayout android:id="@id/backgroundlayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/backgroundImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+            </FrameLayout>
+        </ScrollView>
+        <com.wantu.view.ImagesMovingView android:id="@id/movingView" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.instamag.activity.view.TMagComposeFrameLayout>
+    <FrameLayout android:layout_gravity="top" android:id="@id/actionBarLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <Button android:layout_gravity="left" android:id="@id/btn_cancel" android:layout_width="52.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" />
+        <Button android:layout_gravity="right" android:id="@id/btn_save" android:layout_width="52.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" />
+    </FrameLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/textEditorBar" android:background="@color/solid_semi_black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/textEditor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_toLeftOf="@id/textModifyButton" android:layout_alignParentLeft="true" android:inputType="text">
+            <requestFocus />
+        </EditText>
+        <Button android:id="@id/textModifyButton" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/input_ok" android:layout_alignBottom="@id/textEditor" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/correct_camera_orientation_dialog_bg" android:layout_width="270.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_truegray" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/record_error_head" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_truegray" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/audio_deny_content" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip">
+        <Button android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/surebutton" android:background="@drawable/btn_bg_correct_camera_orientation" android:layout_width="200.0dip" android:layout_height="30.0dip" android:text="@string/camera_error_sure" />
+        <LinearLayout android:orientation="vertical" android:id="@id/audioDenyContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android1:gravity="bottom" android1:orientation="vertical" android1:background="@color/transparent" android1:layout_width="fill_parent" android1:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:android1="http://schemas.android.com/apk/res/android">
+    <com.fotoable.alertAd.TAlertAdView android1:id="@id/tAlertAdView1" android1:layout_width="wrap_content" android1:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffdcdcdc" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.fotoable.fotoproedit.activity.tagtag.TagEditText android:textSize="16.0sp" android:textColor="#dc323232" android:layout_gravity="center|left|top" android:id="@id/txt_place_input" android:background="@drawable/round_corner_tag" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="61.0dip" android:layout_marginBottom="7.0dip" android:hint="@string/tag_input_prompt" android:singleLine="true" android:drawableRight="@drawable/btn_tad_cancel" android:imeOptions="actionDone" />
+        <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="right" android:id="@id/txt_place_ok" android:background="@drawable/btn_cancel_dark" android:layout_width="47.0dip" android:layout_height="36.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="7.0dip" />
+    </FrameLayout>
+    <ListView android:id="@id/tag_history_place_list" android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@drawable/bg_tag_list_item_press" android:divider="@color/line_gray" android:dividerHeight="1.0px" android:layout_weight="1.0" android:headerDividersEnabled="false" android:footerDividersEnabled="true" />
+</LinearLayout>

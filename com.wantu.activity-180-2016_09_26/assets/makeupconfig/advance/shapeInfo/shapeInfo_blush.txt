@@ -1,0 +1,78 @@
+{
+    "120000" : {
+    "pids":["120000"],
+    "alpha":"1.0",
+    "texture":"nongzhuang8_87_701_blush.png",
+    "enname":"nongzhuang8",
+    "cnname":"nongzhuang8",
+    "cnnname":"nongzhuang8",
+    "starIconPath":"",
+    "iconPath":"gr_brush_5.png",
+    "defaultColorInfoId":"120000"
+    },
+
+
+    "120001" : {
+    "pids":["120000"],
+    "alpha":"1.0",
+    "texture":"nongzhuang1_79_698_blush.png",
+    "enname":"nongzhuang1",
+    "cnname":"nongzhuang1",
+    "cnnname":"nongzhuang1",
+    "starIconPath":"",
+    "iconPath":"gr_brush_4.png",
+    "defaultColorInfoId":"120001"
+    },
+
+
+
+    "120002" : {
+    "pids":["120000"],
+    "alpha":"1.0",
+    "texture":"luozhuang4_108_721_blush.png",
+    "enname":"luozhuang4",
+    "cnname":"luozhuang4",
+    "cnnname":"luozhuang4",
+    "starIconPath":"",
+    "iconPath":"gr_brush_3.png",
+    "defaultColorInfoId":"120005"
+    },
+
+    "120003" : {
+    "pids":["120000"],
+    "alpha":"1.0",
+    "texture":"hanzhuang09_42_697_blush.png",
+    "enname":"hanzhuang09",
+    "cnname":"hanzhuang09",
+    "cnnname":"hanzhuang09",
+    "starIconPath":"",
+    "iconPath":"gr_brush_2.png",
+    "defaultColorInfoId":"120004"
+    },
+
+
+    "120004" : {
+    "pids":["120000"],
+    "alpha":"1.0",
+    "texture":"wuhuizhuang02_63_654_blush.png",
+    "enname":"wuhuizhuang02",
+    "cnname":"wuhuizhuang02",
+    "cnnname":"wuhuizhuang02",
+    "starIconPath":"",
+    "iconPath":"gr_brush_7.png",
+    "defaultColorInfoId":"120005"
+    },
+
+    "120005" : {
+    "pids":["120000"],
+    "alpha":"1.0",
+    "texture":"nongzhuang7_86_685_blush.png",
+    "enname":"nongzhuang7",
+    "cnname":"nongzhuang7",
+    "cnnname":"nongzhuang7",
+    "starIconPath":"",
+    "iconPath":"gr_brush_5.png",
+    "defaultColorInfoId":"120011"
+    }
+
+}

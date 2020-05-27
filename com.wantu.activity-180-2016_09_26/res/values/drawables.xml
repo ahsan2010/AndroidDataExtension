@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="ab_bg_black">#aa000000</item>
+    <item type="drawable" name="clr_normal">#00000000</item>
+    <item type="drawable" name="clr_pressed">#ff90cef4</item>
+    <item type="drawable" name="new_share_view_nomal">#ffffffff</item>
+    <item type="drawable" name="new_share_view_press">#ffd3d3d3</item>
+    <item type="drawable" name="pip_scroll_bg">#ff303030</item>
+    <item type="drawable" name="translucent_background">#e0000000</item>
+</resources>

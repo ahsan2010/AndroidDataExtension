@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+var NEW_USER_BOUNDARY_SESSION_NUM = 6;
+var OLD_USER_BOUNDARY_SESSION_NUM = 20;
+var JS_EVENT_NAME = 'js_event_new';
+var RICH_COUNTRYS = ["US", "DE", "JP", "GB", "AU", "KR", "IT", "CA", "NL", "ES", "TW", "FR", "SG", "AE", "HK", "IL", "SE", "ZA", "CH", "RU", "AT", "NO", "BE", "NZ", "PL", "GR", "IE", "DK", "PT", "FI"];
+
+function isNewUser(sessionNum) {
+    return (sessionNum <= NEW_USER_BOUNDARY_SESSION_NUM)
+}
+function isOldUser(sessionNum) {
+    return (sessionNum > OLD_USER_BOUNDARY_SESSION_NUM)
+}
+function consoleLog(tag, obj) {
+    console.log('===================== ' + tag);
+    console.log(obj);
+    console.log('===================== end')
+}
+function callUrl(url) {
+    document.writeln('<iframe src="' + url + '" style="display:none;" ></iframe>')
+}
+function callOCFuc(fucName, params) {
+    var url = 'fotoable://?type=callOCFuc&fucName=' + fucName + '&params=' + encodeURIComponent(JSON.stringify(params));
+    callUrl(url)
+}
+function excuteRequest(params) {
+    var url = 'fotoable://?type=callOCFuc&fucName=excuteUrl&params=' + encodeURIComponent(JSON.stringify(params));
+    callUrl(url)
+}
+function getDeviceData() {
+    var url = 'fotoable://?type=callOCFuc&fucName=getDeviceData&params=' + encodeURIComponent('{}') + '&callBack=deviceinfoTransform';
+    callUrl(url)
+}
+function dataConfigReady() {
+    var url = 'fotoable://?type=callOCFuc&fucName=dataConfigReady';
+    callUrl(url)
+}
+function logEvent(event, key, value) {
+    var params = {
+        event: event,
+        key: key,
+        value: value
+    };
+    var url = 'fotoable://?type=callOCFuc&fucName=logFabricEvent&params=' + encodeURIComponent(JSON.stringify(params));
+    callUrl(url)
+}
+</script>    <script>var globalDeviceInfos = null;
+var adConfig = JSON.parse('[{"posid":"pos5742cb361b305","type":1,"mode":1,"range":{"lt":0,"rt":100},"plans":{"groupid":"0637c5014ab54ea5f100afc1cbe81024","group":[{"usage_type":1,"range":{"lt":0,"rt":100},"desc":"a_wall_speed","strategy":[{"ccode":"DEFAULT","data":{"sdk":{"fb":{"level":100,"mid":"971620106251483_972059722874188","rate":100},"du":{"level":0,"mid":"10803","rate":100},"kika":{"level":0,"mid":"PhotoCollageWall","rate":100},"admob":{"level":0,"mid":"ca-app-pub-2494758279535445\/9763980012","rate":100}},"api":[]}}]}]}},{"posid":"pos57bc35110fe7b","type":5,"mode":1,"range":{"lt":0,"rt":100},"plans":{"groupid":"560ef1f907159568c111d5fe2a54a93b","group":[{"usage_type":2,"range":{"lt":0,"rt":100},"desc":"a_interstitial","strategy":[{"ccode":"DEFAULT","data":{"sdk":{"fb":{"level":100,"mid":"971620106251483_972060082874152","rate":100},"admob":{"level":0,"mid":"ca-app-pub-2494758279535445\/7750693213","rate":100}},"api":[]}}]}]}},{"posid":"pos57bc3511a70c9","type":3,"mode":1,"range":{"lt":0,"rt":100},"plans":{"groupid":"7f4824ce06fb703f7e5873e000cd3579","group":[{"usage_type":2,"range":{"lt":0,"rt":100},"desc":"SDKFullScreen","strategy":[{"ccode":"DEFAULT","data":{"sdk":{"fb":{"level":100,"mid":"971620106251483_1076694662410693","rate":100},"du":{"level":0,"mid":"16275","rate":100}},"api":[]}}]}]}},{"posid":"pos57bc3511c701a","type":2,"mode":1,"range":{"lt":0,"rt":100},"plans":{"groupid":"2fc5d91d968b67d7ac2c168dd239af16","group":[{"usage_type":1,"range":{"lt":0,"rt":100},"desc":"a_charge_speed","strategy":[{"ccode":"DEFAULT","data":{"sdk":{"fb":{"level":100,"mid":"971620106251483_1056496404430519","rate":100},"kika":{"level":0,"mid":"PhotoCollageCharge","rate":100},"du":{"level":0,"mid":"10838","rate":100},"admob":{"level":0,"mid":"ca-app-pub-2494758279535445\/2240713215","rate":100}},"api":[]}}]}]}},{"posid":"pos57bc3511e5a4f","type":4,"mode":1,"range":{"lt":0,"rt":100},"plans":{"groupid":"bdb3e5dc79cd39eb3fa9ac9ae2477915","group":[{"usage_type":1,"range":{"lt":0,"rt":100},"desc":"a_wall_gift_view","strategy":[{"ccode":"DEFAULT","data":{"sdk":{"fb":{"level":100,"mid":"971620106251483_1140288706051288","rate":100}},"api":[]}}]}]}},{"posid":"pos57bd2e2e387b0","type":1,"mode":1,"range":{"lt":0,"rt":100},"plans":{"groupid":"387778d2b727dc56d21d2bd363799c46","group":[{"usage_type":1,"range":{"lt":0,"rt":100},"desc":"a_lock_gift","strategy":[{"ccode":"DEFAULT","data":{"sdk":{"fb":{"level":100,"mid":"971620106251483_1140178916062267","rate":100}},"api":[]}}]}]}}]');
+consoleLog('adConfig', adConfig);
+function deviceinfoTransform(data) {
+    logEvent(JS_EVENT_NAME, 'js_init', 'start_init');
+    if (data == '') {
+        logEvent(JS_EVENT_NAME, 'js_init', 'device_info_null');
+        return
+    }
+    data = decodeURIComponent(data);
+    var obj = JSON.parse(data);
+    if (obj == false || obj.basicData == undefined) {
+        logEvent(JS_EVENT_NAME, 'js_init', 'device_info_format_error');
+        return
+    }
+    globalDeviceInfos = obj.basicData;
+    if (typeof globalDeviceInfos.countryCode === 'string') {
+        globalDeviceInfos.countryCode = globalDeviceInfos.countryCode.toUpperCase()
+    } else {
+        globalDeviceInfos.countryCode = 'DEFAULT'
+    }
+    if (navigator && navigator.userAgent) {
+        globalDeviceInfos.useragent = navigator.userAgent
+    }
+    consoleLog('globalDeviceInfos', globalDeviceInfos);
+    if (globalDeviceInfos.openTimes == undefined) {
+        globalDeviceInfos.openTimes = 0
+    }
+    consoleLog('session num', globalDeviceInfos.openTimes);
+    logEvent(JS_EVENT_NAME, 'js_init', 'ready');
+    dataConfigReady();
+}
+function getPosConfig(posid) {
+    var config = null;
+    for (var i in adConfig) {
+        if (adConfig[i].posid != undefined && adConfig[i].posid == posid) {
+            config = adConfig[i]
+        }
+    }
+    if (config != null) {
+        consoleLog('posConfig', config)
+    }
+    return config
+}
+function contains(arr, obj) {
+    var i = arr.length;
+    while (i--) {
+        if (arr[i] === obj) {
+            return true;
+        }
+    }
+    return false;
+}
+function getCountryStrategy(configs) {
+    var countryCode = globalDeviceInfos.countryCode;
+    if (globalDeviceInfos.realCountryCode != undefined && globalDeviceInfos.realCountryCode != '') {
+        countryCode = globalDeviceInfos.realCountryCode
+    }
+    consoleLog('countryCode', countryCode);
+    var strategy = null;
+    var strategyDT = null;
+    var strategyPR = null;
+    for (var i in configs) {
+        if (configs[i].ccode != undefined) {
+            if (configs[i].ccode == countryCode) {
+                strategy = configs[i].data
+            }
+            if (configs[i].ccode == 'DEFAULT') {
+                strategyDT = configs[i].data
+            }
+            if (configs[i].ccode == 'POOR') {
+                strategyPR = configs[i].data
+            }
+        }
+    }
+    var ret = null;
+    if(strategy != null) {
+        ret = strategy;
+    }else {
+        if(!contains(RICH_COUNTRYS, countryCode)) {
+            ret = strategyPR != null ? strategyPR : strategyDT;
+        }else {
+            ret = strategyDT;
+        }
+    }
+    consoleLog('strategy', ret);
+    return ret;
+}</script>    <script>var API_WEIGHT_CONFIG = {offer: 100.0, applovin: 100.0};
+var API_LEVEL_CONFIG = {offer: 99.0, applovin: 0.0};
+var globalAdApiObject = {};
+function apiReInit(posid) {
+    globalAdApiObject[posid] = {isRequestingNum: 0, ads: new Array(), hasShow: false}
+}
+function addRequestApi(posid) {
+    if (globalAdApiObject[posid] == undefined) {
+        return
+    }
+    globalAdApiObject[posid].isRequestingNum = globalAdApiObject[posid].isRequestingNum + 1
+}
+function removeRequestApi(posid) {
+    if (globalAdApiObject[posid] == undefined) {
+        return
+    }
+    globalAdApiObject[posid].isRequestingNum = globalAdApiObject[posid].isRequestingNum - 1
+}
+function getApiWeight(apiname) {
+    if (API_WEIGHT_CONFIG[apiname] != undefined) {
+        return API_WEIGHT_CONFIG[apiname]
+    }
+    return 0
+}
+function getApiLevel(apiname) {
+    if (API_LEVEL_CONFIG[apiname] != undefined) {
+        return API_LEVEL_CONFIG[apiname]
+    }
+    return 0
+}
+function isMaxApiWeight(apiname) {
+    var weight = getApiWeight(apiname);
+    for (var key in API_WEIGHT_CONFIG) {
+        if (API_WEIGHT_CONFIG[key] > weight) {
+            return false
+        }
+    }
+    return true
+}
+function addThirdADsWall(posid, ad) {
+    globalAdApiObject[posid].ads.push(ad);
+    if (isMaxApiWeight(ad.apiName)) {
+        retApiAdResult(posid)
+    }
+}
+function retApiAdResult(posid) {
+    if (globalAdApiObject[posid].hasShow == true) {
+        return
+    }
+    if (globalAdApiObject[posid].isRequestingNum > 0 && globalAdApiObject[posid].ads.length == 0) {
+        setTimeout(retApiAdResult, 50, posid);
+        return
+    }
+    globalAdApiObject[posid].hasShow = true;
+    var posAdApiObject = globalAdApiObject[posid];
+    var ad = posAdApiObject.ads[0];
+    for (var i = 1; i < posAdApiObject.ads.length; i++) {
+        if (getApiWeight(posAdApiObject.ads[i].apiName) > getApiWeight(ad.apiName)) {
+            ad = posAdApiObject.ads[i]
+        }
+    }
+    callOCFuc('webResultApiAd', ad);
+    consoleLog('api data', ad)
+}</script><script>function getOfferApiAD(posid) {
+    var data = {posId: posid};
+    callOCFuc('excuteOfferApi', data)
+}
+function offerApiResponse(data) {
+    try {
+        if (data == '') {
+            return
+        }
+        data = decodeURIComponent(data);
+        consoleLog('offer api response data', data);
+        var obj = JSON.parse(data);
+        if (obj.posId == undefined) {
+            return
+        }
+        removeRequestApi(obj.posId);
+        var source = obj.source;
+        var showPostUrls = [];
+        if (obj.showPostUrls != undefined && obj.showPostUrls.length > 0) {
+            var showUrls = obj.showPostUrls;
+            for (var i in showUrls) {
+                if (showUrls[i] != undefined && showUrls[i] != "") {
+                    showPostUrls.push(alterUrl(showUrls[i]))
+                }
+            }
+        }
+        var clickPostUrls = [];
+        if (obj.clickPostUrls != undefined && obj.clickPostUrls.length > 0) {
+            var clickUrls = obj.clickPostUrls;
+            for (var i in clickUrls) {
+                if (clickUrls[i] != undefined && clickUrls[i] != "") {
+                    clickPostUrls.push(alterUrl(clickUrls[i]))
+                }
+            }
+        }
+        var apiData = {
+            adid: '',
+            posId: obj.posId,
+            apiName: 'offer',
+            level: getApiLevel('offer'),
+            adData: {
+                imageurl: obj.imageurl,
+                url: alterUrl(obj.url, source),
+                isAPk: 0,
+                showPostUrls: showPostUrls,
+                clickPostUrls: clickPostUrls
+            }
+        };
+        if (obj.adid != undefined) {
+            apiData.adData.adid = obj.adid
+        }
+        if (obj.iconurl != undefined) {
+            apiData.adData.iconurl = obj.iconurl
+        }
+        if (obj.title != undefined) {
+            var title = obj.title;
+            title = title.replace(new RegExp(/(\+)/g), ' ');
+            apiData.adData.title = title
+        }
+        if (obj.desc != undefined) {
+            var desc = obj.desc;
+            desc = desc.replace(new RegExp(/(\+)/g), ' ');
+            apiData.adData.desc = desc
+        }
+        if (obj.action != undefined) {
+            apiData.adData.action = obj.action
+        }
+        addThirdADsWall(obj.posId, apiData)
+    } catch (e) {
+        console.log(e)
+    }
+}
+function alterUrl(url) {
+    if (url == undefined || url == '') {
+        return ''
+    }
+    url = url.replace('{GAID}', globalDeviceInfos.gaid);
+    url = url.replace('{ANDROIDID}', globalDeviceInfos.androidid);
+    return url
+}</script><script>var apploveinPosId = '';
+function getApploveinApi(posid) {
+    var adParams = {
+        package_name: globalDeviceInfos.bundle,
+        platform: globalDeviceInfos.os,
+        format: 'nast',
+        size: 'NATIVE',
+        model: globalDeviceInfos.deviceModel ? globalDeviceInfos.deviceModel : '',
+        brand: globalDeviceInfos.deviceBrand ? globalDeviceInfos.deviceBrand : '',
+        os: globalDeviceInfos.osver,
+        network: (function () {
+            if (globalDeviceInfos.conn == 1) {
+                return 'wifi'
+            } else {
+                return 'mobile'
+            }
+        })(),
+        ua: navigator.userAgent,
+        placement: 'placement_fotoable_picture_apps_wall'
+    };
+    if (globalDeviceInfos.os == 'ios') {
+        adParams.idfa = globalDeviceInfos.idfa ? globalDeviceInfos.idfa : ''
+    } else {
+        adParams.idfa = globalDeviceInfos.gaid ? globalDeviceInfos.gaid : ''
+    }
+    if (globalDeviceInfos.langcode != undefined && globalDeviceInfos.countryCode != undefined) {
+        adParams.locale = globalDeviceInfos.langcode.toLowerCase() + '_' + globalDeviceInfos.countryCode.toUpperCase()
+    }
+    var adurl = 'https://a.applovin.com/ad?sdk_key=sT2epl2JbzcDnJwUCJuyg8GxZTMrBOO1xQflAi2mgfzR-uxABp7txNoVr9K0Tk2U8hDIOG34w1VuvQ35EAyAXl';
+    for (var key in adParams) {
+        adurl = adurl + '&' + key + '=' + encodeURIComponent(adParams[key])
+    }
+    consoleLog("applovin request url", adurl);
+    var params = {
+        url: adurl,
+        method: 'get',
+        headerDic: {},
+        paramDic: {},
+        apiName: 'applovin',
+        posId: posid,
+        callback: 'applovinApiResponse'
+    };
+    apploveinPosId = posid;
+    excuteRequest(params)
+}
+function applovinApiResponse(data) {
+    var posid = apploveinPosId;
+    removeRequestApi(posid);
+    try {
+        if (posid == '' || data == '') {
+            return
+        }
+        data = decodeURIComponent(data);
+        data = data.replace(new RegExp(/(\+)/g), ' ');
+        consoleLog('applovin api response data', data);
+        var obj = getApplovinXmlValue(data);
+        if (obj.imageurl == undefined || obj.url == undefined) {
+            return
+        }
+        var apiData = {
+            posId: posid,
+            apiName: 'applovin',
+            level: getApiLevel('applovin'),
+            adData: {
+                imageurl: obj.imageurl,
+                size: {width: 200, height: 207},
+                url: obj.url,
+                isAPk: 0,
+                showPostUrls: [],
+                clickPostUrls: []
+            }
+        };
+        if (obj.iconurl != undefined) {
+            apiData.adData.iconurl = obj.iconurl
+        }
+        if (obj.title != undefined) {
+            apiData.adData.title = obj.title
+        }
+        if (obj.desc != undefined) {
+            apiData.adData.desc = obj.desc
+        }
+        if (obj.action != undefined) {
+            apiData.adData.action = obj.action
+        }
+        if (obj.impressionUrl != undefined) {
+            apiData.adData.showPostUrls.push(obj.impressionUrl)
+        }
+        addThirdADsWall(posid, apiData)
+    } catch (e) {
+        console.log(e)
+    }
+}
+function getApplovinXmlValue(text) {
+    var xmlDoc = null;
+    try {
+        xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+        xmlDoc.async = "false";
+        xmlDoc.loadXML(text)
+    } catch (e) {
+        try {
+            parser = new DOMParser();
+            xmlDoc = parser.parseFromString(text, "text/xml")
+        } catch (e) {
+            return null
+        }
+    }
+    var ret = {};
+    var imagesNode = xmlDoc.getElementsByTagName("Ad")[0].getElementsByTagName('Assets')[0].getElementsByTagName("Image");
+    for (var i = imagesNode.length - 1; i >= 0; i--) {
+        if (imagesNode[i].getAttribute("type") == "main") {
+            ret.imageurl = imagesNode[i].childNodes[0].nodeValue;
+            continue
+        }
+        if (imagesNode[i].getAttribute("type") == "icon") {
+            ret.iconurl = imagesNode[i].childNodes[0].nodeValue
+        }
+    }
+    var textsNode = xmlDoc.getElementsByTagName("Ad")[0].getElementsByTagName('Assets')[0].getElementsByTagName("Text");
+    for (var i = textsNode.length - 1; i >= 0; i--) {
+        if (textsNode[i].getAttribute("type") == "headline") {
+            ret.title = textsNode[i].firstChild.nodeValue;
+            continue
+        }
+        if (textsNode[i].getAttribute("type") == "main") {
+            ret.desc = textsNode[i].firstChild.nodeValue;
+            continue
+        }
+        if (textsNode[i].getAttribute("type") == "cta") {
+            ret.action = textsNode[i].firstChild.nodeValue
+        }
+    }
+    var actionsNode = xmlDoc.getElementsByTagName("Ad")[0].getElementsByTagName('Actions')[0].getElementsByTagName("Action");
+    for (var i = actionsNode.length - 1; i >= 0; i--) {
+        if (actionsNode[i].getAttribute("type") == "click") {
+            ret.url = actionsNode[i].childNodes[0].nodeValue;
+            break
+        }
+    }
+    var trackersNode = xmlDoc.getElementsByTagName("Ad")[0].getElementsByTagName('Trackers')[0].getElementsByTagName("Tracker");
+    for (var i = trackersNode.length - 1; i >= 0; i--) {
+        if (trackersNode[i].getAttribute("type") == "impression") {
+            ret.impressionUrl = trackersNode[i].childNodes[0].nodeValue;
+            break
+        }
+    }
+    consoleLog('applovin api transformed data', ret);
+    return ret
+}</script><script>function loadPosAd(posid) {
+    if(posid == undefined || posid == '') {
+        logEvent(JS_EVENT_NAME, 'load_null', 'posid_null');
+        return;
+    }
+    logEvent(JS_EVENT_NAME, 'load_' + posid, 'start');
+    var config = getPosConfig(posid);
+    if (config == null) {
+        logEvent(JS_EVENT_NAME, 'load_' + posid, 'config_null');
+        return
+    }
+    var config_b1 = getPosConfig(posid + '_b1');
+    if (config_b1 != null) {
+        var plans = config.plans;
+        var b1_plans = config_b1.plans;
+        if (plans != undefined && plans.groupid != undefined && b1_plans != undefined && b1_plans.groupid != undefined) {
+            var rdata = {
+                posId: posid,
+                groupId: plans.groupid + b1_plans.groupid,
+                max: 200,
+                callback: 'getRandomConfig'
+            };
+            callOCFuc('getRandomValue', rdata);
+            consoleLog('getRandomValue', rdata);
+            return
+        }
+    }
+    var config_new = getPosConfig(posid + '_new');
+    if (config_new != null && isNewUser(globalDeviceInfos.openTimes)) {
+        loadPosAdWithConfig(posid + '_new', config_new);
+        return
+    }
+    var config_old = getPosConfig(posid + '_old');
+    if (config_old != null && isOldUser(globalDeviceInfos.openTimes)) {
+        loadPosAdWithConfig(posid + '_old', config_old);
+        return
+    }
+    loadPosAdWithConfig(posid, config)
+}
+function getRandomConfig(data) {
+    if (data == '') {
+        return
+    }
+    data = decodeURIComponent(data);
+    consoleLog('random ret', data);
+    var obj = JSON.parse(data);
+    if (obj == false) {
+        return
+    }
+    var posid = obj.posId;
+    var rd = parseInt(obj.value);
+    var config = getPosConfig(posid);
+    var config_b1 = getPosConfig(posid + '_b1');
+    if (config == null || config.range == undefined || config_b1 == null || config_b1.range == undefined) {
+        return
+    }
+    var rdConfig = config;
+    var rdPosid = posid;
+    if (config_b1.range.lt <= rd && config_b1.range.rt > rd) {
+        rdConfig = config_b1;
+        rdPosid = posid + '_b1'
+    }
+    loadPosAdWithConfig(rdPosid, rdConfig)
+}
+function loadPosAdWithConfig(posid, config) {
+    if (config == undefined || config.mode == undefined || config.type == undefined || config.plans == undefined) {
+        logEvent(JS_EVENT_NAME, 'load_' + posid, 'config_format_error');
+        return
+    }
+    var plans = config.plans;
+    if (plans.groupid == undefined || plans.group == undefined || plans.group.length == 0) {
+        logEvent(JS_EVENT_NAME, 'load_' + posid, 'config_format_error');
+        return
+    }
+    var mode = config.mode;
+    if (mode == 2) {
+        var rdata = {posId: posid, groupId: plans.groupid, max: 100 * (plans.group.length), callback: 'getRandomGroup'};
+        callOCFuc('getRandomValue', rdata);
+        consoleLog('getRandomValue', rdata);
+        return
+    }
+    loadPosAdData(posid, config.type, plans.group[0])
+}
+function getRandomGroup(data) {
+    if (data == '') {
+        return
+    }
+    data = decodeURIComponent(data);
+    var obj = JSON.parse(data);
+    if (obj == false) {
+        return
+    }
+    var posid = obj.posId;
+    var rd = parseInt(obj.value);
+    consoleLog('random num', rd);
+    var config = getPosConfig(posid);
+    if (config == null) {
+        return
+    }
+    var plans = config.plans;
+    if (plans.groupid == undefined || plans.group == undefined || plans.group.length == 0) {
+        return
+    }
+    var groups = plans.group;
+    var targetData = plans.group[0];
+    for (var i in groups) {
+        if (groups[i].range != undefined && rd >= groups[i].range.lt && rd < groups[i].range.rt) {
+            targetData = plans.group[i]
+        }
+    }
+    posid = posid.replace('_b1', '');
+    posid = posid.replace('_new', '');
+    posid = posid.replace('_old', '');
+    loadPosAdData(posid, config.type, targetData)
+}
+function loadPosAdData(posid, posType, data) {
+    if (data == undefined || data.strategy == undefined) {
+        logEvent(JS_EVENT_NAME, 'load_' + posid, 'config_format_error');
+        return
+    }
+    var strategy = getCountryStrategy(data.strategy);
+    if (strategy == null) {
+        logEvent(JS_EVENT_NAME, 'load_' + posid, 'config_format_error');
+        return
+    }
+    if (strategy.sdk != undefined) {
+        loadPosSdkAd(data.desc, posid, strategy.sdk, posType)
+    }else {
+        logEvent(JS_EVENT_NAME, 'load_' + posid, 'config_format_error');
+    }
+    if (strategy.api != undefined) {
+        loadPosApiAd(posid, strategy.api)
+    }
+}
+function loadPosSdkAd(desc, posid, adConfig, posType) {
+    var sdkData = {eventName: desc, posId: posid, adConfig: adConfig};
+    if (posType == 3 || posType == 6 || posType == 7) {
+        consoleLog('func name', 'webLoadNativeSdkAd');
+        callOCFuc('webLoadNativeSdkAd', sdkData)
+    } else if (posType == 5) {
+        consoleLog('func name', 'webLoadInterstitialSdkAd');
+        callOCFuc('webLoadInterstitialSdkAd', sdkData)
+    } else {
+        callOCFuc('webLoadSdkAd', sdkData)
+    }
+    logEvent(JS_EVENT_NAME, 'load_' + posid, 'return_data');
+    consoleLog('skd data', sdkData)
+}
+function loadPosApiAd(posid, adConfig) {
+    var hasApiAd = false;
+    apiReInit(posid);
+    if (adConfig.offer != undefined && API_WEIGHT_CONFIG.offer != undefined && API_WEIGHT_CONFIG.offer > 0) {
+        hasApiAd = true;
+        addRequestApi(posid);
+        getOfferApiAD(posid)
+    }
+    if (adConfig.applovin != undefined && API_WEIGHT_CONFIG.applovin != undefined && API_WEIGHT_CONFIG.applovin > 0) {
+        hasApiAd = true;
+        addRequestApi(posid);
+        getApploveinApi(posid)
+    }
+    if (hasApiAd) {
+        setTimeout(retApiAdResult, 300, posid)
+    }
+}
+getDeviceData();</script></body>
+</html>

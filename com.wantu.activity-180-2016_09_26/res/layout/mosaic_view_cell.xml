@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/cellLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/imgview" android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/img_tip" android:layout_width="26.0dip" android:layout_height="16.0dip" android:layout_marginTop="10.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/state_layout" android:layout_width="90.0dip" android:layout_height="22.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/state_imageview" android:layout_width="12.0dip" android:layout_height="12.0dip" />
+        <com.instamag.activity.library.view.NumberProgressBar android:layout_gravity="center_vertical" android:id="@id/progress" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    </FrameLayout>
+</FrameLayout>

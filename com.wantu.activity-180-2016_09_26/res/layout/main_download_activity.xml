@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center|left|top" android:orientation="vertical" android:background="@color/local_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/include1" android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.fotoable.view.actionbar.CommonActionBarView android:id="@id/actionbarview" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="bottom" android:layout_gravity="top" android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="55.0dip" android:layout_marginBottom="5.0dip">
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/FrameLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <Button android:textSize="20.0sp" android:textColor="@color/solid_white" android:layout_gravity="center" android:id="@id/btn_apply" android:background="@drawable/res_download_btn" android:visibility="invisible" android:layout_width="300.0dip" android:layout_height="45.0dip" android:text="@string/Apply" />
+            <Button android:textSize="20.0sp" android:textColor="@color/solid_white" android:layout_gravity="center" android:id="@id/btn_down" android:background="@drawable/res_download_btn" android:layout_width="300.0dip" android:layout_height="45.0dip" android:text="@string/Download" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@id/imageFrameLayout" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/FrameLayout1" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <ProgressBar android:layout_gravity="center" android:id="@id/downloadProgressBar" android:visibility="visible" android:layout_width="70.0dip" android:layout_height="70.0dip" android:indeterminate="true" android:indeterminateBehavior="cycle" />
+            <com.fotoable.comlib.ui.RecyclingImageView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/imageview_description" />
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

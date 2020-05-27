@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/container_history_item" android:background="@drawable/bg_tag_list_item_press" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="17.0sp" android:textColor="@color/diver_color" android:gravity="center_vertical" android:id="@id/txt_place_content" android:paddingLeft="7.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginRight="60.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/solid_gray" android:gravity="center" android:layout_gravity="right" android:id="@id/txt_place_delete" android:layout_width="50.0dip" android:layout_height="45.0dip" android:text="@string/delete" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/container_location_item" android:background="@drawable/bg_tag_list_item_press" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/diver_color" android:gravity="center_vertical" android:layout_gravity="top" android:id="@id/shop_name" android:paddingLeft="7.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="23.0dip" android:layout_marginTop="4.0dip" android:text="压锅鱼" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/diver_color" android:gravity="top" android:layout_gravity="top" android:id="@id/shop_location" android:paddingLeft="7.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_marginTop="2.0dip" android:text="北京市昌平区" />
+    </LinearLayout>
+</LinearLayout>

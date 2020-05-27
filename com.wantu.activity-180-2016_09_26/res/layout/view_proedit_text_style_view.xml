@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/pip_scroll_bg" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fotoable.fotoproedit.view.ui.scroll.StyleItemView android:id="@id/bold" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.fotoable.fotoproedit.view.ui.scroll.StyleItemView android:id="@id/italic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.fotoable.fotoproedit.view.ui.scroll.StyleItemView android:id="@id/shadow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.fotoable.fotoproedit.view.ui.scroll.StyleItemView android:id="@id/left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.fotoable.fotoproedit.view.ui.scroll.StyleItemView android:id="@id/middle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.fotoable.fotoproedit.view.ui.scroll.StyleItemView android:id="@id/right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

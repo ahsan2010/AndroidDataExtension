@@ -1,0 +1,5 @@
+{"previewImg":"gr_diliweizhi4_icon.jpg","centerX":0,"centerY":30,"width":102,"height":66,"oriention":3,"basicView":
+[{"viewNum":0,"viewtype":0,"textColor":{"R":0,"G":0,"B":0,"A":100},"isBold":"false","isShadow":"false","fontSize":20,"textLines":1},
+{"viewNum":1,"viewtype":1,"x":0,"y":0,"w":55,"h":60,"imageName":"gr_diliweizhi4_01.png","isContentView":"false"},
+{"viewNum":2,"viewtype":1,"x":55,"y":0,"w":12,"h":60,"imageName":"gr_diliweizhi4_02.png","isContentView":"true"},
+{"viewNum":3,"viewtype":1,"x":67,"y":0,"w":35,"h":60,"imageName":"gr_diliweizhi4_03.png","isContentView":"false"}],"outview":[]}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:nudorm="http://schemas.android.com/apk/res-auto" xmlns:res-auto="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center|left|top" android:id="@id/imageView1ParentView" android:layout_width="260.0dip" android:layout_height="260.0dip" android:layout_marginLeft="30.0dip">
+        <com.wantu.activity.link.view.BorderImageView android:layout_gravity="center|left|top" android:id="@id/imageView1" android:layout_width="fill_parent" android:layout_height="fill_parent" res-auto:borderColor="@color/solid_white" res-auto:borderWidth="5.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|left|top" android:layout_width="82.0dip" android:layout_height="18.0dip" android:layout_marginLeft="195.0dip" android:layout_marginTop="9.0dip">
+        <ImageView android:id="@id/titleImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|left|top" android:layout_width="43.0dip" android:layout_height="16.0dip" android:layout_marginLeft="215.0dip" android:layout_marginTop="11.0dip">
+        <com.wantu.activity.link.view.CaptionLabel android:textSize="20.0sp" android:textColor="@color/solid_white" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="12:00am" android:singleLine="true" res-auto:maxFontSize="11.0sp" />
+    </FrameLayout>
+</FrameLayout>

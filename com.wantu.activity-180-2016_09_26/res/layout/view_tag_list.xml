@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffdcdcdc" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.fotoable.fotoproedit.activity.tagtag.TagEditText android:textSize="16.0sp" android:textColor="#dc323232" android:layout_gravity="center|left|top" android:id="@id/txt_tag" android:background="@drawable/round_corner_tag" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="61.0dip" android:layout_marginBottom="7.0dip" android:hint="@string/tag_input_prompt" android:singleLine="true" android:drawableRight="@drawable/btn_tad_cancel" android:inputType="text" android:imeOptions="actionDone" />
+        <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="right" android:id="@id/txt_tag_close" android:background="@drawable/btn_cancel_dark" android:layout_width="47.0dip" android:layout_height="36.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="7.0dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:orientation="vertical" android:id="@id/ly_tag_input" android:background="@drawable/bg_tag_list_item_press" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/diver_color" android:gravity="center_vertical" android:layout_gravity="left" android:id="@id/txt_input_tag" android:background="@drawable/bg_tag_list_item_press" android:paddingLeft="7.0dip" android:paddingRight="60.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+            <TextView android:layout_gravity="center|left|top" android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="45.0dip" />
+        </FrameLayout>
+        <com.fotoable.fotoproedit.activity.tagtag.PinnedHeaderListView android:id="@id/tag_list" android:background="@color/white" android:clipChildren="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@color/line_gray" android:dividerHeight="1.0px" android:headerDividersEnabled="false" android:footerDividersEnabled="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+{
+
+"version" : "1",
+
+"cn_name" : "卷翘",
+
+"en_name" : "Curly",
+
+"cnn_name" : "卷翹",
+
+"brow": "nongzhuang7_139_570_brow.png",
+"brow_a": "0.25",
+"brow_c": "130001",
+   
+
+"eyeshadow": "nongzhuang7_111_577_shadow.png",
+"eyeshadow_a": "0.48",
+
+
+"eyeliner": "nongzhuang7_167_663_liner.png",
+"eyeliner_a": "0.44",
+"eyeliner_c": "150002",
+
+"eyelash": "nongzhuang7_166_606_lash.png",
+"eyelash_a": "0.62",
+"eyelash_c": "140020",
+
+"lip": "110043",
+"lip_a": "0.68",
+
+
+
+"blush":"nongzhuang7_86_685_blush.png",
+"blush_a": "0.35",
+"blush_c": "120031",
+
+"makeup_alpha": "0.8",
+
+"bottom_alpha" : "0.5",
+
+"base":"100000",
+
+"base_a": "0.5"
+
+
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ui_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ly_action_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.fotoable.fotoproedit.view.ui.ProEidtActionBarView android:id="@id/proEidtActionBarView1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/ly_imgae_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ly_bottom" />
+    <FrameLayout android:id="@id/ly_bottom" android:background="@color/color_scroll_bar" android:layout_width="fill_parent" android:layout_height="96.0dip" android:layout_marginBottom="44.0dip" android:layout_alignParentBottom="true">
+        <com.fotoable.beautyui.other.TProEditCropScrollView android:layout_gravity="bottom" android:id="@id/tMainScrollView1" android:background="@color/color_scroll_bar" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+        <FrameLayout android:layout_gravity="top" android:id="@id/tProBottom" android:background="@color/color_scroll_bar" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <SeekBar android:layout_gravity="center" android:id="@id/tProSeekbar" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxHeight="2.0dip" android:progressDrawable="@drawable/progress_slider" android:minHeight="2.0dip" android:thumb="@drawable/progress_control" />
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

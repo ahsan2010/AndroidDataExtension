@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff242424" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top" android:id="@id/ly_imgae_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="161.0dip">
+        <com.fotoable.beautyui.NewTouchImageView android:layout_gravity="center" android:id="@id/imageview_touch" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <Button android:layout_gravity="center|right|top" android:id="@id/colorlist" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="36.0dip" android:text="color" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|right|top" android:id="@id/rbbtncontainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip">
+        <Button android:layout_gravity="center" android:id="@id/btncompare" android:background="@drawable/btn_compare" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom|center|right" android:id="@id/rtbtncontainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="176.0dip">
+        <Button android:layout_gravity="top" android:id="@id/adjustTip" android:visibility="invisible" android:layout_width="135.0dip" android:layout_height="36.0dip" android:layout_marginRight="2.0dip" />
+        <Button android:layout_gravity="center|right|top" android:id="@id/btnpart" android:background="@drawable/btn_finetune" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="40.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="start|center|top" android:id="@id/btnback" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+        <ImageView android:layout_gravity="center" android:background="@drawable/btn_back_adv" android:layout_width="33.0dip" android:layout_height="33.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|left|top" android:id="@id/leftbtncontainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip">
+        <com.fotoable.makeup.MakeUpPartSelectedArcView.MakeUpPartSelectedArcMenu android:id="@id/viewpartselected" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom|center|left" android:id="@id/seekbarcontainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="81.0dip" android:layout_marginBottom="96.0dip">
+        <LinearLayout android:layout_gravity="center|left|top" android:orientation="horizontal" android:id="@id/caizhuangcontainer" android:layout_width="fill_parent" android:layout_height="31.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="14.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/caizhuang" android:layout_width="45.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/caizhuang" />
+            <SeekBar android:layout_gravity="center" android:id="@id/seekbar_caizhuang" android:paddingLeft="21.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/beauty_red_scrubber_progress" android:minHeight="2.0dip" android:thumb="@drawable/beauty_red_scrubber_control" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center|left|top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="31.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="51.0dip" android:layout_marginRight="14.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/dizhuang" android:layout_width="45.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="caizhuang" />
+            <SeekBar android:layout_gravity="center" android:id="@id/seekbar_dizhuang" android:paddingLeft="21.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/beauty_red_scrubber_progress" android:minHeight="2.0dip" android:thumb="@drawable/beauty_red_scrubber_control" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/makeuplcontianer" android:background="#ff242424" android:layout_width="fill_parent" android:layout_height="115.0dip" android:layout_marginBottom="46.0dip" android:layoutDirection="ltr">
+        <com.fotoable.makeup.MakeUpCrazyCrossDress.CrazyCrossDressGroupScrollView android:layout_gravity="center_vertical" android:id="@id/view_theme" android:background="#ff242424" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="46.0dip" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/bottom_1" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="46.0dip">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/confirmimagebutton" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="18.0sp" android:textColor="@color/onekey_item_text_color" android:id="@id/crazynexttextview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crazy_next" android:layout_centerInParent="true" />
+            <ImageView android:background="@drawable/gr_crazy_next_right" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/crazynexttextview" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/waittingcontainer" android:background="@color/transparent" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar1" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/nonetwork" android:background="@drawable/gr_notnetwork" android:layout_width="257.0dip" android:layout_height="79.0dip" android:layout_marginBottom="50.0dip" />
+    <TextView android:textSize="24.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/labelname" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:text="hah" />
+    <FrameLayout android:id="@id/confirmPicture" android:background="#ff242424" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <FrameLayout android:layout_gravity="start|center" android:id="@id/iv_undo" android:layout_width="46.0dip" android:layout_height="46.0dip">
+                <ImageView android:layout_gravity="center" android:background="@drawable/btn_edit_cancel" android:layout_width="33.0dip" android:layout_height="33.0dip" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center|right" android:id="@id/btnshare" android:visibility="gone" android:layout_width="46.0dip" android:layout_height="46.0dip">
+                <ImageView android:layout_gravity="center|right" android:background="@drawable/btn_share1" android:layout_width="45.0dip" android:layout_height="33.0dip" />
+            </FrameLayout>
+        </FrameLayout>
+        <RelativeLayout android:layout_gravity="top" android:id="@id/confirmPicture_imgae_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" android:layout_marginBottom="111.0dip">
+            <com.fotoable.beautyui.NewTouchImageView android:id="@id/confirmPicture_imageview_touch" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/btnnext" android:layout_width="fill_parent" android:layout_height="77.0dip" android:src="@drawable/btn_crazycross_confirm" android:scaleType="fitXY" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="20.0sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/confirmsavetext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/save_to_share" />
+                <ImageView android:layout_gravity="center_vertical" android:background="@drawable/gr_confirm_save_left_arrow" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="0.0dip" />
+            </FrameLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

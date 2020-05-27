@@ -1,0 +1,46 @@
+{
+
+"version" : "1",
+
+"cn_name" : "甜美",
+
+"en_name" : "Sweet",
+
+"cnn_name" : "甜美",
+
+"brow": "nongzhuang2_152_569_brow.png",
+"brow_a": "0.27",
+"brow_c": "130001",
+   
+
+"eyeshadow": "nongzhuang2_66_557_shadow.png",
+"eyeshadow_a": "0.48",
+
+
+"eyeliner": "nongzhuang2_187_660_liner.png",
+"eyeliner_a": "0.56",
+"eyeliner_c": "150002",
+
+"eyelash": "nongzhuang2_179_622_lash.png",
+"eyelash_a": "0.60",
+"eyelash_c": "140020",
+
+"lip": "110038",
+"lip_a": "0.57",
+
+
+
+"blush":"nongzhuang8_87_701_blush.png",
+"blush_a": "0.38",
+"blush_c": "120026",
+"makeup_alpha": "0.7",
+
+"bottom_alpha" : "0.6",
+
+"base":"100000",
+
+"base_a": "0.5"
+ 
+
+
+}

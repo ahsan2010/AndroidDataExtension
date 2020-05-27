@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/FrameLayout1" android:layout_width="fill_parent" android:layout_height="144.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" />
+    <FrameLayout android:layout_gravity="top" android:background="@drawable/gr_edittab" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="44.0dip">
+        <com.wantu.view.compose2.Compose2ProeditBottomBar android:layout_gravity="bottom" android:id="@id/composeProeditBottomBar1" android:layout_width="fill_parent" android:layout_height="54.0dip" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="46.0dip">
+            <ImageButton android:layout_gravity="center" android:id="@id/imgSwape" android:background="@drawable/btn_trans_bluecolor" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/btn_swap" android:scaleType="fitCenter" />
+        </FrameLayout>
+        <com.wantu.view.compose2.TProEditFreeScrollView android:layout_gravity="bottom" android:id="@id/tProEditFreeScrollView1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="54.0dip" />
+        <com.wantu.view.compose2.Compose2ProeditFreeBottomBar android:layout_gravity="bottom" android:id="@id/composeProeditFreeBottomBar1" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="54.0dip" />
+    </FrameLayout>
+    <ImageButton android:layout_gravity="right" android:id="@id/imgClose" android:background="@color/transparent" android:layout_width="50.0dip" android:layout_height="44.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/collage_close_btn" android:scaleType="fitCenter" />
+</FrameLayout>

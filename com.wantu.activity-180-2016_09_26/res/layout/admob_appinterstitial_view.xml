@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.formats.NativeAppInstallAdView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mediaView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/icon" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@id/action" android:background="@drawable/corner_btn_3dp_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:id="@id/mightLike" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/btnClose" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/btnAdImage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/lineLeft" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/lineRight" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/price_view" android:background="@drawable/corner_btn_2dp_green" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:id="@id/ic_gou" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/priceText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/rate_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:id="@id/googleImg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RatingBar android:id="@id/room_ratingbar" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="4.0" style="@style/roomRatingBar" />
+    </LinearLayout>
+</com.google.android.gms.ads.formats.NativeAppInstallAdView>

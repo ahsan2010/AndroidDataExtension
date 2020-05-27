@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/charge_default" android:scaleType="fitXY" />
+    <com.fotoable.battery.view.ScreenLockLayout android:id="@id/container" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/layout_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/logo" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:layout_alignParentLeft="true">
+                <ImageView android:id="@id/logo_icon" android:layout_width="15.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="11.0sp" android:textColor="#bfffffff" android:layout_gravity="center" android:id="@id/logo_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="PIPCamera" />
+            </LinearLayout>
+            <com.fotoable.battery.view.CustomClock android:id="@id/custom_clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" />
+            <FrameLayout android:id="@id/btn_setting" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true">
+                <ImageView android:layout_gravity="center" android:layout_width="6.0dip" android:layout_height="20.0dip" android:src="@drawable/btn_setup_battery" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/ly_second_setup" android:background="@color/white" android:layout_width="50.0dip" android:layout_height="40.0dip" android:layout_marginTop="45.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+                <TextView android:textSize="12.0sp" android:textColor="@color/solid_black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/setting" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="7.0">
+                    <RelativeLayout android:layout_gravity="bottom|center" android:id="@id/rl_battery" android:layout_width="120.0dip" android:layout_height="56.0dip">
+                        <ImageView android:background="@drawable/battery_frame" android:layout_width="120.0dip" android:layout_height="56.0dip" />
+                        <FrameLayout android:id="@id/batteryProcessView" android:background="#ffff2121" android:layout_width="110.0dip" android:layout_height="50.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentBottom="true" android:layout_centerVertical="true" />
+                        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/lblCurrentPower" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%" />
+                        </FrameLayout>
+                    </RelativeLayout>
+                </FrameLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="4.0">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/slidetounlock" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                        <ImageView android:layout_gravity="center" android:id="@id/iv_unlock" android:layout_width="54.0dip" android:layout_height="18.0dip" android:src="@drawable/gr_slide_unlock" />
+                    </LinearLayout>
+                    <FrameLayout android:id="@id/ly_batteryview" android:layout_width="fill_parent" android:layout_height="74.0dip" android:layout_marginTop="15.0dip">
+                        <com.fotoable.battery.view.BatteryView01 android:id="@id/bv_batteryView01" android:layout_width="fill_parent" android:layout_height="74.0dip" android:layout_alignParentTop="true" />
+                    </FrameLayout>
+                    <FrameLayout android:id="@id/ly_center_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:layout_above="@id/slidetounlock" android:layout_below="@id/ly_batteryview">
+                        <FrameLayout android:layout_gravity="top" android:id="@id/scrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip">
+                                <FrameLayout android:id="@id/adViewContainer" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+                                <FrameLayout android:id="@id/ly_tv_tips" android:background="@drawable/tv_tips_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                                    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center|left" android:id="@id/tv_useage_tips" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginRight="30.0dip" />
+                                    <ImageView android:layout_gravity="center|left" android:id="@id/iv_allright" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/gr_allright" />
+                                    <ImageView android:layout_gravity="center|right" android:id="@id/iv_forward" android:layout_width="10.0dip" android:layout_height="18.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/gr_forward" />
+                                </FrameLayout>
+                            </RelativeLayout>
+                        </FrameLayout>
+                    </FrameLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <com.fotoable.battery.view.BatterySettingView android:id="@id/battersettingview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.fotoable.battery.view.DetailView android:id="@id/detail_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </com.fotoable.battery.view.ScreenLockLayout>
+</FrameLayout>

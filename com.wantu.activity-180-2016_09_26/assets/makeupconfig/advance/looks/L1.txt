@@ -1,0 +1,48 @@
+{
+
+"version" : "1",
+
+"cn_name" : "通勤",
+
+"en_name" : "Office",
+
+"cnn_name" : "通勤",
+
+
+"brow": "hanzhuang01_147_566_brow.png",
+"brow_a": "0.32",
+"brow_c": "130019",
+   
+
+"eyeshadow": "luozhuang1_152_594_shadow.png",
+"eyeshadow_a": "0.70",
+
+
+
+"eyeliner": "luozhuang1_202_657_liner.png",
+"eyeliner_a": "0.72",
+"eyeliner_c": "150016",  
+
+
+"eyelash": "luozhuang1_181_625_lash.png",
+"eyelash_a": "0.75",
+"eyelash_c": "140000",
+
+"lip": "110058",
+"lip_a": "0.49",
+
+
+
+"blush":"luozhuang4_108_721_blush.png",
+"blush_a": "0.32",
+"blush_c": "120019",
+"makeup_alpha": "0.7",
+
+"bottom_alpha" : "0.5",
+
+"base":"100000",
+
+"base_a": "0.5"
+
+
+}

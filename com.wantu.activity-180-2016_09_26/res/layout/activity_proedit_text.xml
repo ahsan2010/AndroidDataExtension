@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff303030" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/image_container" android:layout_width="fill_parent" android:layout_height="440.0dip" android:layout_marginTop="58.0dip">
+        <FrameLayout android:id="@id/labelContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/tTextOriImageview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <com.fotoable.fotoproedit.activity.font.FontSldeLineView android:id="@id/fontlineview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.fotoable.fotoproedit.activity.font.FontLabelCursorView android:id="@id/fonttextCursor" android:layout_width="2.0dip" android:layout_height="45.0dip" />
+        <ImageView android:id="@id/btn_flip" android:background="@drawable/btn_flipphoto" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+        <ImageView android:id="@id/btn_delete" android:background="@drawable/btn_deletephoto" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+        <ImageView android:id="@id/btn_rotate" android:background="@drawable/btn_rotatephoto" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:background="@color/transparent" android:clickable="false" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginTop="100.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/stroke_shadow_prompt" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="stroke" />
+    </FrameLayout>
+    <com.fotoable.fotoproedit.activity.font.FontTextTouchView android:id="@id/fonttexttouchview" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/keyboard_bottom_contianer" android:background="#ff464646" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.fotoable.fotoproedit.activity.font.fontEditText android:id="@id/textEditor" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_marginLeft="-1.0dip" android:ems="10" android:inputType="textMultiLine" />
+    </RelativeLayout>
+    <com.fotoable.fotoproedit.view.ui.scroll.TProEditTextBottomBar android:layout_gravity="bottom" android:id="@id/tTextBottomBar1" android:background="@drawable/ui_gr_proeditbg" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginBottom="44.0dip" />
+    <com.fotoable.fotoproedit.view.ui.ProEidtActionBarView android:layout_gravity="bottom" android:id="@id/proEidtActionBarView1" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginBottom="0.0dip" />
+    <Button android:layout_gravity="bottom|center" android:id="@id/btn_add" android:background="@drawable/gr_openlibrary" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginBottom="2.0dip" />
+    <com.fotoable.fotoproedit.activity.font.FontKeyBoardBottomView android:layout_gravity="bottom" android:id="@id/keyboard_bottom_view" android:background="@color/fotobeauty_bg" android:layout_width="fill_parent" android:layout_height="218.0dip" android:layout_marginBottom="-216.0dip" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/notouchcontainer" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="44.0dip" />
+    <RelativeLayout android:layout_gravity="top" android:id="@id/bannerContainerID" android:tag="bannerRelative" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+</FrameLayout>

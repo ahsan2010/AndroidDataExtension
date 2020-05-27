@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:res-auto="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:layout_width="320.0dip" android:layout_height="60.0dip">
+        <FrameLayout android:layout_gravity="center|left|top" android:layout_width="114.0dip" android:layout_height="52.0dip" android:layout_marginLeft="103.0dip" android:layout_marginTop="4.0dip">
+            <ImageView android:id="@id/logView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

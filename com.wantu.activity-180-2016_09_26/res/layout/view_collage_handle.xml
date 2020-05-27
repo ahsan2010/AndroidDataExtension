@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff282828" android:layout_width="fill_parent" android:layout_height="191.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_styles" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/collage_styles" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_effects" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/collage_effects" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/backgrounds" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_close_handleView" android:background="@drawable/btn_close_l" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+    </LinearLayout>
+    <TextView android:layout_gravity="top" android:background="#ff3f3f3f" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="39.0dip" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/container_handleView" android:layout_width="fill_parent" android:layout_height="150.0dip">
+        <com.wantu.view.compose2.Compose2ModuleFramesView android:id="@id/view_styles" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.wantu.view.compose2.Compose2ModuleCornorView android:id="@id/view_effects" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.wantu.view.compose2.Compose2ModuleBgView android:id="@id/view_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</FrameLayout>

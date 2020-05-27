@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linetop" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include android:id="@id/include1" android:layout_width="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" layout="@layout/nav_bar" />
+        <WebView android:id="@id/webView1" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/RelativeLayoutBottom" android:padding="10.0dip" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="120.0dip">
+            <LinearLayout android:id="@id/LLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                <TextView android:textSize="16.0dip" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否关注玩图官方微博？" />
+            </LinearLayout>
+            <TextView android:textSize="14.0dip" android:textColor="@color/solid_white" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="及时获取更多资讯，了解各种使用秘笈，解决您使用玩图的各种问题，欣赏更多有趣的GIF动画" android:layout_below="@id/LLayout1" android:layout_alignLeft="@id/LLayout1" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

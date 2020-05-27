@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff282828" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_compose_module_cornor" android:layout_width="fill_parent" android:layout_height="150.0dip">
+        <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="7.0dip">
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/solid_white" android:layout_gravity="center|left" android:id="@id/textView1" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="@string/ui_collage_shadow" />
+                <ToggleButton android:textColor="@color/black" android:textColorHint="@color/black" android:layout_gravity="center|left" android:id="@id/tgShade" android:background="@drawable/tg_btn" android:layout_width="58.0dip" android:layout_height="30.0dip" android:layout_marginLeft="90.0dip" android:checked="false" android:textOn="" android:textOff="" android:text="ToggleButton" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/solid_white" android:layout_gravity="center|right" android:id="@id/textview_biankuang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="96.0dip" android:text="@string/collage_outline" />
+                <ToggleButton android:textColor="@color/black" android:textColorHint="@color/black" android:layout_gravity="center|right" android:id="@id/tg_biankuang" android:background="@drawable/tg_btn" android:layout_width="58.0dip" android:layout_height="30.0dip" android:layout_marginLeft="0.0dip" android:layout_marginRight="30.0dip" android:checked="false" android:textOn="" android:textOff="" android:text="ToggleButton" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="57.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/solid_white" android:layout_gravity="center_vertical" android:id="@id/textview_edge" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="@string/collage_edge" android:lines="1" />
+            <SeekBar android:layout_gravity="center_vertical" android:id="@id/module_seek_edge" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progressDrawable="@drawable/progress_slider" android:minHeight="2.0dip" android:thumb="@drawable/progress_control" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/solid_white" android:layout_gravity="center_vertical" android:id="@id/textview_corner" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="@string/ui_collage_cornor" android:lines="1" />
+            <SeekBar android:layout_gravity="center_vertical" android:id="@id/module_seek_cornor" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:progressDrawable="@drawable/progress_slider" android:minHeight="2.0dip" android:thumb="@drawable/progress_control" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

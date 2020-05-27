@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/navibar" android:background="@drawable/nav_bg" android:layout_width="fill_parent" android:layout_height="53.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button android:textColor="@color/solid_white" android:id="@id/back_btn" android:background="@drawable/nav_back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="backBtnClicked" />
+        <Button android:textColor="@color/solid_white" android:id="@id/next_btn" android:background="@drawable/nav_next_btn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="nextBtnClicked" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="20.0dip" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/selectedphotos" android:layout_width="fill_parent" android:layout_height="118.0dip" android:layout_alignParentBottom="true">
+        <fragment android:name="com.fotoable.fotophotoselector.PhotoSelectScrollFragment" android:id="@id/photo_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/encryptActivityContent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/selectedphotos" android:layout_below="@id/navibar" />
+</RelativeLayout>

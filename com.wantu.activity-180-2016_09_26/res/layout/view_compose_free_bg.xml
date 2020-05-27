@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff282828" android:layout_width="fill_parent" android:layout_height="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/module_free_bg_container" android:layout_width="fill_parent" android:layout_height="115.0dip">
+        <com.wantu.view.compose2.freebg.FreeCollageBgScrollPageView android:layout_gravity="top" android:id="@id/pageViewer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="0.0dip" />
+        <com.wantu.view.compose2.indicate.CirclePageIndicator android:layout_gravity="bottom|center" android:id="@id/circlePageIndicator1" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginBottom="0.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="36.0dip">
+        <Button android:layout_gravity="center_vertical" android:id="@id/library_btn" android:background="@drawable/btn_tab_library" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" />
+        <FrameLayout android:layout_gravity="top" android:id="@id/module_free_frame_color_container" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="40.0dip" android:layout_marginRight="5.0dip">
+            <com.wantu.view.compose2.color.ColorSelectView android:layout_gravity="bottom|center" android:id="@id/colorSelectView1" android:layout_width="wrap_content" android:layout_height="36.0dip" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

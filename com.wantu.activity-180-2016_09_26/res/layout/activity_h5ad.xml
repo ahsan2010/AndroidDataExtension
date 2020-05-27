@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bgView" android:background="@drawable/gr_loading_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:orientation="vertical" android:id="@id/include1" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <FrameLayout android:layout_gravity="center|left|top" android:id="@id/btn_cancel" android:layout_width="90.0dip" android:layout_height="48.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/nav_back_color" android:layout_gravity="center" android:id="@id/text_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/back" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/imageView2" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/nav_cancel_pic" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/loadingframelayout" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center|top" android:id="@id/imageLoading" android:layout_width="46.0dip" android:layout_height="50.0dip" />
+        <TextView android:gravity="center" android:layout_gravity="bottom" android:id="@id/tvloading" android:layout_width="fill_parent" android:layout_height="18.0dip" android:text="@string/loading" />
+    </FrameLayout>
+</RelativeLayout>

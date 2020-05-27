@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/centerwatermark" android:layout_width="100.0dip" android:layout_height="80.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@id/imageview" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <FrameLayout android:layout_gravity="center|right|top" android:id="@id/selectframe" android:background="@drawable/btn_watermark_sel" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="10.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/nonewatermark" android:background="@drawable/btn_watermark_none_res" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

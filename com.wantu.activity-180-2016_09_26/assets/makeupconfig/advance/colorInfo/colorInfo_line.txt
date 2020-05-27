@@ -1,0 +1,94 @@
+{
+    "150000" : {
+    "pids":["150000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "colorid":"150002"
+    },
+
+    "150001" : {
+    "pids":["150000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "colorid":"150010"
+    },
+
+    "150002" : {
+    "pids":["150000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "colorid":"150016"
+    },
+
+    "150003" : {
+    "pids":["150000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "colorid":"110043"
+    },
+
+    "150004" : {
+    "pids":["150000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "colorid":"150009"
+    },
+
+    "150005" : {
+    "pids":["150000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "colorid":"120003"
+    },
+
+    "150006" : {
+    "pids":["150000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "colorid":"170003"
+    },
+
+    "150007" : {
+    "pids":["150000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "colorid":"170000"
+    },
+
+    "150008" : {
+    "pids":["150000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "colorid":"170001"
+    }
+}
+
+
+   

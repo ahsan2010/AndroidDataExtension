@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:id="@id/FrameLayout1" android:background="@color/ui_action_bar_color" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/new_create_folder" android:background="@drawable/new_folder_btn" android:layout_width="120.0dip" android:layout_height="35.0dip">
+        <TextView android:textSize="20.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/new_create_folder_tv" android:layout_width="120.0dip" android:layout_height="36.0dip" android:text="@string/new_create_folder" />
+    </FrameLayout>
+</FrameLayout>

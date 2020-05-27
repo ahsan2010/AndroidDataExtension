@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:slideswitch="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/bar_auto_qudou" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="12.0sp" android:textColor="@color/unselected_bg" android:layout_gravity="center_vertical" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Auto_Blemish" />
+        <com.fotoable.beautyui.SlideSwitch android:layout_gravity="center|left" android:id="@id/toggle" android:layout_width="20.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/bar_manual_qudou" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/unselected_bg" android:id="@id/textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="画笔大小" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.fotoable.beautyui.newui.MNewCanSelButton android:id="@id/help_hint_qudou" android:background="@drawable/btn_tip_res" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.fotoable.beautyui.newui.MNewCanSelButton android:enabled="false" android:id="@id/undobtn" android:background="@drawable/btn_undo" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_centerInParent="true">
+            <com.fotoable.beautyui.newui.MNewCanSelButton android:layout_gravity="center_vertical" android:id="@id/button1" android:background="@drawable/icon_blemish1" android:layout_width="35.0dip" android:layout_height="35.0dip" style="?android:attr/buttonStyleSmall" />
+            <com.fotoable.beautyui.newui.MNewCanSelButton android:layout_gravity="center_vertical" android:id="@id/button2" android:background="@drawable/icon_blemish2" android:layout_width="35.0dip" android:layout_height="35.0dip" style="?android:attr/buttonStyleSmall" />
+            <com.fotoable.beautyui.newui.MNewCanSelButton android:layout_gravity="center_vertical" android:id="@id/button3" android:background="@drawable/icon_blemish3" android:layout_width="35.0dip" android:layout_height="35.0dip" style="?android:attr/buttonStyleSmall" />
+            <com.fotoable.beautyui.newui.MNewCanSelButton android:layout_gravity="center_vertical" android:id="@id/button4" android:background="@drawable/icon_blemish4" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="8.0dip" style="?android:attr/buttonStyleSmall" />
+            <com.fotoable.beautyui.newui.MNewCanSelButton android:layout_gravity="center_vertical" android:id="@id/button5" android:background="@drawable/icon_blemish5" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="8.0dip" style="?android:attr/buttonStyleSmall" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+{"previewImg":"gr_wupin53_00.jpg","centerX":35,"centerY":10,"width":170,"height":154,"oriention":0,"basicView":
+[{"viewNum":0,"viewtype":0,"textColor":{"R":180,"G":177,"B":177,"A":100},"isBold":"false","isShadow":"false","fontSize":20,"textLines":1}
+,{"viewNum":1,"viewtype":1,"x":0,"y":0,"w":70,"h":112,"imageName":"gr_wupin53_01.png","isContentView":"false"},
+{"viewNum":2,"viewtype":1,"x":0,"y":112,"w":70,"h":6,"imageName":"gr_wupin53_02.png","isContentView":"true"},
+{"viewNum":3,"viewtype":1,"x":0,"y":118,"w":70,"h":36,"imageName":"gr_wupin53_03.png","isContentView":"false"}],"outview":[]}

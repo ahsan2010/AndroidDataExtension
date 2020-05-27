@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/gr_tab_bg" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/bottom_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="center" android:id="@id/bottom_bar_layout_module" android:background="@drawable/item_horizon_btn" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/im_background" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/gr_tab_icon_collage" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tx_bottom_bar_module" android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:text="@string/ui_compose_module" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center|top" android:id="@id/img_module_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/gr_tab_selected" android:scaleType="fitStart" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/bottom_mag" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/bottom_bar_layout_mag" android:background="@drawable/item_horizon_btn" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center|left" android:id="@id/im_background_mag" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/gr_tab_icon_instamag" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center|left" android:id="@id/tx_bottom_bar_module_mag" android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:text="@string/magzine" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center|top" android:id="@id/img_module_selector_mag" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/gr_tab_selected" android:scaleType="fitStart" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/bottom_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="center" android:id="@id/bottom_bar_layout_free" android:background="@drawable/item_horizon_btn" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/im_share" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/gr_tab_icon_free" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tx_bottom_bar_free" android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:text="@string/ui_compose_free" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center|top" android:id="@id/img_free_selector" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/gr_tab_selected" android:scaleType="fitStart" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/bottom_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/bottom_bar_layout_long" android:background="@drawable/item_horizon_btn" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/im_link" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/gr_tab_icon_pinjie" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tx_bottom_bar_link" android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:text="@string/ui_compose_link" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center|top" android:id="@id/img_link_selector" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/gr_tab_selected" android:scaleType="fitStart" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

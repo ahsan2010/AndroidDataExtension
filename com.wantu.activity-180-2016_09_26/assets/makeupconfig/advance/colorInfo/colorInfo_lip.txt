@@ -1,0 +1,221 @@
+{
+    "110000" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"lip_110000.png",
+    "colorid":"110000"
+    },
+
+    "110001" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"lip_110048.png",
+    "colorid":"110048"
+    },
+
+    "110002" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"lip_110001.png",
+    "colorid":"110001"
+    },
+
+    "110003" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"gr_lip_6.png",
+    "colorid":"110010"
+    },
+
+    "110004" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"lip_110011.png",
+    "colorid":"110011"
+    },
+
+    "110005" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"gr_lip_21.png",
+    "colorid":"110013"
+    },
+
+    "110006" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"gr_lip_15.png",
+    "colorid":"110017"
+    },
+
+    "110007" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"lip_110018.png",
+    "colorid":"110018"
+    },
+
+    "110008" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"gr_lip_13.png",
+    "colorid":"110058"
+    },
+
+    "110009" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"gr_lip_14.png",
+    "colorid":"110029"
+    },
+
+    "110010" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"gr_lip_7.png",
+    "colorid":"110032"
+    },
+
+    "110011" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"gr_lip_11.png",
+    "colorid":"110035"
+    },
+
+    "110012" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"gr_lip_25.png",
+    "colorid":"110037"
+    },
+
+    "110013" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"lip_110038.png",
+    "colorid":"110038"
+    },
+
+    "110014" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"gr_lip_22.png",
+    "colorid":"110039"
+    },
+
+    "110015" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"gr_lip_10.png",
+    "colorid":"110040"
+    },
+
+    "110016" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"lip_110041.png",
+    "colorid":"110041"
+    },
+
+    "110017" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"gr_lip_24.png",
+    "colorid":"110042"
+    },
+
+    "110018" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"lip_110043.png",
+    "colorid":"110043"
+    },
+
+    "110019" : {
+    "pids":["110000"],
+    "alpha":"0.7",
+    "enname":"",
+    "cnname":"",
+    "cnnname":"",
+    "starIconPath":"",
+    "iconPath":"gr_lip_23.png",
+    "colorid":"110044"
+    }
+}

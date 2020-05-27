@@ -1,0 +1,46 @@
+{
+
+"version" : "1",
+
+"cn_name" : "绯红",
+
+"en_name" : "Crimson",
+
+"cnn_name" : "緋紅",
+
+"brow": "nongzhuang1_144_569_brow.png",
+"brow_a": "0.28",
+"brow_c": "130019",
+   
+
+"eyeshadow": "nongzhuang1_112_586_shadow.png",
+"eyeshadow_a": "0.56",
+
+
+"eyeliner": "nongzhuang1_148_644_liner.png",
+"eyeliner_a": "0.65",
+"eyeliner_c": "150002",
+
+
+"eyelash": "nongzhuang1_182_630_lash.png",
+"eyelash_a": "0.72",
+"eyelash_c": "140022", 
+
+
+"lip": "110037",
+"lip_a": "0.40",
+
+
+"blush":"nongzhuang1_79_698_blush.png",
+"blush_a": "0.45",
+"blush_c": "120019",
+"makeup_alpha": "0.8",
+
+"bottom_alpha" : "0.6",
+
+"base":"100001",
+
+"base_a": "0.5"
+
+
+}

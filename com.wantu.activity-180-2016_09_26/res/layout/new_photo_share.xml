@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/LinearLayout1" android:background="#ff4c4c4c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/divideLine" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:id="@id/topnav" android:layout_width="fill_parent" android:layout_height="260.0dip">
+        <com.fotoable.view.actionbar.CommonActionBarView android:id="@id/actionBarView" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <FrameLayout android:layout_gravity="top" android:id="@id/toucheview" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="44.0dip" />
+        <FrameLayout android:layout_gravity="bottom|center" android:id="@id/scrollViewContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="44.0dip">
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@id/adViewContainer" android:tag="adViewContainer" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/saving_tip" android:background="#ff4c4c4c" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/topnav">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/view_loading" android:layout_width="wrap_content" android:layout_height="40.0dip">
+            <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="false" />
+            <TextView android:textColor="#ffffffff" android:id="@id/txt_load" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/processing_tip" android:layout_toRightOf="@id/progressBar" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <ScrollView android:id="@id/scrollcontainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/saving_tip">
+        <LinearLayout android:orientation="vertical" android:id="@id/handle_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/recylercontainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:orientation="horizontal" android:id="@id/photo_share_btns" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.fotoable.savepagescrollview.ShareScrolladView android:gravity="center" android:layout_gravity="top" android:id="@id/tShareScrollView1" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <RelativeLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/shareSaveTextviewLayout" android:background="@color/solid_dark_gray" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/solid_white" android:id="@id/shareSaveTextview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:id="@id/shareButtonView" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/shareButton" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

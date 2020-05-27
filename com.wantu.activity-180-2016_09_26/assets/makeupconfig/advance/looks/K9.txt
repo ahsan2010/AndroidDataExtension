@@ -1,0 +1,46 @@
+{
+
+"version" : "1",
+
+"cn_name" : "柔媚",
+
+"en_name" : "Lovely",
+
+"cnn_name" : "柔媚",
+
+"brow": "hanzhuang02_133_557_brow.png",
+"brow_a": "0.24",
+"brow_c": "130001",
+   
+
+"eyeshadow": "hanzhuang09_173_639_shadow.png",
+"eyeshadow_a": "0.59",
+
+
+"eyeliner": "hanzhuang02_194_656_liner.png",
+"eyeliner_a": "0.70",
+"eyeliner_c": "150002",
+
+"eyelash": "hanzhuang02_176_632_lash.png",
+"eyelash_a": "0.43",
+"eyelash_c": "140000", 
+
+
+"lip": "110018",
+"lip_a": "0.39",
+
+
+
+"blush":"hanzhuang09_42_697_blush.png",
+"blush_a": "0.17",
+"blush_c": "120014",
+"makeup_alpha": "0.7",
+
+"bottom_alpha" : "0.5",
+
+"base":"100003",
+
+"base_a": "0.5"
+
+
+}

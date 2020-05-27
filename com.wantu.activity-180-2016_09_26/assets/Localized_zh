@@ -1,0 +1,28 @@
+/* 
+   Localizable.strings
+
+   Copyright 2013 Fotoable,Inc. All rights reserved.
+ */
+
+pen 	= "简单";
+sparkle = "流火";
+laser	= "炫金";
+boken1	= "炫光粉";
+boken2	= "炫光蓝";
+boken3	= "蜂巢";
+boken4 	= "斑斓";
+lips1	= "红唇";
+flares1	= "满天星";
+flares2 = "甜甜圈";
+flares3 = "星芒";
+bubble3 = "泡泡";
+heart1	= "粉心"
+heart3 	= "红心";
+mosaic	= "马赛克";
+eraser	= "橡皮擦";
+reset   = "重置";
+dollar  = "美元"
+gold    = "元宝"
+redbag  = "红包"
+rmb     = "人民币"
+Taptoinput = "点击输入文字"

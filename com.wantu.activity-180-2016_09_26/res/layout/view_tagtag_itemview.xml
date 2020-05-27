@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fotoable.fotoproedit.activity.tagtag.TagCircleWaveView android:id="@id/halo" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+    <FrameLayout android:id="@id/container" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="10.0dip">
+        <ImageView android:id="@id/basicImageview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:id="@id/contentTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

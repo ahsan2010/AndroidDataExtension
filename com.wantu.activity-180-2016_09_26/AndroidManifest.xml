@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.wantu.activity" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.wantu.activity.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.wantu.activity.permission.C2D_MESSAGE"/>
+    <application android:allowBackup="false" android:icon="@drawable/icon_action" android:label="@string/app_name" android:largeHeap="true" android:name="com.qihoo.util.StubApp1711921008" android:qihoo="activity" android:supportsRtl="true" android:theme="@style/Theme.Background">
+        <receiver android:exported="true" android:name="com.google.android.gms.gcm.GcmReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.wantu.activity"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.wantu.activity.FotoGcmListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="1.1691328E14"/>
+        <meta-data android:name="app_license" android:value="1f66f77c81c9274254762b3f4d0e1a98"/>
+        <provider android:authorities="com.wantu.activity.DuAdCacheProvider" android:exported="false" android:name="com.duapps.ad.stats.DuAdCacheProvider"/>
+        <receiver android:name="com.duapps.ad.base.PackageAddReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+        <receiver android:exported="true" android:name="com.google.android.gms.analytics.CampaignTrackingReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="AGENT_APPKEY" android:value="07dfb88bcbf182a229f63700b4af1a15"/>
+        <meta-data android:name="AGENT_SECRET" android:value="b7ae54768555803ce60a6093a593c775"/>
+        <receiver android:name="com.kika.pluto.filter.KoalaAppInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/app_pro_desc" android:name="com.wantu.activity.CallProEditActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.qihoo.util.appupdate.AppUpdateActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:exported="false" android:name="com.qihoo.util.CommonActivity"/>
+        <service android:enabled="true" android:exported="true" android:name="com.qihoo.util.CommonService">
+            <intent-filter>
+                <action android:name="com.qihoo.commonservice.SERVICE"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.qihoo.util.CommonReceiver">
+            <intent-filter>
+                <action android:name="com.qihoo.commonreceiver.ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.qihoo.commonreceiver.CLEARED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.wantu.activity.COMMONPROVIDER" android:exported="true" android:name="com.qihoo.util.CommonProvider"/>
+        <activity android:label="@string/app_name" android:name="com.wantu.activity.SplashScreenActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="standard" android:name="com.qihoo.util.StartActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wantu.activity.guide.GuideViewAcitivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:launchMode="singleTop" android:name="com.wantu.activity.WantuActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wantu.activity.ExternReceiverActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wantu.activity.compose2.ComposePhotoesActivity2" android:screenOrientation="portrait" android:theme="@style/App.Theme.Holo"/>
+        <activity android:name="com.fotoable.alertAd.TAlertAdActivity" android:screenOrientation="portrait" android:theme="@style/ThemeNotTitleBar"/>
+        <activity android:exported="true" android:name="com.wantu.activity.wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.wantu.activity.ShareEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.fotoable.makeup.FotoMakeupAdvanceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.wantu.activity.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wantu.activity.FWebViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.wantu.activity.ThumbBrowserActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wantu.activity.pip.PipProcessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wantu.activity.pip.PipGLProcessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wantu.pip.activity.PipStyleActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_main_resource" android:name="com.wantu.ResourceOnlineLibrary.activity.MainResourceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wantu.ResourceOnlineLibrary.activity.MainResourceManageActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wantu.activity.weibo.SinaCallBackActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="SinaCallBackActivity" android:scheme="wantu"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wantu.activity.weibo.QQCallBackActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="QQCallBackActivity" android:scheme="wantu"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/effect" android:name="com.wantu.activity.PipProcessActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/photo_share_title" android:name="com.wantu.activity.PhotoShareActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/photo_share_title" android:name="com.wantu.activity.NewPhotoShareActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.fotoable.adbuttonlib.TWebBrowActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="" android:name="com.wantu.activity.photoselector.LinkPhotoSelectorActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.instamag.activity.compose.LinkComposeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.instamag.activity.library.activity.MainDownloadActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.instamag.activity.compose.MagComposeActivity" android:screenOrientation="portrait" android:theme="@style/App.Theme.Holo"/>
+        <activity android:name="com.wantu.activity.photoselector.InstaPhotoSelectorActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.wantu.ResourceOnlineLibrary.compose.manage.ManageOnlineLibActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/effect" android:name="com.wantu.activity.photoselector.PhotoSelectorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wantu.activity.photoselector.MultiPhotoSelectorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wantu.activity.photoselector.SinglePhotoSelectorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wantu.activity.photoselector.ProEditPhotoSelectActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.fotoable.photoselector.MediaStoreScannerService"/>
+        <activity android:name="com.wantu.ResourceOnlineLibrary.activity.MainResourceLibraryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wantu.activity.photonewselector.PhotoSecretSelectorActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.secret.SecretMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.fotoable.secretalbum.ImagePagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.fotoable.secretalbum.SecretAlbumActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.adClasses.ADPhotoSelectorActicity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.adClasses.ADProEditFilterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.adClasses.ADProEditStretchActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.adClasses.ADMagComposeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="android.app.lib_name" android:value="cocos2djs"/>
+        <activity android:label="@string/app_name" android:name="com.fotoable.fotoproedit.activity.ProEditMainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.fotoable.sketch.activity.TTieZhiActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.fotoable.wiw.activity.TWiwActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:label="@string/app_name" android:name="com.fotoable.fotoproedit.activity.ProEditCropActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.fotoable.fotoproedit.activity.ProEditNewCropActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.fotoable.fotoproedit.activity.ProEditStretchActicity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.fotoable.fotoproedit.activity.ProEditNewStretchActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.fotoable.fotoproedit.activity.ProEditRotateActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.fotoable.fotoproedit.activity.ProEditSceneActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.fotoable.fotoproedit.activity.ProEditLightActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.fotoable.fotoproedit.activity.ProEditFilterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:label="@string/app_name" android:name="com.fotoable.fotoproedit.activity.ProEditBorderActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.fotoproedit.activity.ProEditLightPenActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.fotoproedit.activity.ProEditAdjustActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.jsnative.FH5ADActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.jsnative.NativePhotoSelectorActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.facebook.ads.InterstitialAdActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.facebook.ads.VideoAdActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MoPubActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MraidActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.common.MoPubBrowser"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MraidVideoPlayerActivity"/>
+        <activity android:name="com.fotoable.fotoproedit.activity.ProEditFontActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:name="com.fotoable.fotoproedit.activity.ProEditSketchActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.fotoproedit.activity.ProEditSkickerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.fotoproedit.activity.ProEditTagActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.fotoproedit.activity.ProEditMosaicActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.fotoproedit.activity.ProEditSlimBodyActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.fotoproedit.activity.ProEditNewBorderActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.beautyui.gpuimage.sample.activity.ActivityCamera" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.fotoable.beautyui.gpuimage.sample.activity.ActivityCameraNew" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.wantu.activity.Third2CameraActivity">
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.fotoable.beautyui.gpuimage.sample.activity.ActivityCameraNoRealtime" android:screenOrientation="portrait"/>
+        <activity android:name="com.instamag.activity.library.activity.NewMagLibraryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.instamag.activity.library.activity.NewMagCountListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.beautyui.newui.MNewFotoBeautyActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="7154d9e206dec423717e96b5658df06992157a66"/>
+        <activity android:name="com.wantu.activity.StorePathActivity"/>
+        <activity android:name="com.wantu.activity.FileSystemActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.instamag.activity.library.activity.NewMagListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.fotoable.makeup.MakeUpCrazyCrossDress.MakeUpCrazyCrossDressLooksShowActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.fotoable.makeup.MakeUpCrazyCrossDress.MCrazyCrossBeautyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.fotoable.makeup.Dizzy.CrazyCrossDressDizzyActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.fotoable.fotoproedit.activity.ProEditZongYiActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:hardwareAccelerated="false" android:label="@string/app_name" android:name="com.wantu.activity.PhotoShareToInstagramActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.fotoproedit.activity.mosaic.MosaicLibraryActivity" android:theme="@style/activityTheme"/>
+        <receiver android:name="com.wantu.activity.DownloadBackgroundReciver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.wantu.service.net.PushService"/>
+        <activity android:hardwareAccelerated="false" android:name="com.fotoable.tiezhicam.StickerActivityCameraNew" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:hardwareAccelerated="false" android:name="com.fotoable.tiezhicam.ActivityMediaPlayerTest" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <service android:name="com.fotoable.autowakeup.BGService" android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.fotoable.autowakeup.TestService"/>
+        <receiver android:enabled="true" android:name="com.fotoable.autowakeup.MyBroadcastReceiver" android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.fotoable.message.IDListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.fotoable.message.RegistrationService"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.facebook.LoginActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.fotoable.ads.interstitialAd.FotoInterstitialActivity"/>
+        <receiver android:enabled="true" android:name="com.fotoable.battery.Receiver.LockScreenReceiver" android:process=":remote">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.fotoable.battery.BatteryCoreService" android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </service>
+        <activity android:launchMode="singleTask" android:name="com.fotoable.battery.LockScreenActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:launchMode="singleTask" android:name="com.fotoable.battery.guider.BatteryOptionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.fotoable.common.TCommonWebActivity"/>
+        <activity android:name="com.fotoable.fullscreenad.FullScreenAdActivity"/>
+        <activity android:name="com.fotoable.common.FotoCameraActivity"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+        <activity android:name="jp.co.cyberagent.android.gpuimage.export.CameraCaptureActivity"/>
+        <activity android:name="jp.co.cyberagent.android.gpuimage.grafika.MovieCaptureActivity"/>
+        <activity android:name="com.fotoable.prismalib.camera.PrismaCameraMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.fotoable.prismalib.camera.PrismaSinglePhotoSelectorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.fotoable.prismalib.camera.PrismaHandleActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.fotoable.prismalib.camera.PrismaCameraNoGpuActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

@@ -1,0 +1,45 @@
+{
+
+"version" : "1",
+
+"cn_name" : "孔雀",
+
+"en_name" : "Peacock",
+
+"cnn_name" : "孔雀",
+
+"brow": "nongzhuang6_145_565_brow.png",
+"brow_a": "0.24",
+"brow_c": "130026",
+   
+
+"eyeshadow": "nongzhuang6_134_604_shadow.png",
+"eyeshadow_a": "0.48",
+
+"eyeliner": "nongzhuang6_158_649_liner.png",
+"eyeliner_a": "0.40",
+"eyeliner_c": "150002",  
+
+
+"eyelash": "nongzhuang6_158_605_lash.png",
+"eyelash_a": "0.57",
+"eyelash_c": "140000",
+
+"lip": "110042",
+"lip_a": "0.41",
+
+
+"blush":"nongzhuang8_87_701_blush.png",
+"blush_a": "0.33",
+"blush_c": "120017",
+"makeup_alpha": "0.7",
+
+"bottom_alpha" : "0.5",
+
+"base":"100000",
+
+"base_a": "0.5"
+      
+
+
+}

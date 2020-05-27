@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/selfie_top_container" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/btn_selfie_switch" android:background="@drawable/btn_videosticker_camswitch_l" android:paddingTop="10.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+        <ImageView android:layout_gravity="center|top" android:id="@id/btn_selfie_flash" android:paddingTop="10.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_videosticker_cameraflash_off" />
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/btn_selfie_back" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/btn_videosticker_back1" />
+    </FrameLayout>
+</FrameLayout>

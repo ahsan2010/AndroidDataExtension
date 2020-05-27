@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="36.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="center|left" android:visibility="invisible" android:layout_width="20.0dip" android:layout_height="10.0dip" android:layout_marginLeft="13.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/triImage" android:background="@drawable/gr_library_tri" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/solid_white" android:gravity="center_vertical" android:layout_gravity="center|left" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="13.0dip" android:text="1张" />
+        <View android:layout_gravity="bottom" android:background="#ff373737" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="13.0dip" />
+    </FrameLayout>
+</RelativeLayout>

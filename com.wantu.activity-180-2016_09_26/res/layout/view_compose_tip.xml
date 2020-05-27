@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/layout_compose_module_cornor" android:layout_width="fill_parent" android:layout_height="146.0dip">
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/module_cornor_bg" android:background="@drawable/gr_tab_bg_bg" android:layout_width="fill_parent" android:layout_height="105.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/solid_white" android:layout_gravity="top" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="@string/tip" />
+            <TextView android:textSize="19.0sp" android:textColor="@color/solid_white" android:layout_gravity="top" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="36.0dip" android:text="@string/ui_collage_tip" />
+            <FrameLayout android:background="@color/solid_dark_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="33.0dip" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="right" android:id="@id/img_close" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/btn_close_stats" />
+    </FrameLayout>
+</FrameLayout>

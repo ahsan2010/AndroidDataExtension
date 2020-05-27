@@ -1,0 +1,47 @@
+{
+
+"version" : "1",
+
+"cn_name" : "丹妃",
+
+"en_name" : "Ruby",
+
+"cnn_name" : "丹妃",
+
+"brow": "hanzhuang07_156_560_brow.png",
+"brow_a": "0.15",
+"brow_c": "130012",
+   
+
+"eyeshadow": "hanzhuang08_180_642_shadow.png",
+"eyeshadow_a": "0.70",
+
+
+"eyeliner": "hanzhuang05_189_658_liner.png",
+"eyeliner_a": "0.90",
+"eyeliner_c": "150016",
+
+
+"eyelash": "hanzhuang05_176_635_lash.png",
+"eyelash_a": "0.95",
+"eyelash_c": "140020",
+
+"lip": "110017",
+"lip_a": "0.40",
+
+
+
+"blush":"nongzhuang1_79_698_blush.png",
+"blush_a": "0.22",
+"blush_c": "120017",
+"makeup_alpha": "0.7",
+
+"bottom_alpha" : "0.5",
+
+"base":"100000",
+
+"base_a": "0.5"
+      
+
+
+}

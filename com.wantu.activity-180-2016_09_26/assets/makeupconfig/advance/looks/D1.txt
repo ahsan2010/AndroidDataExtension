@@ -1,0 +1,46 @@
+﻿{
+
+"version" : "1",
+
+"cn_name" : "舞台",
+
+"en_name" : "Stage",
+
+"cnn_name" : "舞臺",
+
+"brow": "wuhuizhuang03_157_569_brow.png",
+"brow_a": "0.85",
+"brow_c": "130033",
+   
+
+"eyeshadow": "wuhuizhuang03_83_562_shadow.png",
+"eyeshadow_a": "0.80",
+
+"eyeliner": "wuhuizhuang03_179_660_liner.png",
+"eyeliner_a": "0.80",
+"eyeliner_c": "150002", 
+
+
+"eyelash": "caihuizhuang_163_624_lash.png",
+"eyelash_a": "0.90",
+"eyelash_c": "140000",
+
+"lip": "110048",
+"lip_a": "0.65",
+
+
+
+"blush":"nongzhuang1_79_698_blush.png",
+"blush_a": "0.70",
+"blush_c": "120036",
+"makeup_alpha": "0.8",
+
+"bottom_alpha" : "0.5",
+
+"base":"100002",
+
+"base_a": "0.5"
+      
+
+
+}

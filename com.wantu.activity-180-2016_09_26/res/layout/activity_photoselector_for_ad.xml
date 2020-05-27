@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/normal_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/navibar" android:background="@drawable/nav_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <Button android:textSize="13.0sp" android:textColor="@color/solid_white" android:id="@id/back_btn" android:background="@drawable/nav_back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="backBtnClicked" />
+        <Button android:textColor="@color/solid_white" android:id="@id/next_btn" android:background="@drawable/nav_next_btn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="nextBtnClicked" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="20.0dip" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/helper" android:background="@null" android:padding="5.0dip" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/help" android:layout_toRightOf="@id/title" android:layout_centerVertical="true" android:onClick="helpBtnClicked" />
+    </RelativeLayout>
+    <com.fotoable.view.actionbar.CommonActionBarView android:id="@id/actionBarView" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/encryptActivityContent" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_below="@id/actionBarView" android:layout_alignParentBottom="true" />
+</RelativeLayout>

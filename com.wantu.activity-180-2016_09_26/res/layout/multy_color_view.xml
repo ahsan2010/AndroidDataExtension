@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/layout_color_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="center|left|top" android:id="@id/layout_color_indicate" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="40.0dip">
+        <ImageView android:id="@id/imageView" android:layout_width="30.0dip" android:layout_height="40.0dip" android:src="@drawable/gr_colorbox" />
+        <FrameLayout android:layout_gravity="center|left|top" android:id="@id/indicate_color" android:background="#ffff0000" android:layout_width="20.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="4.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center|left|top" android:id="@id/layout_color_indicate_1" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="40.0dip">
+        <ImageView android:id="@id/imageView1" android:layout_width="30.0dip" android:layout_height="40.0dip" android:src="@drawable/gr_colorbox_1" />
+        <FrameLayout android:layout_gravity="bottom|center|left" android:id="@id/indicate_color_1" android:background="#ffff0000" android:layout_width="20.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="4.0dip" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/FrameLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/commmon_view" android:background="@drawable/gr_edittab" android:layout_width="fill_parent" android:layout_height="100.0dip">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="46.0dip">
+                    <ImageButton android:gravity="center" android:layout_gravity="center|top" android:id="@id/imgSwape" android:background="@drawable/btn_library_l" android:layout_width="42.0dip" android:layout_height="42.0dip" />
+                    <Button android:gravity="center" android:layout_gravity="right" android:id="@id/imgclose" android:background="@drawable/btn_close_l" android:layout_width="42.0dip" android:layout_height="42.0dip" />
+                </FrameLayout>
+                <com.wantu.view.compose2.Compose2ProeditFreeBottomBar android:layout_gravity="bottom" android:id="@id/composeProeditFreeBottomBar1" android:layout_width="fill_parent" android:layout_height="54.0dip" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/space_ad" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/commmon_view" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

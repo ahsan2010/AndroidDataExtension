@@ -1,0 +1,82 @@
+{
+    "190000" : {
+        "pids":["190000"],
+        "alpha":"0.8",
+        "texture":"hanzhuang01_184_632_doulid.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"doubleeyelid_0.png"
+    },
+    "190001" : {
+        "pids":["190000"],
+        "alpha":"0.8",
+        "texture":"hanzhuang12_181_637_doulid.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"doubleeyelid_1.png"
+    },
+    "190002" : {
+        "pids":["190000"],
+        "alpha":"0.8",
+        "texture":"hanzhuang04_184_632_doulid.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"doubleeyelid_2.png"
+    },
+    "190003" : {
+        "pids":["190000"],
+        "alpha":"0.8",
+        "texture":"hanzhuang11_210_641_doulid.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"doubleeyelid_3.png"
+    },
+    "190004" : {
+        "pids":["190000"],
+        "alpha":"0.8",
+        "texture":"luozhuang7_191_643_doulid.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"doubleeyelid_4.png"
+    },
+    "190005" : {
+        "pids":["190000"],
+        "alpha":"0.8",
+        "texture":"yingguo_185_632_doulid.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"doubleeyelid_5.png"
+    },
+    "190006" : {
+        "pids":["190000"],
+        "alpha":"0.8",
+        "texture":"zhili_201_636_doulid.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"doubleeyelid_6.png"
+    },
+    "190007" : {
+        "pids":["190000"],
+        "alpha":"0.8",
+        "texture":"hanzhuang10_165_638_doulid.png",
+        "enname":"",
+        "cnname":"",
+        "cnnname":"",
+        "starIconPath":"",
+        "iconPath":"doubleeyelid_7.png"
+    }
+}

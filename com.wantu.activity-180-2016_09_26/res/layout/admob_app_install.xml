@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.formats.NativeAppInstallAdView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/container_frame" android:layout_width="300.0dip" android:layout_height="207.0dip">
+        <FrameLayout android:id="@id/imagecontainer" android:background="@color/transparent" android:layout_width="300.0dip" android:layout_height="157.0dip" android:layout_marginTop="0.0dip">
+            <FrameLayout android:background="@android:color/white" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center|left|top" android:id="@id/appinstall_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" />
+            </FrameLayout>
+            <ImageView android:layout_gravity="center|left|top" android:id="@id/logoicon" android:background="@drawable/adlogo" android:layout_width="15.0dip" android:layout_height="8.0dip" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="bottom|center|left" android:orientation="vertical" android:id="@id/content_frame" android:layout_width="160.0dip" android:layout_height="35.0dip" android:layout_marginLeft="50.0dip" android:weightSum="2.0">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center|left" android:layout_gravity="center|left|top" android:id="@id/appinstall_headline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="很爱很爱" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="9.0sp" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center|left" android:layout_gravity="bottom|center|left" android:id="@id/appinstall_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="求求致命在线英语培训机构，每天45分钟免费体验课程，轻松学习" android:layout_weight="1.0" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="bottom|center|left" android:id="@id/iconcontainer" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip">
+            <FrameLayout android:background="#ffaaaaaa" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip">
+                <ImageView android:id="@id/appinstall_app_icon" android:background="#ffaaaaaa" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:scaleType="centerCrop" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="bottom|center|right" android:id="@id/click_frame" android:background="@drawable/corner_btn_2px_white" android:layout_width="80.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip">
+            <Button android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/appinstall_call_to_action" android:background="@drawable/corner_btn_2px_green" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:text="下载" />
+        </FrameLayout>
+    </FrameLayout>
+</com.google.android.gms.ads.formats.NativeAppInstallAdView>

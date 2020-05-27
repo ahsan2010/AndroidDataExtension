@@ -1,0 +1,5 @@
+{"previewImg":"gr_shiwu6_icon.jpg","centerX":12,"centerY":6,"width":159,"height":102,"oriention":3,"basicView":
+[{"viewNum":0,"viewtype":0,"textColor":{"R":247,"G":197,"B":46,"A":100},"isBold":"false","isShadow":"false","fontSize":20,"textLines":1},
+{"viewNum":1,"viewtype":1,"x":0,"y":0,"w":129,"h":102,"imageName":"gr_shiwu6_01.png","isContentView":"false"},
+{"viewNum":2,"viewtype":1,"x":129,"y":42,"w":12,"h":60,"imageName":"gr_shiwu6_02.png","isContentView":"true"},
+{"viewNum":3,"viewtype":1,"x":141,"y":42,"w":18,"h":60,"imageName":"gr_shiwu6_03.png","isContentView":"false"}],"outview":[]}

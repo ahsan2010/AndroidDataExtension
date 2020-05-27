@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/item_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wantu.setting.BackPathActionBarView android:id="@id/actionBarView" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true" />
+    <TextView android:id="@id/txt_showfile" android:background="#ff808080" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_below="@id/actionBarView" />
+    <ListView android:id="@id/list_files" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/line_gray" android:dividerHeight="0.5dip" android:layout_above="@id/actionBottomView" android:layout_below="@id/txt_showfile" />
+    <com.wantu.setting.CommonBottomView android:id="@id/actionBottomView" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

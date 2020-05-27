@@ -1,0 +1,10 @@
+{"previewImg":"gr_dongwu02.jpg","centerX":10,"centerY":10,"width":165,"height":70,"oriention":3,"basicView":
+[{"viewNum":0,"viewtype":0,"textColor":
+{"R":0,"G":26,"B":32,"A":100},"isBold":"false","isShadow":"false","fontSize":20,"textLines":1},
+{"viewNum":1,"viewtype":1,"x":0,"y":0,"w":107,"h":70,"imageName":"gr_dongwu02_01.png","isContentView":"false"},
+{"viewNum":2,"viewtype":1,"x":107,"y":10,"w":12,"h":60,"imageName":"gr_dongwu02_02.png","isContentView":"true"},
+{"viewNum":3,"viewtype":1,"x":119,"y":10,"w":46,"h":60,"imageName":"gr_dongwu02_03.png","isContentView":"false"}],"outview":[]}
+
+
+
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/relativelayout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/lineLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/lineHorizLayout1" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/share_frame1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:ellipsize="none" android:layout_gravity="center|top" android:id="@id/shareText1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:text="nice" android:singleLine="true" />
+                <FrameLayout android:layout_gravity="center" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip">
+                    <com.fotoable.savepagescrollview.SAutoBgFrameLayout android:layout_gravity="center" android:id="@id/shareImage1" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+                    <View android:layout_gravity="center|right|top" android:id="@id/flag_new1" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/lineHorizLayout2" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/share_frame2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:ellipsize="none" android:layout_gravity="center|top" android:id="@id/shareText2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:text="right" android:singleLine="true" />
+                <FrameLayout android:layout_gravity="center" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip">
+                    <com.fotoable.savepagescrollview.SAutoBgFrameLayout android:layout_gravity="center" android:id="@id/shareImage2" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+                    <View android:layout_gravity="center|right|top" android:id="@id/flag_new2" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/lineHorizLayout3" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/share_frame3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:ellipsize="none" android:layout_gravity="center|top" android:id="@id/shareText3" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:text="nice" android:singleLine="true" />
+                <FrameLayout android:layout_gravity="center" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip">
+                    <com.fotoable.savepagescrollview.SAutoBgFrameLayout android:layout_gravity="center" android:id="@id/shareImage3" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+                    <View android:layout_gravity="center|right|top" android:id="@id/flag_new3" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/lineHorizLayout4" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/share_frame4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:ellipsize="none" android:layout_gravity="center|top" android:id="@id/shareText4" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:text="nice" android:singleLine="true" />
+                <FrameLayout android:layout_gravity="center" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip">
+                    <com.fotoable.savepagescrollview.SAutoBgFrameLayout android:layout_gravity="center" android:id="@id/shareImage4" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+                    <View android:layout_gravity="center|right|top" android:id="@id/flag_new4" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/lineLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/lineLayout1">
+        <LinearLayout android:orientation="vertical" android:id="@id/lineHorizLayout5" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/share_frame5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:ellipsize="none" android:layout_gravity="center|top" android:id="@id/shareText5" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="58.0dip" android:text="nice" android:singleLine="true" />
+                <FrameLayout android:layout_gravity="center" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginBottom="5.0dip">
+                    <com.fotoable.savepagescrollview.SAutoBgFrameLayout android:layout_gravity="center" android:id="@id/shareImage5" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+                    <View android:layout_gravity="center|right|top" android:id="@id/flag_new5" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/lineHorizLayout6" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/share_frame6" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:ellipsize="none" android:layout_gravity="center|top" android:id="@id/shareText6" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="58.0dip" android:text="right" android:singleLine="true" />
+                <FrameLayout android:layout_gravity="center" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip">
+                    <com.fotoable.savepagescrollview.SAutoBgFrameLayout android:layout_gravity="center" android:id="@id/shareImage6" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+                    <View android:layout_gravity="center|right|top" android:id="@id/flag_new6" android:visibility="invisible" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/lineHorizLayout7" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/share_frame7" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:ellipsize="none" android:layout_gravity="center|top" android:id="@id/shareText7" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="58.0dip" android:text="nice" android:singleLine="true" />
+                <FrameLayout android:layout_gravity="center" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip">
+                    <com.fotoable.savepagescrollview.SAutoBgFrameLayout android:layout_gravity="center" android:id="@id/shareImage7" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+                    <View android:layout_gravity="center|right|top" android:id="@id/flag_new7" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/lineHorizLayout8" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/share_frame8" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:ellipsize="none" android:layout_gravity="center|top" android:id="@id/shareText8" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="58.0dip" android:text="nice" android:singleLine="true" />
+                <FrameLayout android:layout_gravity="center" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip">
+                    <com.fotoable.savepagescrollview.SAutoBgFrameLayout android:layout_gravity="center" android:id="@id/shareImage8" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+                    <View android:layout_gravity="center|right|top" android:id="@id/flag_new8" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/mask" android:background="#7a000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="130.0dip" android:layout_alignBottom="@id/lineLayout2">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/view_loading" android:layout_width="wrap_content" android:layout_height="40.0dip">
+            <ProgressBar android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="false" />
+            <TextView android:textColor="#ffffffff" android:id="@id/txt_load" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/process_savephoto" android:layout_toRightOf="@id/progressBar" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

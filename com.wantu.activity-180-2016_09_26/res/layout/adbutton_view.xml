@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageSwitcher android:layout_gravity="center" android:id="@id/imageswitcher" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/nativeviewcontainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="5.0sp" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="bottom|center|right" android:id="@id/fbnative_flag_ad" android:background="@drawable/view_roundbackground" android:layout_width="12.0dip" android:layout_height="12.0dip" android:text="AD" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/fbnative_clickedview" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="8.0sp" android:textColor="@color/save_gray" android:gravity="center" android:layout_gravity="bottom|center|right" android:id="@id/text_openlink" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Open\nLink" android:lines="2" />
+    </FrameLayout>
+    <TextView android:textSize="5.0sp" android:textColor="@color/solid_white" android:gravity="center" android:layout_gravity="bottom|center|right" android:id="@id/offline_flag_ad" android:background="@drawable/view_roundbackground" android:layout_width="12.0dip" android:layout_height="12.0dip" android:text="AD" />
+</FrameLayout>

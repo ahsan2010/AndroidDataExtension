@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/item_image" android:background="@drawable/textfont_bg_item" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/download_image" android:background="@drawable/gr_download" android:visibility="invisible" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" />
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/share_image" android:background="@drawable/share" android:visibility="invisible" android:layout_width="22.0dip" android:layout_height="14.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" />
+</FrameLayout>
