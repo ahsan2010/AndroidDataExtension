@@ -4,17 +4,18 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.bcel.Constants;
 import org.joda.time.DateTime;
 
 import com.csvreader.CsvReader;
+import com.sail.common.ProjectConstants;
+import com.sail.mobile.model.AdInformation;
 import com.sail.mobile.model.AppInfoAPK;
+import com.sail.mobile.model.AppTable;
 import com.sail.mobile.model.UpdateTable;
 
 public class FileUtil {
@@ -193,7 +194,6 @@ public class FileUtil {
 		return fileRecords;
 	}
 
-	
 	public static Map<String, String> readVerfiedAdList(String path) {
 		Map<String, String> adPackageMapGroup = new HashMap<String, String>();
 		try {
@@ -213,6 +213,24 @@ public class FileUtil {
 		}
 		return adPackageMapGroup;
 	}
+	
+	public static Map<String, String> readVerfiedAnalyticsLibraryList(String path) {
+		Map<String, String> adPackageMapGroup = new HashMap<String, String>();
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(path));
+			String line = "";
+			while ((line = br.readLine()) != null) {
+				String name[] = line.split(",");
+				adPackageMapGroup.put(name[0].trim(), name[1].trim());
+				System.out.println(name[0] + " " + name[1]);
+			}
+			System.out.println("Total Verified Analytics: " + adPackageMapGroup.size());
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return adPackageMapGroup;
+	}
 
 	public static boolean checkErrorJar(String fileName, Set<String> errorJarList) {
 
@@ -223,9 +241,137 @@ public class FileUtil {
 		return false;
 	}
 
+	public static Map<String, ArrayList<AdInformation>> readAdLibraryInformationPerApp(String path) {
+		Map<String, ArrayList<AdInformation>> appUseAd = new HashMap<String, ArrayList<AdInformation>>();
+		try {
+			CsvReader reader = new CsvReader(path);
+			reader.readHeaders();
+			int totalError = 0;
+			while (reader.readRecord()) {
+				String packageName = reader.get("App_Name");
+				String versionCode = reader.get("Version_Code");
+				String listOfAdds = reader.get("List_Of_Ads");
+				String releaseDate = reader.get("Release_Date");
+
+				if (listOfAdds.trim().length() <= 0) {
+					continue;
+				}
+				// System.out.println("Release Date: " + releaseDate);
+				try {
+					DateTime updateDateTime = DateUtil.formatterWithHyphen.parseDateTime(releaseDate);
+					AdInformation adInfo = new AdInformation(packageName, versionCode, listOfAdds, releaseDate);
+					if(!appUseAd.containsKey(packageName)){
+						appUseAd.put(packageName, new ArrayList<AdInformation>());
+					}
+					appUseAd.get(packageName).add(adInfo);
+				} catch (Exception e) {
+					++totalError;
+					System.err.println(packageName + " " + versionCode + " " + releaseDate);
+					// e.printStackTrace();
+				}
+
+			}
+			System.out.println("Ad library update data [" + appUseAd.size() + "]");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return appUseAd;
+	}
+
+	public static Map<String, AdInformation> readAdLibraryInformationII() {
+		Map<String, AdInformation> appUseAd = new HashMap<String, AdInformation>();
+		try {
+			CsvReader reader = new CsvReader(ProjectConstants.ADS_UPDATE_DATA_PATH);
+			reader.readHeaders();
+			int totalError = 0;
+			while (reader.readRecord()) {
+				String packageName = reader.get("App_Name");
+				String versionCode = reader.get("Version_Code");
+				String listOfAdds = reader.get("List_Of_Ads");
+				String releaseDate = reader.get("Release_Date");
+
+				if (listOfAdds.trim().length() <= 0) {
+					continue;
+				}
+				// System.out.println("Release Date: " + releaseDate);
+				try {
+					DateTime updateDateTime = DateUtil.formatterWithHyphen.parseDateTime(releaseDate);
+					AdInformation adInfo = new AdInformation(packageName, versionCode, listOfAdds, releaseDate);
+					String key = packageName + "-" + versionCode;
+					appUseAd.put(key, adInfo);
+				} catch (Exception e) {
+					++totalError;
+					System.err.println(packageName + " " + versionCode + " " + releaseDate);
+					// e.printStackTrace();
+				}
+
+			}
+			System.out.println("Ad library update data [" + appUseAd.size() + "]");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return appUseAd;
+	}
+
+	public static Map<String, AppTable> readAppData() {
+
+		Map<String, AppTable> appTableRecords = new HashMap<String, AppTable>();
+
+		try {
+
+			CsvReader record = new CsvReader(ProjectConstants.APP_CSV_PATH);
+			record.readHeaders();
+
+			while (record.readRecord()) {
+				AppTable data = new AppTable();
+
+				data.setAPP_ID(Integer.parseInt(record.get("APP_ID")));
+				data.setPACKAGE_NAME(record.get("PACKAGE_NAME"));
+				data.setAPP_TITLE(record.get("APP_TITLE"));
+				data.setIS_APP_TITLE_HAS_NON_PRINTABLE_CHAR(record.get("IS_APP_TITLE_HAS_NON_PRINTABLE_CHAR"));
+				data.setAPP_DESCRIPTION(record.get("APP_DESCRIPTION"));
+				data.setIS_APP_DESCRIPTION_HAS_NON_PRINTABLE_CHAR(
+						record.get("IS_APP_DESCRIPTION_HAS_NON_PRINTABLE_CHAR"));
+				data.setAPP_CATEGORY(record.get("APP_CATEGORY"));
+				data.setAPP_SUB_CATEGORY(record.get("APP_SUB_CATEGORY"));
+				data.setORGANIZATION_ID(record.get("ORGANIZATION_ID"));
+				data.setCONTENT_RATING(record.get("CONTENT_RATING"));
+				data.setCONTENT_RATING_TEXT(record.get("CONTENT_RATING_TEXT"));
+				data.setIS_TOP_DEVELOPER(record.get("IS_TOP_DEVELOPER"));
+				data.setIS_WEARABLE_APP(record.get("IS_WEARABLE_APP"));
+				data.setAPP_TYPE(record.get("APP_TYPE"));
+				data.setAVAILABILITY_RESTRICTION(record.get("setAVAILABILITY_RESTRICTION"));
+				data.setMAIN_PAGE_URL(record.get("MAIN_PAGE_URL"));
+				data.setDETAILS_URL(record.get("DETAILS_URL"));
+				data.setREVIEWS_URL(record.get("REVIEWS_URL"));
+				data.setPURCHASE_DETAILS_URL(record.get("PURCHASE_DETAILS_URL"));
+				data.setDEVELOPER_EMAIL(record.get("DEVELOPER_EMAIL"));
+				data.setDEVELOPER_WEBSITE(record.get("DEVELOPER_WEBSITE"));
+				data.setIS_2013_TOP_10K_APPS(record.get("IS_2013_TOP_10K_APPS"));
+				data.setIS_2015_TOP_500_APPS(record.get("IS_2015_TOP_500_APPS"));
+				data.setIS_FDROID_APP(record.get("IS_FDROID_APP"));
+				data.setIS_2016_TOP_2500_APPS(record.get("IS_2016_TOP_2500_APPS"));
+				data.setIS_2016_FAMILY_APPS(record.get("IS_2016_FAMILY_APPS"));
+				data.setIS_2016_TOP_2500_NON_FREE_APPS(record.get("IS_2016_TOP_2500_NON_FREE_APPS"));
+				data.setIS_2016_FAMILY_NON_FREE_APPS(record.get("IS_2016_FAMILY_NON_FREE_APPS"));
+
+				appTableRecords.put(data.getPACKAGE_NAME(), data);
+
+			}
+			System.out.println("Total Number of Available Apps in Study [" + appTableRecords.size() + "]");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return appTableRecords;
+
+	}
+
 	public static void main(String arg[]) {
 		FileUtil futil = new FileUtil();
-		
+
 	}
 
 }

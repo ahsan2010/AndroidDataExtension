@@ -8,7 +8,30 @@ public class UpdateTable {
 	public String VERSION_CODE;
 	public String RELEASE_DATE; 
 	public String APK_SIZE;
+	public String targetSdkVersion;
+	public String minimumSdkVersion;
+	public String missingFlag;
 	
+	
+	
+	public String getTargetSdkVersion() {
+		return targetSdkVersion;
+	}
+	public void setTargetSdkVersion(String targetSdkVersion) {
+		this.targetSdkVersion = targetSdkVersion;
+	}
+	public String getMinimumSdkVersion() {
+		return minimumSdkVersion;
+	}
+	public void setMinimumSdkVersion(String minimumSdkVersion) {
+		this.minimumSdkVersion = minimumSdkVersion;
+	}
+	public String getMissingFlag() {
+		return missingFlag;
+	}
+	public void setMissingFlag(String missingFlag) {
+		this.missingFlag = missingFlag;
+	}
 	public String getAPP_ID() {
 		return APP_ID;
 	}

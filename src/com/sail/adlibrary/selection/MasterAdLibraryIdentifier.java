@@ -14,13 +14,13 @@ import com.sail.mobile.model.UpdateTable;
 
 public class MasterAdLibraryIdentifier {
 	
-	int numberOfThreads = 10;
+	int numberOfThreads = 20;
 	
 	
 	public ArrayList<String> getAppUpdatesLink(){
 		ArrayList<String> updateLink = new ArrayList<String>();
 		try{
-			CsvReader reader = new CsvReader(ProjectConstants.APP_UPDATES_SHORT_FILE);
+			CsvReader reader = new CsvReader(ProjectConstants.STUDIED_APP_UPDATES);
 			reader.readHeaders();
 			while(reader.readRecord()){
 				String packageName = reader.get("PACKAGE_NAME");

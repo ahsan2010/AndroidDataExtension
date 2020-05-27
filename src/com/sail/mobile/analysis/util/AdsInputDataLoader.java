@@ -82,6 +82,37 @@ public class AdsInputDataLoader
 		return appUpdateRecords;
 	}
 
+	
+	public static HashMap<String,UpdateTable> readUpdateDataPerUpdateIII(String fileName){
+		HashMap<String,UpdateTable> appUpdateRecords = new HashMap<String,UpdateTable>();
+		
+		try{
+			int inputUpdatesCount = 0;
+			CsvReader reader = new CsvReader(fileName);
+			reader.readHeaders();
+			while (reader.readRecord())
+			{
+				inputUpdatesCount++;
+				UpdateTable update = new UpdateTable();
+				update.setAPP_ID(reader.get("APP_ID").trim());
+				update.setAPP_UPDATE_ID(reader.get("APP_UPDATE_ID").trim());
+				update.setPACKAGE_NAME(reader.get("PACKAGE_NAME").trim());
+				update.setVERSION_CODE(reader.get("VERSION_CODE").trim());
+				update.setRELEASE_DATE(reader.get("RELEASE_DATE").trim());
+				update.setAPK_SIZE(reader.get("APK_FILE_SIZE").trim());
+				
+				appUpdateRecords.put(update.getPACKAGE_NAME()+"-"+update.getVERSION_CODE() +"-" + update.getRELEASE_DATE(),update);
+				
+			}
+			System.out.println("Initially loaded ["+appUpdateRecords.size()+"] apps with [" + inputUpdatesCount + "] updates.");
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		
+		return appUpdateRecords;
+	}
+	
 	public static Set<String> readErrorJarList(String path){
 		Set<String> errorJars = new HashSet<String>();
 		

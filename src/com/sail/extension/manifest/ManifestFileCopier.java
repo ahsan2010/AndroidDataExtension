@@ -14,12 +14,13 @@ import com.sail.common.ProjectConstants;
 
 public class ManifestFileCopier {
 
-	int numberOfThreads = 10;
+	public String STUDIED_APP_UPDATES = "/home/local/SAIL/ahsan/Documents/Pinky/Documents/Update_Classification_SBSE_May/ROOT/Data/UpdatesMissingManifest.csv";
+	int numberOfThreads = 20;
 
 	public ArrayList<String> getAppUpdatesLink() {
 		ArrayList<String> updateLink = new ArrayList<String>();
 		try {
-			CsvReader reader = new CsvReader(ProjectConstants.STUDIED_APP_UPDATES);
+			CsvReader reader = new CsvReader(STUDIED_APP_UPDATES);
 			reader.readHeaders();
 			while (reader.readRecord()) {
 				String packageName = reader.get("PACKAGE_NAME");
@@ -28,6 +29,7 @@ public class ManifestFileCopier {
 				releaseDate = releaseDate.replace("-", "_");
 
 				String updateString = packageName + "-" + versionCode + "-" + releaseDate;
+				System.out.println("Update String: " + updateString);
 				updateLink.add(updateString);
 
 			}
@@ -41,8 +43,9 @@ public class ManifestFileCopier {
 	public void runTheWorker() {
 		ArrayList<String> updateLink = getAppUpdatesLink();
 		int start = 0;
-		int end = 10000;
-		int total = end - start + 1;
+		int end = updateLink.size();
+		//int end = 5;
+		int total = end - start;
 		int difference = (int) (total / numberOfThreads);
 
 		System.out.println("Total Threads [" + numberOfThreads + "]");

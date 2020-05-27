@@ -13,7 +13,7 @@ import com.sail.common.ProjectConstants;
 
 public class ApkToJarMaster {
 
-	int numberOfThreads = 5;
+	int numberOfThreads = 1;
 	public Set<String> existingJarConersion = new HashSet<String>();
 	public ArrayList<String> apkNeedsToCompile = new ArrayList<String>();
 	
@@ -29,21 +29,20 @@ public class ApkToJarMaster {
 				releaseDate = releaseDate.replace("-","_");
 				
 				String updateString = packageName +"-" + versionCode + "-" + releaseDate;
-				updateLink.add(updateString);		
+				updateLink.add(updateString);
+				
 			}
 		reader.close();
-		System.out.println("Total updates ["+updateLink.size()+"]");
 		}catch(Exception e){
 			e.printStackTrace();
 		}
 		return updateLink;
 	}
-
 	
 	public void checkExistingJar(){
 		int totalExistingJars = 0;
 		ArrayList<String> updateLink = getAppUpdatesLink();
-		for(int i = 0 ; i < 30000 ; i ++){
+		for(int i = 0 ; i < updateLink.size() ; i ++){
 			
 			String updateString = updateLink.get(i);
 			String fileLocation = ProjectConstants.jarOutputPath + updateString + "-dex2jar.jar";
@@ -55,7 +54,7 @@ public class ApkToJarMaster {
 				apkNeedsToCompile.add(updateString);
 			}
 			
-			//System.out.println("Check complete " + (i+1) + " " + fileLocation + " " + totalExistingJars);
+			System.out.println("Check complete " + (i+1) + " " + fileLocation + " " + totalExistingJars);
 		}
 		System.out.println("Total existing Jars = " + totalExistingJars +" " + existingJarConersion.size());
 	}
@@ -65,7 +64,7 @@ public class ApkToJarMaster {
 		//ArrayList<String> updateLink = getAppUpdatesLink();
 		int start = 0;
 		int end = apkNeedsToCompile.size();
-		int updatesNeedToAnalyze = end - start;
+		int updatesNeedToAnalyze = end - start + 1;
 		
 		/*if((start + updatesNeedToAnalyze) > updateLink.size()){	
 			updatesNeedToAnalyze = updateLink.size() - start;
@@ -115,7 +114,6 @@ public class ApkToJarMaster {
 	
 	public static void main(String[] args) throws Exception{
 		ApkToJarMaster ob = new ApkToJarMaster();
-		//ob.runTheWorker();
 		ob.checkExistingJar();
 		ob.runTheWorker();
 		System.out.println("Program finishes successfully");

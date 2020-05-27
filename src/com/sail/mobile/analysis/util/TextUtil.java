@@ -3,11 +3,24 @@ package com.sail.mobile.analysis.util;
 import java.text.DecimalFormat;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.regex.Pattern;
 
 public class TextUtil {
 	
 	static DecimalFormat INTEGER_FORMATTER = new DecimalFormat("#,###");
 	static DecimalFormat DECIMAL_FORMATTER = new DecimalFormat("#,###.#");
+	
+	public static final String ANALYTICS_CLASS = "analytic";
+	static Pattern patternAnalyticsLibrary = Pattern.compile(ANALYTICS_CLASS);
+	
+	public static boolean isAnalyticsLibrary(String packageName, String className)
+	{
+		// Generate the matcher with pattern to filter
+		boolean result;
+		//result = pattern1.matcher(packageName).find() || pattern2.matcher(packageName).find() || pattern3.matcher(className).find() || pattern4.matcher(className).find();
+		result = patternAnalyticsLibrary.matcher(packageName.toLowerCase()).find() || patternAnalyticsLibrary.matcher(className.toLowerCase()).find();
+		return result;
+	}
 	
 	
 	public static boolean isEmptyText(String text)

@@ -26,7 +26,7 @@ public class ChildAdLibraryIdentifier implements Runnable{
 
 	public  String JAR_DIRECTORY = "/safwatscratch/shassan/Jars/";
 	public String OUTPUT_LOCATION =  ProjectConstants.ROOT + "Ad_Library_Identification_Result/";
-	public String AD_LIBRARY_MAP = "/home/local/SAIL/ahsan/Documents/SAIL_Projects/Android_Data_Extension/Data/verified_ads_updated.csv";
+	public String AD_LIBRARY_MAP = "/home/local/SAIL/ahsan/Documents/SAIL_Projects/Android_Data_Extension/Data/Updated_Varified_Ad_List.csv";
 	ArrayList<String>updateLink = new ArrayList<String>();
 	Map<String,String> varifiedAdPackageMapGroup = FileUtil.readVerfiedAdList(AD_LIBRARY_MAP);
 	Set<String> adLibraryImportSet = new HashSet<String>();
@@ -52,14 +52,14 @@ public class ChildAdLibraryIdentifier implements Runnable{
 		Enumeration<JarEntry> entries = jarFile.entries();
 		while (entries.hasMoreElements()) {
 			JarEntry entry = entries.nextElement();
-			System.out.println(entry.getName());
+			//System.out.println(entry.getName());
 			if (!entry.getName().endsWith(".class")) {
 				continue;
 			}
 			ClassParser parser = new ClassParser(jarPath, entry.getName());
 			JavaClass javaClass = parser.parse();
 			javaClasses.put(javaClass.getClassName(), javaClass);
-			System.out.println("GOT >>>");
+			//System.out.println("GOT >>>");
 		}
 		return javaClasses;
 	}
@@ -144,8 +144,8 @@ public class ChildAdLibraryIdentifier implements Runnable{
 		return adImport;
 	}
 	
-	public HashMap<String,Integer> adLibraryDetection(String updateInfo){
-		String jarLocation = JAR_DIRECTORY + updateInfo+"-dex2jar.jar";
+	public HashMap<String,Integer> adLibraryDetection(String updateKey){
+		String jarLocation = JAR_DIRECTORY + updateKey+"-dex2jar.jar";
 		HashMap<String,Integer> adsUsageGroupCountInfo = new HashMap<String,Integer>();
 		
 		try{
@@ -180,7 +180,7 @@ public class ChildAdLibraryIdentifier implements Runnable{
 		writer = new CsvWriter(location);
 		writer.write("App_Name");
 		writer.write("Version_Code");
-		writer.write("Date");
+		writer.write("Release_Date");
 		writer.write("Total_Ads");
 		writer.write("List_Of_Ads");
 		writer.write("Total_Ads_Import");
